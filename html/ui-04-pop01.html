@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap">
+<style>
+#container > a {margin-top:20px; width:auto}
+</style>
+	<div id="container">
+		<a href="javascript:void(0)" onclick="fn_layer('layer1','300')" class="btn btnBlue">당일 일정일 때 알림 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer2','300')" class="btn btnBlue">지난 일정(근태 기록 변경 가능) 알림 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer3','300')" class="btn btnBlue">지난 일정(누락인 경우) 알림 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer4','300')" class="btn btnBlue">예정(근무일정 변경 가능) 알림 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer5','300')" class="btn btnBlue">출퇴근(근태기록 있는 경우) 알림 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer6','300')" class="btn btnBlue">설정 일정 외 알림 팝업버튼</a>
+
+		<!-- 당일 일정일 때 알림 -->
+		<div class="layer layer1">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p>12.5 (목) 변경 요청 사항</p>
+					<div class="boxBlue">
+						<strong>변경 사유 : 반차</strong>
+						<p class="line"><strong>기존</strong>09 : 00 ~ 18 : 00</p>
+						<p class="color"><strong>변경</strong>09 : 00 ~ 14 : 00</p>
+					</div>
+					<p>위 내용대로 접수하시겠습니까?</p>
+					<div class="btnBottom">
+						<button class="btn btnBlue">변경요청하기</button>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 당일 일정일 때 알림 -->
+
+		<!-- 지난 일정(근태 기록 변경 가능) 알림 -->
+		<div class="layer layer2">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p>12.5 (목) 변경 요청 사항</p>
+					<div class="boxBlue">
+						<strong>변경 항목 : 출근시간수정</strong>
+						<p class="line"><strong>기존</strong>09 : 12</p>
+						<p class="color"><strong>변경</strong>09 : 00</p>
+					</div>
+					<p>위 내용대로 접수하시겠습니까?</p>
+					<div class="btnBottom">
+						<button class="btn btnBlue">변경요청하기</button>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 지난 일정(근태 기록 변경 가능) 알림 -->
+
+		<!-- 지난 일정(누락인 경우) 알림 -->
+		<div class="layer layer3">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p>12.5 (목) 변경 요청 사항</p>
+					<div class="boxBlue">
+						<strong>변경 항목 : 출근시간수정</strong>
+						<p class="line"><strong>기존</strong>(누락)</p>
+						<p class="color"><strong>변경</strong>09 : 00</p>
+					</div>
+					<p>위 내용대로 접수하시겠습니까?</p>
+					<div class="btnBottom">
+						<button class="btn btnBlue">변경요청하기</button>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 지난 일정(누락인 경우) 알림 -->
+
+		<!-- 예정(근무일정 변경 가능) 알림 -->
+		<div class="layer layer4">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p>12.5 (목) 변경 요청 사항</p>
+					<div class="boxBlue">
+						<strong>변경 항목 : 연차휴가</strong>
+						<p class="line"><strong>기존</strong>09 : 00 ~ 18 : 00</p>
+						<p class="color"><strong>변경</strong>연차휴가</p>
+					</div>
+					<p>위 내용대로 접수하시겠습니까?</p>
+					<div class="btnBottom">
+						<button class="btn btnBlue">변경요청하기</button>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 예정(근무일정 변경 가능) 알림 -->
+
+		<!-- 출퇴근(근태기록 있는 경우) 알림 -->
+		<div class="layer layer5">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p>12.5 (목) 변경 요청 사항</p>
+					<div class="boxBlue">
+						<strong>변경 항목 : 추가근무승인</strong>
+						<p><strong>기존</strong>무일정</p>
+						<p><strong>추가</strong>09 : 00 ~ 14 : 00</p>
+					</div>
+					<p>위 내용대로 접수하시겠습니까?</p>
+					<div class="btnBottom">
+						<button class="btn btnBlue">추가승인요청하기</button>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 출퇴근(근태기록 있는 경우) 알림 -->
+
+		<!-- 설정 일정 외 알림 -->
+		<div class="layer layer6">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p>12.5 (목) 변경 요청 사항</p>
+					<div class="boxBlue">
+						<strong>변경 항목 : 추가근무승인</strong>
+						<p><strong>기존</strong>09 : 00 ~ 18 : 00</p>
+						<p><strong>변경</strong>09 : 00 ~ 14 : 00</p>
+					</div>
+					<p>위 내용대로 접수하시겠습니까?</p>
+					<div class="btnBottom">
+						<button class="btn btnBlue">추가승인요청하기</button>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 설정 일정 외 알림 -->
+	</div>
+</div>
+<!--// wrap -->
+</body>
+</html>

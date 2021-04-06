@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>요청/접수 관리 &lt; 이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap">
+	<!-- subHeader -->
+	<div id="subHeader">
+		<h2>요청/접수 관리</h2>
+		<a href="" class="btnLogout">로그아웃</a>
+		<a href="" class="btnMenu">메뉴보기</a>
+		<a href="" class="btnNotice"><span>알림</span><strong>99</strong></a>
+		<div class="utilPop">
+			<ul>
+				<li><a href="">이용안내</a></li>
+				<li><a href="">위치저장</a></li>
+			</ul>
+			<a href="" class="btnClose">닫기</a>
+		</div>
+	</div>
+	<!--// subHeader -->
+
+	<!-- container -->
+	<div id="container">
+		<div class="content">
+			<!-- tabWrap -->
+			<div class="tabWrap">
+				<ul>
+					<li class="curr"><a href="">접수 현황</a></li>
+					<li><a href="">결과 안내</a></li>
+				</ul>
+				<div class="tabBoxWrap v2">
+					<!-- 접수 현황 -->
+					<div>
+						<!-- listTop -->
+						<div class="listTop">
+							<ul>
+								<li>전체 2건</li>
+							</ul>
+							<select title="필터선택">
+								<option value="">전체</option>
+								<option value="">근태기록</option>
+								<option value="">근무일정</option>
+								<option value="">추가근무</option>
+								<option value="">연장근무</option>
+							</select>
+						</div>
+						<!--// listTop -->
+						<!-- workList -->
+						<div class="workList">
+							<dl>
+								<dt>12월 2일 (월) <span>대기 중</span></dt>
+								<dd>
+									<a href="">
+										<p><strong>일정</strong>09:00 ~ 18:00 / 휴게 1시간</p>
+										<p class="cBlue"><strong>근태</strong>09:12~18:00</p>
+										<p class="cBlue"><strong>접수항목</strong>출근 시간 수정</p>
+									</a>
+								</dd>
+								<dd>
+									<a href="">
+										<p><strong>일정</strong>09:00 ~ 18:00 / 휴게 1시간</p>
+										<p class="cBlue"><strong>근태</strong>09:12~18:00</p>
+										<p class="cBlue"><strong>접수항목</strong>출근 시간 수정</p>
+									</a>
+								</dd>
+							</dl>
+						</div>
+						<!--// workList -->
+						<!-- noData -->
+						<div class="noData">
+							<p>조회 된 데이터가 없습니다.</p>
+						</div>
+						<!--// noData -->
+					</div>
+					<!--// 접수 현황 -->
+					<!-- 결과 안내 -->
+					<div>
+						<!-- listTop -->
+						<div class="listTop">
+							<ul>
+								<li>승인 00</li>
+								<li>반려 00</li>
+							</ul>
+							<select title="필터선택">
+								<option value="">전체</option>
+								<option value="">승인</option>
+								<option value="">반려</option>
+							</select>
+						</div>
+						<!--// listTop -->
+						<!-- workList -->
+						<div class="workList">
+							<dl>
+								<dt>12월 2일 (월)</dt>
+								<dd>
+									<div>
+										<strong class="cBlue">승인</strong>
+										<p><strong>일정</strong>09:00 ~ 18:00 / 휴게 1시간</p>
+										<p><strong>근태</strong>09:12~18:00</p>
+										<p><strong>접수내용</strong>근태 변경</p>
+										<p class="cBlue"><strong>승인사항</strong><span>09:12 ~ 18:00</span>  →  09:00 ~ 18:00</p>
+									</div>
+								</dd>
+								<dd>
+									<div>
+										<strong class="cRed">반려</strong>
+										<p><strong>일정</strong>09:00 ~ 18:00 / 휴게 1시간</p>
+										<p><strong>근태</strong>09:12~18:00</p>
+										<p><strong>접수내용</strong>근태 변경</p>
+										<p class="cBlue"><strong>승인사항</strong>07:00~08:50 (+1시간 50분)</p>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt>12월 2일 (월)</dt>
+								<dd>
+									<div>
+										<strong class="cBlue">승인</strong>
+										<p><strong>일정</strong>09:00 ~ 18:00 / 휴게 1시간</p>
+										<p><strong>근태</strong>09:12~18:00</p>
+										<p class="cBlue"><strong>접수내용</strong>연장근로업무사전승인</p>
+										<p class="cBlue"><strong>승인사항</strong>06:00~20:00 (2시간)</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<!--// workList -->
+					</div>
+					<!--// 결과 안내 -->
+				</div>
+			</div>
+			<!--// tabWrap -->
+		</div>
+	</div>
+	<!--// container -->
+
+	<!-- FixedBtn -->
+	<div id="FixedBtn">
+		<ul>
+			<li><a href="">메인</a></li>
+			<li><a href="">근무/통계</a></li>
+			<li><a href="">계약/급여</a></li>
+			<li class="curr"><a href="">요청/접수</a></li>
+			<li><a href="">관리</a></li>
+		</ul>
+	</div>
+	<!--// FixedBtn -->
+</div>
+<!--// wrap -->
+</body>
+</html>

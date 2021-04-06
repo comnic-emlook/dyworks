@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/swiper.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap">
+<style>
+#container > a {margin-top:20px; width:auto}
+</style>
+	<div id="container">
+		<a href="javascript:void(0)" onclick="fn_layer('layer1','300')" class="btn btnBlue">삭제 (가능 시) 알림 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer2','300')" class="btn btnBlue">삭제 (불가능 시) 알림 팝업버튼</a>
+
+		<!-- 삭제 (가능 시) -->
+		<div class="layer layer1">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p>삭제하시겠습니까?</p>
+					<p>삭제 시 소속 회사 관련 모든 데이터가<br />사라짐과 동시에 로그아웃 됩니다.</p>
+					<p>이후 동일 회사를 다시 생성하더라도 <br />데이터는 복구되지 않습니다.</p>
+					<!-- btnBottom -->
+					<div class="btnBottom">
+						<button class="btn btnBlue">삭제</button>
+					</div>
+					<!--// btnBottom -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 삭제 (가능 시) -->
+
+		<!-- 삭제 (불가능 시) -->
+		<div class="layer layer2">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p>삭제하고자 하는 <br />회사에 소속 된 직원이 있습니다.</p>
+					<p>이용 직원이 있는 경우 삭제가 불가합니다.</p>
+					<!-- btnBottom -->
+					<div class="btnBottom">
+						<button class="btn btnBlue">확인</button>
+					</div>
+					<!--// btnBottom -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 삭제 (불가능 시) -->
+	</div>
+</div>
+<!--// wrap -->
+</body>
+</html>

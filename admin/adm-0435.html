@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>관리 &lt; 이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/swiper.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap">
+	<!-- subHeader -->
+	<div id="subHeader">
+		<h2>근태체크방식 관리</h2>
+		<a href="" class="btnBack">이전 페이지</a>
+		<a href="" class="btnInfo">정보 안내</a>
+	</div>
+	<!--// subHeader -->
+
+	<!-- container -->
+	<div id="container">
+		<div class="content">
+			<div class="fullScreen">
+				<!-- tabWrap -->
+				<div class="tabWrap">
+					<ul>
+						<li class="curr"><a href="">근태 알림 관리</a></li>
+						<li><a href="">알림 수신 여부 설정</a></li>
+					</ul>
+					<div class="tabBoxWrap">
+						<!-- 근태 알림 관리 -->
+						<div>
+							<p class="txt">근태 관련 알림 타임을 설정할 수 있습니다. <br />설정 시간에 맞춰 자동 적용됩니다.</p>
+							<!-- taPolicy -->
+							<div class="taPolicy">
+								<dl>
+									<dd class="inputList">
+										<dl>
+											<dt>출근 전</dt>
+											<dd>
+												<select title="출근 전" class="v2">
+													<option value="">10분전</option>
+												</select>
+											</dd>
+										</dl>
+										<dl>
+											<dt>퇴근 전</dt>
+											<dd>
+												<select title="퇴근 전" class="v2">
+													<option value="">10분전</option>
+												</select>
+											</dd>
+										</dl>
+										<dl>
+											<dt>출근 미 체크</dt>
+											<dd>
+												<select title="출근 미 체크" class="v2">
+													<option value="">10분전</option>
+												</select>
+											</dd>
+										</dl>
+										<dl>
+											<dt>퇴근 미 체크</dt>
+											<dd>
+												<select title="퇴근 미 체크" class="v2">
+													<option value="">10분전</option>
+												</select>
+											</dd>
+										</dl>
+										<dl>
+											<dt>52시간 초과 전 <span>(최대 근로시간 : 52시간)</span></dt>
+											<dd>
+												<select title="52시간 초과 전 (최대 근로시간 : 52시간)" class="v2">
+													<option value="">10분전</option>
+												</select>
+											</dd>
+										</dl>
+										<dl>
+											<dt>52시간 초과 후 <span>(최대 근로시간 : 52시간)</span></dt>
+											<dd>
+												<select title="52시간 초과 후 (최대 근로시간 : 52시간)" class="v2">
+													<option value="">10분전</option>
+												</select>
+											</dd>
+										</dl>
+									</dd>
+								</dl>
+								<dl>
+									<dd class="inputList">
+										<dl>
+											<dt>연장근무사전신청 알림 설정</dt>
+											<dd>
+												<select title="연장근무사전신청 알림 설정" class="v2">
+													<option value="">퇴근 시간 기준 30분 초과</option>
+												</select>
+											</dd>
+										</dl>
+									</dd>
+								</dl>
+								<dl>
+									<dd class="inputList">
+										<dl>
+											<dt>연장근무신청 시간 초과 전</dt>
+											<dd>
+												<select title="연장근무신청 시간 초과 전" class="v2">
+													<option value="">10분전</option>
+												</select>
+											</dd>
+										</dl>
+										<dl>
+											<dt>연장근무신청 시간 초과 후/dt>
+											<dd>
+												<select title="연장근무신청 시간 초과 후" class="v2">
+													<option value="">10분전</option>
+												</select>
+											</dd>
+										</dl>
+									</dd>
+								</dl>
+							</div>
+							<!--// taPolicy -->
+						</div>
+						<!--// 근태 알림 관리 -->
+						<!-- 알림 수신 여부 설정 -->
+						<div>
+							<p class="txt">이용 타입 별, 알림 수신 여부를 설정할 수 있습니다.<br />허용한 알림 타입만 수신 가능합니다.</p>
+							<div class="setArea">
+								<ul>
+									<li>
+										<p>근태(출근,퇴근) 체크 알림 수신</p> 
+										<em><input type="checkbox" id="chk01"><label for="chk01">알림수신동의</label></em>
+									</li>
+									<li>
+										<p>근무 일정 변경 요청 접수 알림 수신</p> 
+										<em><input type="checkbox" id="chk02"><label for="chk02">알림수신동의</label></em>
+									</li>
+									<li>
+										<p>근태 기록 변경 요청 접수 알림 수신</p> 
+										<em><input type="checkbox" id="chk03"><label for="chk03">알림수신동의</label></em>
+									</li>
+									<li>
+										<p>연장 근무 사전 신청 접수 알림 수신</p> 
+										<em><input type="checkbox" id="chk04"><label for="chk04">알림수신동의</label></em>
+									</li>
+									<li>
+										<p>시스템 업데이트 알림 수신</p> 
+										<em><input type="checkbox" id="chk05"><label for="chk05">알림수신동의</label></em>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!--// 알림 수신 여부 설정 -->
+					</div>
+				</div>
+				<!--// tabWrap -->
+			</div>
+		</div>
+	</div>
+	<!--// container -->
+</div>
+<!--// wrap -->
+</body>
+</html>

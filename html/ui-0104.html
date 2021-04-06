@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>내 위치 공유하기 &lt; 이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap">
+	<!-- subHeader -->
+	<div id="subHeader">
+		<h2>연장근무신청</h2>
+		<a href="" class="btnBack">이전 페이지</a>
+	</div>
+	<!--// subHeader -->
+
+	<!-- container -->
+	<div id="container">
+		<div class="content">
+			<!-- inputList -->
+			<div class="inputList">
+				<dl>
+					<dt>연장 근무 신청일</dt>
+					<dd><input type="text" class="txtC" title="연장 근무 신청일" value="2020년 1월 10일 (금)"></dd>
+				</dl>
+				<dl>
+					<dt>연장 근무 시간</dt>
+					<dd class="time">
+						<input type="time" title="출근시간입력" placeholder="시간을 선택하세요">
+						<span>~</span>
+						<input type="time" title="퇴근시간입력" placeholder="시간을 선택하세요">
+					</dd>
+				</dl>
+				<ul class="icoList">
+					<li>ⓘ 1일 연장근로 최대 시간 : 2시간 제한 상태.</li>
+					<li>ⓘ 연장근무신청 범위 : 출근 시간 기준 최대 2시간.</li>
+				</ul>
+				<dl>
+					<dt>연장 근무 사유</dt>
+					<dd>
+						<textarea title="연장 근무 사유" placeholder="(한글영문숫자포함 최대 150자 이내)"></textarea>
+					</dd>
+				</dl>
+			</div>
+			<!--// inputList -->
+			<!-- btnBottom -->
+			<div class="btnBottom">
+				<button class="btn btnBlue">관리자에게 승인 받기</button>
+			</div>
+			<!--// btnBottom -->
+		</div>
+	</div>
+	<!--// container -->
+</div>
+<!--// wrap -->
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap">
+<style>
+#container > a {margin-top:20px; width:auto}
+</style>
+	<div id="container">
+		<a href="javascript:void(0)" onclick="fn_layer('layer1','300')" class="btn btnBlue">ID/PW 찾기 알림 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer2','300')" class="btn btnBlue">로그인 5회차 오류 알림 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer3','300')" class="btn btnBlue">비밀번호 변경(인증완료) 알림 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer4','300')" class="btn btnBlue">회사생성 팝업버튼</a><br />
+		
+		<!-- 알림 -->
+		<div class="layer layer1">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p>귀하의 임시 비밀번호를 <br />
+					메일로 발송하였습니다.<br />
+					확인 후 다시 로그인해주세요.<br />
+					로그인 후 비밀번호 재설정 바랍니다.</p>
+					<div class="btnBottom">
+						<button class="btn btnBlue">로그인 화면</button>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 알림 -->
+
+		<!-- 로그인 5회차 오류 알림 -->
+		<div class="layer layer2">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p>비밀번호 5회 초과로 보안유지를 위해<br />
+					다시 설정 후 이용 가능합니다.<br />
+					인증 후 다시 로그인 바랍니다.</p>
+					<div class="btnBottom">
+						<button class="btn btnBlue">설정하기</button>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 로그인 5회차 오류 알림 -->
+
+		<!-- 비밀번호 변경(인증완료) 알림 -->
+		<div class="layer layer3">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p>비밀번호 변경이 완료 되었습니다.<br />다시 로그인 후 이용해주세요.</p>
+					<div class="btnBottom">
+						<button class="btn btnBlue">로그인 화면</button>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 비밀번호 변경(인증완료) 알림 -->
+
+		<!-- 회사생성 -->
+		<div class="layer layer4">
+			<div class="inner">
+				<p class="tit">회사생성</p>
+				<!-- popCont --> 
+				<div class="popCont">
+					<p>회사 생성이 완료 되었습니다.<br />
+					단계별 이용 방법 안내를 통해 설정 후 <br />이용바랍니다.</p>
+					<!-- boxBlue -->
+					<div class="boxBlue txtC">
+						<a href="" class="btn btnBlue">엠룩 가이드북</a>
+						<div class="step">
+							<ol>
+								<li><strong>STEP 01</strong>기본 회사 생성</li>
+								<li><strong>STEP 02</strong>하위 조직 및 지점 설정</li>
+								<li><strong>STEP 03</strong>근태 체크 방식 설정</li>
+								<li><strong>STEP 04</strong>근무 일정 정보 등록</li>
+								<li><strong>STEP 05</strong>직원 등록 및 초대</li>
+								<li><strong>STEP 06</strong>직원 근무 일정 부여/관리</li>
+							</ol>
+						</div>
+					</div>
+					<!--// boxBlue -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 회사생성 -->
+	</div>
+</div>
+<!--// wrap -->
+</body>
+</html>

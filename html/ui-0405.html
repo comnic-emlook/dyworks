@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>변경 요청하기 &lt; 근무현황 &lt; 이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap">
+	<!-- subHeader -->
+	<div id="subHeader">
+		<h2>변경 요청하기</h2>
+		<a href="" class="btnBack">이전 페이지</a>
+	</div>
+	<!--// subHeader -->
+
+	<!-- container -->
+	<div id="container">
+		<div class="content">
+			<!-- titCal -->
+			<div class="titCal v3">
+				<strong>2019.12.05(목)</strong>
+				<p class="txtCal">
+					<strong>일정</strong>09:00 ~ 18:00 /휴게 1시간<br />
+					<strong>근태</strong>출근 누락 ~ 18:00
+				</p>
+			</div>
+			<!--// titCal -->
+			<!-- inputList -->
+			<div class="inputList">
+				<dl>
+					<dt>출근 시간 수정</dt>
+					<dd class="time">
+						<input type="time" title="출근시간입력">
+						<span>~</span>
+						<input type="time" title="퇴근시간입력">
+					</dd>
+				</dl>
+				<dl>
+					<dt>출퇴근 기록 변경 사유</dt>
+					<dd>
+						<textarea title="출퇴근 기록 변경 사유 입력" placeholder="(한글영문숫자포함 최대 150자 이내)"></textarea>
+					</dd>
+				</dl>
+			</div>
+			<!--// inputList -->
+			<!-- btnBottom -->
+			<div class="btnBottom">
+				<button class="btn btnBlue">변경 요청하기</button>
+			</div>
+			<!--// btnBottom -->
+			<!-- infoBox -->
+			<div class="infoBox">
+				<strong>안내</strong>
+				<ul>
+					<li>현재 또는 예정 일정에 대해  일정, 근태기록 요청 가능.</li>
+					<li>과거 일정은 근태 기록에 대해  수정 요청 가능.</li>
+					<li>일정이 없거나, 추가 근무 일정이 있는 경우 추가 근무 시간 승인 요청 가능.</li>
+				</ul>
+			</div>
+			<!--// infoBox -->
+		</div>
+	</div>
+	<!--// container -->
+</div>
+<!--// wrap -->
+</body>
+</html>

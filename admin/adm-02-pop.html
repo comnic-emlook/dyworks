@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/swiper.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap">
+<style>
+#container > a {margin-top:20px; width:auto}
+</style>
+	<div id="container">
+		<a href="javascript:void(0)" onclick="fn_layer('layer1','300')" class="btn btnBlue">알림1 버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer2','300')" class="btn btnBlue">알림2 버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer3','300')" class="btn btnBlue">알림3 버튼</a>
+		
+		<!-- 알림1 -->
+		<div class="layer layer1">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p>변경 저장 하시겠습니까?</p>
+					<span>(저장과 함께 확정하기도 가능합니다.)</span>
+					<div class="boxBlue">
+						<p class="dotTxt">09:00~18:00/휴게1시간</p>
+						<p class="dotTxt">09:00~18:00</p>
+					</div>
+					<div class="btnBottom v2R">
+						<button class="btn btnWhite">저장</button>
+						<button class="btn btnBlue">저장 및 확정하기</button>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 알림1 -->
+
+		<!-- 알림2 -->
+		<div class="layer layer2">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p>변경하시겠습니까?</p>
+					<div class="boxBlue">
+						<p class="dotTxt">09:00~18:00/휴게1시간</p>
+					</div>
+					<div class="btnBottom">
+						<button class="btn btnBlue">저장</button>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 알림2 -->
+
+		<!-- 알림3 -->
+		<div class="layer layer3">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p>삭제하시겠습니까?</p>
+					<span>삭제 시 '-'로 표기 노출 됩니다</span>
+					<div class="boxBlue">
+						<p class="dotTxt">09:00~18:00/휴게1시간</p>
+						<p class="dotTxt">09:00~18:00</p>
+					</div>
+					<div class="btnBottom v2">
+						<button class="btn btnWhite">취소</button>
+						<button class="btn btnBlue">삭제</button>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 알림3 -->
+	</div>
+</div>
+<!--// wrap -->
+</body>
+</html>

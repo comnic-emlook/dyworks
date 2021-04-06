@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/swiper.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap" class="main">
+	<!-- header -->
+	<div id="header">
+		<h1><a href="">이엠룩</a></h1>
+		<a href="" class="btnLogout">로그아웃</a>ㅖ
+		<a href="" class="btnMenu">메뉴보기</a>
+		<a href="" class="btnNotice"><span>알림</span><strong>99</strong></a>
+		<div class="utilPop">
+			<ul>
+				<li><a href="">이용안내</a></li>
+				<li><a href="">위치저장</a></li>
+			</ul>
+			<a href="" class="btnClose">닫기</a>
+		</div>
+	</div>
+	<!--// header -->
+	<!-- container -->
+	<div id="container">
+		<!-- mainTop -->
+		<div class="mainTop">
+			<div class="top">
+				<ul>
+					<li class="curr"><a href="">GPS</a></li>
+					<li><a href="">Wi-Fi</a></li>
+					<li><a href="">비콘</a></li>
+				</ul>
+				<span class="icoGps">신호 확인중...</span>
+			</div>
+			<strong class="todayStatus">출근</strong>
+			<p><a href="" class="btnMap">내 위치 저장</a></p>
+		</div>
+		<!--// mainTop -->
+		<!-- mainCont -->
+		<div class="mainCont">
+			<!-- TODAY 근무일정 -->
+			<div class="cont v1">
+				<h2>TODAY 근무일정</h2>
+				<p><a href="">정규 09:00 ~ 18:00</a></p>
+				<p><a href="">야간 09:00 ~ 18:00</a></p>
+				<dl>
+					<dt>직원요청/ 근무현황 - 2019.11.01. 10:23 <a href="" class="btnReset">reset</a></dt>
+					<dd>
+						<div>
+							<div class="inBox">
+								<strong>요청대기</strong>
+								<a href="">99</a>
+							</div>
+						</div>
+						<div>
+							<div class="inBox">
+								<strong>근무중</strong>
+								<a href="">99</a>
+							</div>
+						</div>
+						<div>
+							<div class="inBox">
+								<strong>지각</strong>
+								<a href="">99</a>
+							</div>
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<!--// TODAY 근무일정 -->
+
+			<!-- My근무현황 11월 -->
+			<div class="cont v2">
+				<h2>My근무현황 11월</h2>
+				<!-- 2020-02-18 -->
+				<dl class="cumuTime">
+					<dt>승인 근로 시간 <strong>00시간 00분</strong></dt>
+					<dd>
+						<div class="graph">
+							<strong>52</strong>
+							<p></p><!-- 그래프 - 하단 근무시간에 따라 100%로 계산해서 그래프 %가 체크됩니다. -->
+							<em>42</em><!-- 근무시간에 따라 100%로 계산해서 위치 체크됩니다. -->
+							<!-- 시간 체크해서 값만 바꿔주시면 그래프는 1초마다 시간 체크해서 채워집니다.
+								common.js에 "그래프"라고 검색하시면 스크립트 확인하실 수 있습니다. -->
+						</div>
+					</dd>
+				</dl>
+				<!--// 2020-02-18 수정 -->
+				<!-- weekList -->
+				<div class="weekList">
+					<ul>
+						<li><span>12/5 일</span><strong>09:00<br/>18:00</strong></li>
+						<li><span>12/6 월</span><strong>09:00<br/>18:00</strong></li><!-- 오늘일 경우 -->
+						<li class="today"><span>12/7 화</span><strong>09:00<br/>18:00</strong></li>
+						<li><span>12/8 수</span></li>
+						<li><span>12/9 목</span></li>
+						<li><span>12/10 금</span></li>
+						<li><span>12/11 토</span></li>
+					</ul>
+				</div>
+				<!--// weekList -->
+				<!-- quickBtn -->
+				<ul class="quickBtn">
+					<li><a href="">근태 기록</a></li>
+					<li><a href="">접수 현황</a></li>
+					<li><a href="">근로계약관리 <span>유료</span></a></li>
+					<li><a href="">급여 관리 <span>유료</span></a></li>
+				</ul>
+				<!--// quickBtn -->
+			</div>
+			<!--// My근무현황 11월 -->
+		</div>
+		<!--// mainCont -->
+	</div>
+	<!--// container -->
+	<!-- FixedBtn -->
+	<div id="FixedBtn">
+		<ul>
+			<li class="curr"><a href="">메인</a></li>
+			<li><a href="">근무/통계</a></li>
+			<li><a href="">계약/급여</a></li>
+			<li><a href="">요청/접수</a></li>
+			<li><a href="">관리</a></li>
+		</ul>
+	</div>
+	<!--// FixedBtn -->
+</div>
+<!--// wrap -->
+</body>
+</html>

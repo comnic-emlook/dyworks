@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<div id="wrap">
+	<div id="container">
+		<a href="javascript:void(0)" onclick="fn_layer('layer01')" class="btn btnBlue">상세 정보 팝업버튼</a>
+
+		<!-- 상세 정보 -->
+		<div class="layer fullPop layer01">
+			<div class="inner">
+				<p class="tit">상세 정보</p>
+				<!-- popCont --> 
+				<div class="popCont v2">
+					<div class="bgGray">
+						<div class="boxWhite userInfo">
+							<div class="inBox">
+								<strong>김동현 
+									<select title="구분">
+										<option value="c">퇴사</option>
+										<option value="b">차단</option>
+										<option value="a">활성</option>
+									</select>
+								</strong>
+								<ul>
+									<li><strong>퇴사일</strong>19/11/11</li>
+									<li><strong>연락처</strong>01012345678</li>
+									<li><strong>이메일</strong>eyesdff@emlook.com</li>
+								</ul>
+								<button class="btn btnBlue">근무일정</button>
+							</div>
+						</div>
+					</div> 
+					<!-- infoList -->
+					<div class="infoList">
+						<dl>
+							<dt>소속 회사 정보</dt>
+							<dd><strong>회사명</strong>이엠룩</dd>
+							<dd><strong>소속 지점</strong>없음</dd>
+							<dd><strong>소속 조직</strong>솔루션사업팀</dd>
+							<dd><strong>직급</strong>부장</dd>
+							<dd><strong>입사일</strong>2019/11/11</dd>
+							<dd><strong>권한</strong>직원</dd>
+							<dd><strong>근로타입</strong>정규직</dd>
+						</dl>
+					</div>
+					<!--// infoList -->
+					<!-- btnBottom -->
+					<div class="btnBottom">
+						<button class="btn btnBlue">수정</button>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 상세 정보 -->
+	</div>
+</div>
+<!--// wrap -->
+</body>
+</html>

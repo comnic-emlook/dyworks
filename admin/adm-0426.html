@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<div id="wrap">
+	<div id="container">
+		<a href="javascript:void(0)" onclick="fn_layer('layer01')" class="btn btnBlue">지점 선택 팝업버튼</a><br /><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer02')" class="btn btnBlue">조직 선택 팝업버튼</a><br /><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer03')" class="btn btnBlue">선택 그룹 적용할 근무일정 선택  팝업버튼</a><br /><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer04')" class="btn btnBlue">직원 선택 팝업버튼</a>
+
+		<!-- 지점 선택 -->
+		<div class="layer fullPop layer01">
+			<div class="inner">
+				<p class="tit">조직 선택</p>
+				<!-- popCont --> 
+				<div class="popCont v2">
+					<ul class="checkList">
+						<li>선택안함
+							<span class="checkbox"><input type="checkbox" id="chk0401"><label for="chk0401"><em>선택</em></label></span>
+						</li>
+						<li>이엠룩(본사)
+							<span class="checkbox"><input type="checkbox" id="chk0402"><label for="chk0402"><em>선택</em></label></span>
+						</li>
+					</ul>
+					<!-- btnBottom -->
+					<div class="btnBottom">
+						<button class="btn btnBlue">다음</button>
+					</div>
+					<!--// btnBottom -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 지점 선택-->
+
+		<!-- 조직 선택 -->
+		<div class="layer fullPop layer02">
+			<div class="inner">
+				<p class="tit">조직 선택</p>
+				<!-- popCont --> 
+				<div class="popCont v2">
+					<dl class="checkTit">
+						<dt>본사</dt>
+						<dd>
+							<ul class="checkList">
+								<li>솔루션 사업 팀(20)
+									<span class="checkbox"><input type="checkbox" id="chk0101"><label for="chk0101"><em>선택</em></label></span>
+									<ul>
+										<li>
+											- 개발 1팀(10)
+											<span class="checkbox"><input type="checkbox" id="chk0201"><label for="chk0201"><em>선택</em></label></span>
+										</li>
+										<li>
+											- 개발 2팀(10)
+											<span class="checkbox"><input type="checkbox" id="chk0202"><label for="chk0202"><em>선택</em></label></span>
+										</li>
+									</ul>
+								</li>
+								<li>
+									기획 팀(00)
+									<span class="checkbox"><input type="checkbox" id="chk0102"><label for="chk0102"><em>선택</em></label></span>
+								</li>
+								<li>
+									디자인 팀(00)
+									<span class="checkbox"><input type="checkbox" id="chk0103"><label for="chk0103"><em>선택</em></label></span>
+								</li>
+							</ul>
+						</dd>
+						<dt>제주지점</dt>
+						<dd>
+							<ul class="checkList">
+								<li>솔루션 사업 팀(20)
+									<span class="checkbox"><input type="checkbox" id="chk0301"><label for="chk0301"><em>선택</em></label></span>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+					<!-- btnBottom -->
+					<div class="btnBottom v2">
+						<button class="btn btnWhite">이전</button>
+						<button class="btn btnBlue">다음</button>
+					</div>
+					<!--// btnBottom -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 조직 선택-->
+
+		<!-- 선택 그룹 적용할 근무일정 선택 -->
+		<div class="layer fullPop layer03">
+			<div class="inner">
+				<p class="tit">선택 그룹 적용할 근무일정 선택</p>
+				<!-- popCont --> 
+				<div class="popCont v2">
+					<ul class="checkList">
+						<li>기본 근무 09:00~18:00(휴게1시간) 
+							<span class="checkbox"><input type="checkbox" id="chk0501"><label for="chk0501"><em>선택</em></label></span>
+						</li>
+						<li>설정한 근무 일정 명
+							<span class="checkbox"><input type="checkbox" id="chk0502"><label for="chk0502"><em>선택</em></label></span>
+						</li>
+						<li>재택근무 09:00~18:00 (9H)
+							<span class="checkbox"><input type="checkbox" id="chk0503"><label for="chk0503"><em>선택</em></label></span>
+						</li>
+					</ul>
+					<!-- btnBottom -->
+					<div class="btnBottom v2">
+						<button class="btn btnWhite">이전</button>
+						<button class="btn btnBlue">다음</button>
+					</div>
+					<!--// btnBottom -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 선택 그룹 적용할 근무일정 선택-->
+
+		<!-- 직원 선택 -->
+		<div class="layer fullPop layer04">
+			<div class="inner">
+				<p class="tit">직원 선택</p>
+				<!-- popCont --> 
+				<div class="popCont v2">
+					<dl class="checkTit">
+						<dt>본사 > 솔루션사업팀 – 개발1팀,개발2팀</dt>
+						<dd>
+							<ul class="checkList">
+								<li>솔루션 사업팀 – 개발1팀(10)
+									<span class="checkbox"><input type="checkbox" id="chk0601"><label for="chk0601"><em>선택</em></label></span>
+									<ul>
+										<li>
+											직원명(직급)
+											<span class="checkbox"><input type="checkbox" id="chk0602"><label for="chk0602"><em>선택</em></label></span>
+										</li>
+										<li>
+											직원명(직급)
+											<span class="checkbox"><input type="checkbox" id="chk0603"><label for="chk0603"><em>선택</em></label></span>
+										</li>
+									</ul>
+								</li>
+								<li>솔루션 사업팀 – 개발1팀(10)
+									<span class="checkbox"><input type="checkbox" id="chk0701"><label for="chk0701"><em>선택</em></label></span>
+									<ul>
+										<li>
+											직원명(직급)
+											<span class="checkbox"><input type="checkbox" id="chk0702"><label for="chk0702"><em>선택</em></label></span>
+										</li>
+										<li>
+											직원명(직급)
+											<span class="checkbox"><input type="checkbox" id="chk0703"><label for="chk0703"><em>선택</em></label></span>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+					<!-- btnBottom -->
+					<div class="btnBottom v2">
+						<button class="btn btnWhite">이전</button>
+						<button class="btn btnBlue">선택</button>
+					</div>
+					<!--// btnBottom -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 직원 선택-->
+	</div>
+</div>
+<!--// wrap -->
+</body>
+</html>

@@ -1,0 +1,4 @@
+﻿@charset "utf-8";
+
+.fixedArea ul {display:none; position:absolute; bottom:35px; right:0; padding:0 10px; border:1px solid #b5b8c7; width:150px; background:#fff; box-shadow: 0 10px 30px rgba(0,0,0,.3);}
+.fixedArea ul li a {display:block; line-height:40px; font-size:14px; color:#000}

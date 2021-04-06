@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<div id="wrap">
+	<div id="container">
+		<a href="javascript:void(0)" onclick="fn_layer('layer01')" class="btn btnBlue">권역정보 설정 팝업버튼</a>
+
+		<!-- 권역정보 설정 -->
+		<div class="layer fullPop layer01">
+			<div class="inner">
+				<p class="tit">권역정보 설정</p>
+				<!-- popCont --> 
+				<div class="popCont">
+					<!-- inputList -->
+					<div class="inputList">
+						<dl>
+							<dt>권역 명칭</dt>
+							<dd><input type="text" title="권역 명칭 입력" placeholder="권역 명칭 입력"></dd>
+						</dl>
+						<dl>
+							<dt>상태</dt>
+							<dd>
+								<select class="v2" title="상태 선택">
+									<option value="">활성</option>
+								</select>
+							</dd>
+						</dl>
+					</div>
+					<!--// inputList -->
+					<!-- btnCenter -->
+					<div class="btnCenter v2">
+						<button class="btn btnBlue">등록</button>
+					</div>
+					<!--// btnCenter -->
+					<!-- inputList -->
+					<div class="inputList">
+						<dl>
+							<dt>등록 권역 명 리스트</dt>
+							<dd>
+								<ul class="modiList">
+									<li>
+										<strong>1</strong><span class="cBlue">권역 명권역 명권역 명권역 명권역 명</span><!-- 수정이 눌렸을 경우 -->
+										<div class="btnArea">
+											<a href="" class="btn btnWhite ss">삭제</a>
+											<a href="" class="btn btnBlue ss">수정</a><!-- 수정이 눌렸을 경우 -->
+										</div>
+									</li>
+									<li>
+										<strong>2</strong><span>권역 명</span>
+										<div class="btnArea">
+											<a href="" class="btn btnWhite ss">삭제</a>
+											<a href="" class="btn btnWhite ss">수정</a>
+										</div>
+									</li>
+									<li>
+										<strong>3</strong><span>권역 명</span>
+										<div class="btnArea">
+											<a href="" class="btn btnWhite ss">삭제</a>
+											<a href="" class="btn btnWhite ss">수정</a>
+										</div>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+					<!--// inputList -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 권역정보 설정 -->
+	</div>
+</div>
+<!--// wrap -->
+</body>
+</html>

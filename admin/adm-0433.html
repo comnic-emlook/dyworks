@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>관리 &lt; 이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/swiper.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap">
+	<!-- subHeader -->
+	<div id="subHeader">
+		<h2>근태체크방식 관리</h2>
+		<a href="" class="btnBack">이전 페이지</a>
+		<a href="" class="btnInfo">정보 안내</a>
+	</div>
+	<!--// subHeader -->
+
+	<!-- container -->
+	<div id="container">
+		<div class="content">
+			<div class="fullScreen">
+				<!-- tabWrap -->
+				<div class="tabWrap">
+					<ul>
+						<li class="curr"><a href="">근태방식설정</a></li>
+						<li><a href="">사업장 근태정책</a></li>
+					</ul>
+					<div class="tabBoxWrap">
+						<!-- 근태방식설정 -->
+						<div>
+							<p class="txt">적용 하고자 하는 근태 체크 방식을 등록하세요.</p>
+							<!-- methodSet -->
+							<div class="methodSet">
+								<dl>
+									<dt>GPS
+										<span class="set"><input type="checkbox" id="chk01"><label for="chk01">설정</label></span>
+									</dt>
+									<dd>
+										<strong>이엠룩이엠룩이엠룩이엠룩이엠룩이엠룩이엠룩</strong>
+										<ul class="list02">
+											<li><strong>위도</strong>127.1234567</li>
+											<li><strong>경도</strong>127.5377123</li>
+										</ul>
+										<div class="btnArea">
+											<button class="btn btnWhite ss">수정</button>
+											<button class="btn btnWhite ss">삭제</button>
+										</div>
+									</dd>
+									<dd>
+										<strong>이엠룩</strong>
+										<ul class="list02">
+											<li><strong>위도</strong>127.1234567</li>
+											<li><strong>경도</strong>127.5377123</li>
+										</ul>
+										<div class="btnArea">
+											<button class="btn btnWhite ss">수정</button>
+											<button class="btn btnWhite ss">삭제</button>
+										</div>
+									</dd>
+									<dd class="noData">
+										<p>등록 된 데이터가 없습니다.</p>
+									</dd>
+								</dl>
+
+								<dl>
+									<dt>Wi-Fi
+										<span class="set"><input type="checkbox" id="chk02"><label for="chk02">설정</label></span>
+									</dt>
+									<dd>
+										<strong>이엠룩</strong>
+										<ul class="list02">
+											<li><strong>SSID</strong>EML-SECHO</li>
+										</ul>
+										<div class="btnArea">
+											<button class="btn btnWhite ss">수정</button>
+											<button class="btn btnWhite ss">삭제</button>
+										</div>
+									</dd>
+									<dd class="noData">
+										<p>등록 된 데이터가 없습니다.</p>
+									</dd>
+								</dl>
+
+								<dl>
+									<dt>비콘
+										<span class="set"><input type="checkbox" id="chk03"><label for="chk03">설정</label></span>
+									</dt>
+									<dd>
+										<strong>이엠룩</strong>
+										<ul class="list02">
+											<li><strong>UUID</strong>EMLS0000000001</li>
+											<li><strong>MAJOR</strong>GN001</li>
+											<li><strong>MINOR</strong>GN001-01</li>
+										</ul>
+										<div class="btnArea">
+											<button class="btn btnWhite ss">수정</button>
+											<button class="btn btnWhite ss">삭제</button>
+										</div>
+									</dd>
+									<dd>
+										<strong>이엠룩</strong>
+										<ul class="list02">
+											<li><strong>UUID</strong>EMLS0000000001</li>
+											<li><strong>MAJOR</strong>GN001</li>
+											<li><strong>MINOR</strong>GN001-01</li>
+										</ul>
+										<div class="btnArea">
+											<button class="btn btnWhite ss">수정</button>
+											<button class="btn btnWhite ss">삭제</button>
+										</div>
+									</dd>
+									<dd class="noData">
+										<p>등록 된 데이터가 없습니다.</p>
+									</dd>
+								</dl>
+							</div>
+							<!--// methodSet -->
+
+							<!-- btnBottom -->
+							<div class="btnBottom">
+								<button class="btn btnBlue">근태방식 등록</button>
+							</div>
+							<!--// btnBottom -->
+						</div>
+						<!--// 근태방식설정 -->
+						<!-- 사업장 근태정책 -->
+						<div>
+							<p class="txt">간주 근무란? 출장, 외근 등 사업장 외 출퇴근 기록이 어려운 경우 실제 근무시간과 관계없이 회사에서 설정한 간주근무타입만큼 근로한 것으로 간주하는 제도입니다. </p>
+							<!-- taPolicy -->
+							<div class="taPolicy">
+								<dl>
+									<dt>
+										회사 근로 기준 설정
+										<a href="" class="btnInfo">정보안내</a>
+									</dt>
+									<dd class="inputList">
+										<ul>
+											<li>
+												<select title="52시간제 적용 여부 선택" class="v2">
+													<option value="">52시간제 적용 여부 선택</option>
+												</select>
+											</li>
+											<li>
+												<select title="근로 시작 요일을 선택" class="v2">
+													<option value="">근로 시작 요일을 선택  </option>
+												</select>
+											</li>
+										</ul>
+									</dd>
+								</dl>
+								<dl>
+									<dt>
+										지각 범위 설정
+										<a href="" class="btnInfo">정보안내</a>
+									</dt>
+									<dd class="inputList">
+										<ul>
+											<li>
+												<select title="출근 시간 기준 10분 초과" class="v2">
+													<option value="">5출근 시간 기준 10분 초과</option>
+												</select>
+											</li>
+										</ul>
+									</dd>
+								</dl>
+								<dl>
+									<dt>
+										연장근무사전신청 설정
+										<a href="" class="btnInfo">정보안내</a>
+									</dt>
+									<dd class="inputList">
+										<dl>
+											<dt>연장근무사전신청</dt>
+											<dd>
+												<select title="연장근무사전신청" class="v2">
+													<option value="">사용</option>
+												</select>
+											</dd>
+										</dl>
+										<dl>
+											<dt>1일 인정 연장시간 설정</dt>
+											<dd>
+												<select title="1일 인정 연장시간 설정" class="v2">
+													<option value="">1일 최대 2시간 인정</option>
+												</select>
+											</dd>
+										</dl>
+										<dl>
+											<dt>1주 최대 연장 가능 근로 시간 설정</dt>
+											<dd>
+												<select title="1주 최대 연장 가능 근로 시간 설정" class="v2">
+													<option value="">최대 12시간</option>
+												</select>
+											</dd>
+										</dl>
+										<dl>
+											<dt>연장근무사전신청 알림</dt>
+											<dd>
+												<select title="연장근무사전신청 알림" class="v2">
+													<option value="">퇴근 시간 기준 30분 초과</option>
+												</select>
+											</dd>
+										</dl>
+									</dd>
+								</dl>
+								<dl>
+									<dt>
+										조기 출근 시간 인정 설정
+										<a href="" class="btnInfo">정보안내</a>
+									</dt>
+									<dd class="inputList">
+										<ul>
+											<li>
+												<select title="조기 출근 시간 인정  사용 여부 선택" class="v2">
+													<option value="">조기 출근 시간 인정  사용 여부 선택</option>
+												</select>
+											</li>
+											<li>
+												<select title="1일 최대 2시간 인정" class="v2">
+													<option value="">1일 최대 2시간 인정</option>
+												</select>
+											</li>
+										</ul>
+									</dd>
+								</dl>
+							</div>
+							<!--// taPolicy -->
+						</div>
+						<!--// 사업장 근태정책 -->
+					</div>
+				</div>
+				<!--// tabWrap -->
+			</div>
+		</div>
+	</div>
+	<!--// container -->
+</div>
+<!--// wrap -->
+</body>
+</html>

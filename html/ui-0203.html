@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no" />
+  <title>회원가입 &lt; 이엠룩</title>
+  <!-- //<![CDATA[ -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/jquery-1.10.2.min.js"></script>
+  <script src="../js/common.js"></script>
+</head>
+
+<body>
+  <!-- wrap -->
+  <div id="wrap">
+    <!-- subHeader -->
+    <div id="subHeader">
+      <h2>회원 가입</h2>
+      <a href="" class="btnBack">이전 페이지</a>
+    </div>
+    <!--// subHeader -->
+
+    <!-- container -->
+    <div id="container">
+      <div class="content">
+        <h3>정보 입력</h3>
+
+        <div class="inputList">
+          <dl>
+            <dt>이름</dt>
+            <dd><input type="text" title="이름 입력" placeholder="이름을 입력해주세요"></dd>
+          </dl>
+          <dl>
+            <dt>이메일(ID)</dt>
+            <dd><input type="text" title="이메일(ID) 입력" placeholder="이메일을 입력해주세요"></dd>
+          </dl>
+          <dl>
+            <dt>비밀번호</dt>
+            <dd><input type="password" title="비밀번호 입력" placeholder="비밀번호(영문, 특수문자, 숫자 포함 8~15자리)"></dd>
+            <dd><input type="password" title="비밀번호 재입력" placeholder="비밀번호 재입력"></dd>
+          </dl>
+          <dl>
+            <dt>휴대폰번호</dt>
+            <dd>
+              <!-- 본인 인증 -->
+              <div class="btnInput">
+                <input type="text" title="휴대폰번호 입력" placeholder="휴대폰번호 입력">
+                <button class="btn btnBlue">본인인증</button>
+              </div>
+              <!-- 인증번호 입력 -->
+              <div class="btnInput">
+                <input type="text" title="휴대폰번호 입력" placeholder="휴대폰번호 입력">
+                <button class="btn btnBlue">재발송</button>
+              </div>
+              <div class="btnInput">
+                <input type="text" title="인증번호 입력" placeholder="인증번호 입력">
+                <button class="btn btnBlue">확인</button>
+
+                <!-- 입력 제한 시간 -->
+                <div class="time-limit">03:00</div>
+
+                <!-- 인증 됨 상태 처리 시 class="is-on" 추가 -->
+                <p class="certification">
+                  <a class="time-extension" href="">시간연장</a>
+                </p>
+
+                <!-- 인증번호 제한시간 초과 시 -->
+                <p class="certification-message">홍길동님, 인증번호를 보내드렸어요.<br>
+                  인증번호를 입력해주세요.</p>
+
+                <!-- 인증번호 제한시간 초과 시 -->
+                <p class="certification-message error">인증번호 입력 시간을 초과했습니다.<br>
+                인증번호를 재발송 해주세요.</p>
+              </div>
+            </dd>
+          </dl>
+        </div>
+
+        <!-- btnBottom -->
+        <div class="btnBottom">
+          <button class="btn btnBlue">수정하기</button>
+        </div>
+        <!--// btnBottom -->
+      </div>
+    </div>
+    <!--// container -->
+  </div>
+  <!--// wrap -->
+</body>
+
+</html>

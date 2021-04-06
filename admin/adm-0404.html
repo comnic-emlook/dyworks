@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>관리 &lt; 이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/swiper.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap">
+	<!-- subHeader -->
+	<div id="subHeader">
+		<h2>회사 정보</h2>
+		<a href="" class="btnBack">이전 페이지</a>
+	</div>
+	<!--// subHeader -->
+
+	<!-- container -->
+	<div id="container">
+		<div class="content">
+			<!-- tabWrap -->
+			<div class="tabWrap">
+				<ul>
+					<li class="curr"><a href="">회사 생성 정보</a></li>
+					<li><a href="">회사계약정보</a></li>
+				</ul>
+				<div class="tabBoxWrap v2">
+					<!-- 회사 생성 정보 -->
+					<div>
+						<!-- compInfo -->
+						<div class="compInfo">
+							<strong>이엠룩</strong>
+							<ul>
+								<li><strong>권한</strong>최고관리자</li>
+								<li><strong>생성일</strong>2019. 11. 11.</li>
+							</ul>
+						</div>
+						<!--// compInfo -->
+						<div class="inputList">
+							<dl>
+								<dt>회사명</dt>
+								<dd><input type="text" title="회사명 입력" placeholder="회사명 입력"></dd>
+							</dl>
+							<dl>
+								<dt>업종</dt>
+								<dd><input type="text" title="업종 입력" placeholder="업종 입력"></dd>
+							</dl>
+							<dl>
+								<dt>주소</dt>
+								<dd><input type="text" title="주소 검색" placeholder="주소 검색"></dd>
+								<dd><input type="text" title="상세주소 입력" placeholder="상세주소 입력"></dd>
+							</dl>
+							<dl>
+								<dt>사용인원</dt>
+								<dd>
+									<select class="v2" title="사용인원 선택">
+										<option value="">선택</option>
+									</select>
+								</dd>
+							</dl>
+							<dl>
+								<dt>알게된 경로</dt>
+								<dd>
+									<select class="v2" title="알게된 경로 선택">
+										<option value="">선택</option>
+									</select>
+								</dd>
+							</dl>
+						</div>
+						<!-- btnBottom -->
+						<div class="btnBottom v2">
+							<button class="btn btnWhite">삭제</button>
+							<button class="btn btnBlue">수정</button>
+						</div>
+						<!--// btnBottom -->
+					</div>
+					<!--// 회사 생성 정보 -->
+					<!-- 회사계약정보 -->
+					<div>
+						<strong class="noticeTxt">근로계약 체결 및 결제에 대한 정보를 관리합니다.</strong>
+						<!-- subTabWrap -->
+						<div class="subTabWrap">
+							<ul>
+								<li class="curr"><a href="">계약 기반 정보</a></li>
+								<li><a href="">세금계산서 정보</a></li>
+							</ul>
+							<div class="subTabBox">
+								<!-- 계약 기반 정보 -->
+								<div>
+									<div class="inputList">
+										<dl>
+											<dt>회사명</dt>
+											<dd><input type="text" title="회사명 입력" placeholder="회사명 입력"></dd>
+										</dl>
+										<dl>
+											<dt>전화번호</dt>
+											<dd><input type="text" title="회사 대표 전화번호 입력" placeholder="회사 대표 전화번호 입력"></dd>
+										</dl>
+										<dl>
+											<dt>대표</dt>
+											<dd><input type="text" title="대표명 입력" placeholder="대표명 입력"></dd>
+										</dl>
+										<dl>
+											<dt>사업자 등록번호</dt>
+											<dd><input type="text" title="사업자 등록번호 입력" placeholder="사업자 등록번호 입력"></dd>
+											<div class="fileWrap">
+												<p class="file"><span>사업자 등록증</span> <a href="javascript:void(0);" onclick="fn_file_del(this);" class="btnDel">삭제</a></p>
+											</div>
+											<div class="btnFile v2">
+												<p>사업자 등록증 첨부</p>
+												<input type="file" title="파일첨부" onchange="fn_file(this);">
+											</div>
+											<div class="fileWrap">
+												<p class="file"><span>계약서 사용 도장 이미지</span> <a href="javascript:void(0);" onclick="fn_file_del(this);" class="btnDel">삭제</a></p>
+											</div>
+											<div class="btnFile v2">
+												<p>계약서 사용 도장 이미지</p>
+												<input type="file" title="파일첨부" onchange="fn_file(this);">
+											</div>
+										</dl>
+										<dl>
+											<dt>주소</dt>
+											<dd><input type="text" title="주소 검색" placeholder="주소 검색"></dd>
+											<dd><input type="text" title="상세주소 입력" placeholder="상세주소 입력"></dd>
+										</dl>
+									</div>
+									<!-- btnBottom -->
+									<div class="btnBottom v2">
+										<button class="btn btnWhite">수정</button>
+										<button class="btn btnBlue">등록</button>
+									</div>
+									<!--// btnBottom -->
+								</div>
+								<!--// 계약 기반 정보 -->
+								<!-- 세금계산서 정보 -->
+								<div>
+									<div class="inputList">
+										<dl>
+											<dt>수신 이메일</dt>
+											<dd><input type="text" title="수신 이메일 입력" placeholder="수신 이메일 입력"></dd>
+										</dl>
+										<dl>
+											<dt>수신 전화번호</dt>
+											<dd><input type="text" title="수신 전화번호 입력" placeholder="수신 전화번호 입력"></dd>
+										</dl>
+										<dl>
+											<dt>수신자 이름</dt>
+											<dd><input type="text" title="수신자 이름 입력" placeholder="수신자 이름 입력"></dd>
+										</dl>
+									</div>
+									<!-- btnBottom -->
+									<div class="btnBottom v2">
+										<button class="btn btnWhite">수정</button>
+										<button class="btn btnBlue">등록</button>
+									</div>
+									<!--// btnBottom -->
+								</div>
+								<!--// 세금계산서 정보 -->
+							</div>
+						</div>
+						<!--// subTabWrap -->
+					</div>
+					<!--// 회사계약정보 -->
+				</div>
+			</div>
+			<!--// tabWrap -->
+		</div>
+	</div>
+	<!--// container -->
+</div>
+<!--// wrap -->
+</body>
+</html>

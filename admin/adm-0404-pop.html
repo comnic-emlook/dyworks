@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/swiper.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap">
+<style>
+#container > a {margin-top:20px; width:auto}
+</style>
+	<div id="container">
+		<a href="javascript:void(0)" onclick="fn_layer('layer10','300')" class="btn btnBlue">캘린더 날짜 지정-적용하기 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer11','300')" class="btn btnBlue">52시간 초과 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer12','300')" class="btn btnBlue">일정 충돌 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer13','300')" class="btn btnBlue">일정부여하기 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer14','300')" class="btn btnBlue">일정부여하기-52시간 초과 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer15','300')" class="btn btnBlue">일정부여하기-일정 충돌 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer16','300')" class="btn btnBlue">직원 이름 직접 검색 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer17','300')" class="btn btnBlue">선택 직원 적용할 근무일정 선택 팝업버튼</a><br />
+
+		<!-- 캘린더 날짜 지정-적용하기 -->
+		<div class="layer layer10">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont">
+					<p>기본 근무 09:00~18:00(휴게1시간) <br/>본사▹ 솔루션 사업팀</p>
+					<!-- boxBlue -->
+					<div class="boxBlue">
+						<strong class="v2">[적용 직원]</strong>
+						<p class="dotTxt">이름(지점 ▹조직/직급) </p>
+						<p class="dotTxt">이름(지점 ▹조직/직급) </p>
+						<p class="dotTxt">이름(지점 ▹조직/직급) </p>
+					</div>
+					<!--// boxBlue -->
+					<p class="txtL">적용하시겠습니까?</p>
+					<!-- btnBottom -->
+					<div class="btnBottom">
+						<button class="btn btnBlue">적용</button>
+					</div>
+					<!--// btnBottom -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 캘린더 날짜 지정-적용하기 -->
+
+		<!-- 52시간 초과  -->
+		<div class="layer layer11">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont">
+					<p>아래 직원은 근무일정이 충돌합니다.</p>
+					<p>기존 근무일정을 현재 근무일정으로 <br />적용 진행하시겠습니까?</p>
+					<!-- boxBlue -->
+					<div class="boxBlue">
+						<strong class="v2">[안내]</strong>
+						<p class="dotTxt">이름(지점 ▹조직/직급)</p>
+						<p class="dotTxt">이름(지점 ▹조직/직급)</p>
+					</div>
+					<!--// boxBlue -->
+					<!-- btnBottom -->
+					<div class="btnBottom v2">
+						<button class="btn btnWhite">계속 진행</button>
+						<button class="btn btnBlue">적용</button>
+					</div>
+					<!--// btnBottom -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 52시간 초과  -->
+
+		<!-- 일정 충돌  -->
+		<div class="layer layer12">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont">
+					<p>아래 직원은 현재 근무일정을 적용 시 <br />최대 근로시간 52시간을 초과합니다.</p>
+					<p>초과 근로자 제외, 적용하시겠습니까?</p>
+					<!-- boxBlue -->
+					<div class="boxBlue">
+						<strong class="v2">[안내]</strong>
+						<p class="dotTxt">이름(지점 ▹조직/직급)</p>
+						<p class="dotTxt">이름(지점 ▹조직/직급)</p>
+					</div>
+					<!--// boxBlue -->
+					<!-- btnBottom -->
+					<div class="btnBottom">
+						<button class="btn btnBlue">계속 진행</button>
+					</div>
+					<!--// btnBottom -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 일정 충돌  -->
+
+		<!-- 일정부여하기 -->
+		<div class="layer layer13">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont">
+					<!-- emplArea -->
+					<div class="emplArea">
+						<strong>홍길동</strong>
+						<p>이엠룩 / 부장 / 솔루션 사업팀 / 직원</p>
+					</div>
+					<!--// emplArea -->
+					<!-- boxBlue -->
+					<div class="boxBlue">
+						<ul class="list02">
+							<li><strong>기본 근무</strong>09:00 ~ 18:00(휴게1시간)</li>
+							<li><strong>야간 근무</strong>10:00 ~ 03:00</li>
+						</ul>
+					</div>
+					<!--// boxBlue -->
+					<p class="txtL">이대로 적용하시겠습니까?</p>
+					<!-- btnBottom -->
+					<div class="btnBottom">
+						<button class="btn btnBlue">적용</button>
+					</div>
+					<!--// btnBottom -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 일정부여하기 -->
+
+		<!-- 일정부여하기 - 52시간 초과되는 경우 -->
+		<div class="layer layer14">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont">
+					<!-- emplArea -->
+					<div class="emplArea">
+						<strong>홍길동</strong>
+						<p>이엠룩 / 부장 / 솔루션 사업팀 / 직원</p>
+					</div>
+					<!--// emplArea -->
+					<!-- boxBlue -->
+					<div class="boxBlue">
+						<ul class="list02">
+							<li><strong>기본 근무</strong>09:00 ~ 18:00(휴게1시간)</li>
+							<li><strong>야간 근무</strong>10:00 ~ 03:00</li>
+						</ul>
+					</div>
+					<!--// boxBlue -->
+					<p class="txtL">최대 근로시간 52시간을 초과합니다.<br />다시 설정해주세요.</p>
+					<!-- btnBottom -->
+					<div class="btnBottom">
+						<button class="btn btnBlue">다시 설정</button>
+					</div>
+					<!--// btnBottom -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 일정부여하기 - 52시간 초과되는 경우 -->
+
+		<!-- 일정부여하기 - 적용일정이 충돌 되는 경우 -->
+		<div class="layer layer15">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont">
+					<!-- emplArea -->
+					<div class="emplArea">
+						<strong>홍길동</strong>
+						<p>이엠룩 / 부장 / 솔루션 사업팀 / 직원</p>
+					</div>
+					<!--// emplArea -->
+					<!-- boxBlue -->
+					<div class="boxBlue">
+						<ul class="list02">
+							<li><strong>기본 근무</strong>09:00 ~ 18:00(휴게1시간)</li>
+							<li><strong>야간 근무</strong>10:00 ~ 03:00</li>
+						</ul>
+					</div>
+					<!--// boxBlue -->
+					<p class="txtL">충돌 되는 근무 일정이 존재합니다.<br />기존 근무 일정을 현재 적용 일정으로 변경 적용 하시겠습니까?</p>
+					<!-- btnBottom -->
+					<div class="btnBottom v2">
+						<button class="btn btnWhite">다시 설정</button>
+						<button class="btn btnBlue">적용</button>
+					</div>
+					<!--// btnBottom -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 일정부여하기 - 적용일정이 충돌 되는 경우 -->
+
+		<!-- 직원 이름 직접 검색 -->
+		<div class="layer layer16">
+			<div class="inner">
+				<p class="tit">직원 이름 직접 검색</p>
+				<!-- popCont --> 
+				<div class="popCont">
+					<!-- searchArea -->
+					<div class="searchArea">
+						<input type="text" title="직원 이름 입력" placeholder="직원 이름 입력">
+						<a href="" class="btnSearch">검색</a>
+					</div>
+					<!--// searchArea -->
+					<div class="noData">
+						<p>검색 데이터가 존재하지 않습니다.</p>
+					</div>
+					<!-- selectList -->
+					<dl class="selectList">
+						<dt>2명 검색</dt>
+						<dd>
+							<p>홍길동</p>
+							<p>솔루션솔루션솔루션솔루션 사업팀 / 부장</p>
+							<p><button class="btn btnWhite ss">선택</button></p>
+						</dd>
+						<dd>
+							<p>홍길동</p>
+							<p>솔루션 사업팀 / 부장</p>
+							<p><button class="btn btnWhite ss">선택</button></p>
+						</dd>
+						<dd>
+							<p>홍길동</p>
+							<p>솔루션 사업팀 / 부장</p>
+							<p><button class="btn btnWhite ss">선택</button></p>
+						</dd>
+					</dl>
+					<!--// selectList -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 직원 이름 직접 검색 -->
+
+		<!-- 선택 직원  적용할 근무일정 선택 -->
+		<div class="layer layer17">
+			<div class="inner">
+				<p class="tit">선택 직원 적용할 근무일정 선택</p>
+				<!-- popCont --> 
+				<div class="popCont">
+					<!-- emplArea -->
+					<div class="emplArea v2">
+						<strong>홍길동</strong>
+						<p>이엠룩 / 부장 / 솔루션 사업팀 / 직원</p>
+					</div>
+					<!--// emplArea -->
+					<!-- selectList -->
+					<dl class="selectList v2">
+						<dt>근무일정 복수 선택 가능</dt>
+						<dd>
+							<p>기본 근무</p>
+							<p>09:00 ~ 18:00(휴게1시간)</p>
+							<p class="checkbox"><input type="checkbox" id="chk0101"><label for="chk0101"><em>선택</em></label></p>
+						</dd>
+						<dd>
+							<p>야간 근무</p>
+							<p>10:00 ~ 03:00</p>
+							<p class="checkbox"><input type="checkbox" id="chk0102"><label for="chk0102"><em>선택</em></label></p>
+						</dd>
+					</dl>
+					<!--// selectList -->
+					<!-- btnBottom -->
+					<div class="btnBottom">
+						<button class="btn btnBlue">선택</button>
+					</div>
+					<!--// btnBottom -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 선택 직원  적용할 근무일정 선택 -->
+	</div>
+</div>
+<!--// wrap -->
+</body>
+</html>

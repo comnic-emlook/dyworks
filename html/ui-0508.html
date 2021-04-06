@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<div id="wrap">
+	<div id="container">
+		<a href="javascript:void(0)" onclick="fn_layer('layer01')" class="btn btnBlue">계약 상세 팝업버튼</a>
+
+		<!-- 계약 상세 영역 -->
+		<div class="layer fullPop layer01">
+			<div class="inner">
+				<p class="tit">계약 상세</p>
+				<!-- popCont --> 
+				<div class="popCont">
+					<!-- 2020-02-12 -->
+					<dl class="contractWrap">
+						<dt>
+							파일첨부하기
+							<ol class="step">
+								<li>①</li>
+								<li>②</li>
+								<li class="curr">③</li>
+								<li>④</li>
+							</ol>
+						</dt>
+						<dd>
+							<p>전자서명 동의를 해야 최종 완료됩니다.</p>
+							<!-- agreeBox -->
+							<dl class="agreeBox checkbox">
+								<dt><input type="checkbox" id="chk01"><label for="chk01">전자서명 인지 및 동의</label></dt>
+								<dd>전자서명 및 전자문서의 법적 효력에 대해 동의합니다.</dd>
+								<dd>서명 완료 후 전송되는 전자문서를 원본으로 인정합니다.</dd>
+								<dd>서명참여자가 전자서명에 정당한 권한이 있음을 확인하였습니다.</dd>
+								<dd>기타 자세한 내용은 <a href="" class="btnLink">전자서명 이용약관</a> 및 <a href="" class="btnLink">전자서명개인정보처리 방침</a>에 따라 동의합니다.</dd>
+							</dl>
+							<!--// agreeBox -->
+							<dl class="boxWhite">
+								<dt><strong>첨부요청</strong>통장사본, 주민등록증 사본</dt>
+								<dd>
+									<div class="fileWrap">
+										<p class="file"><span>통장사본</span> <a href="javascript:void(0);" onclick="fn_file_del(this);" class="btnDel">삭제</a></p>
+										<p class="file"><span>통장사본</span> <a href="javascript:void(0);" onclick="fn_file_del(this);" class="btnDel">삭제</a></p>
+									</div>
+									<div class="btnFile">
+										<input type="file" title="파일첨부" onchange="fn_file(this);">
+									</div>
+								</dd>
+							</dl>
+						</dd>
+					</dl>
+					<!-- btnBottom -->
+					<div class="btnBottom v2">
+						<button class="btn btnWhite">이전</button>
+						<button class="btn btnBlue">동의</button>
+					</div>
+					<!--// btnBottom -->
+					<!--// 2020-02-12 -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 계약 상세 영역 -->
+	</div>
+</div>
+<!--// wrap -->
+</body>
+</html>

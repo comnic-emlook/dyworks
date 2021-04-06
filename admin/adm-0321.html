@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>계약/급여 &lt; 이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap">
+	<!-- subHeader -->
+	<div id="subHeader">
+		<h2>근로계약작성</h2>
+		<a href="" class="btnBack">이전 페이지</a>
+		<a href="" class="btnInfo">정보안내</a>
+	</div>
+	<!--// subHeader -->
+
+	<!-- container -->
+	<div id="container">
+		<div class="content">
+			<!-- viewWrap -->
+			<div class="fullScreen">
+				<dl class="contractWrap">
+					<dt>
+						계약 직원 설정
+						<ol class="step">
+							<li>①</li>
+							<li>②</li>
+							<li>③</li>
+							<li>④</li>
+							<li class="curr">⑤</li>
+						</ol>
+					</dt>
+					<dd>
+						<p>직원에게 요청할 자료 명을 입력 설정하세요.</p>
+						<ul class="addList">
+							<li><input type="text" title="요청할 자료 명 입력" placeholder="요청한 자료 명 입력1(예:통장사본)"><a href="javascript:void(0)" class="btnDel" onclick="fn_list_del(this)">삭제</a></li>
+						</ul>
+						<a href="javascript:void(0)" class="btnAdd" onclick="fn_add_list(this)">요청할 자료 추가</a>
+					
+						<div class="boxWhite">
+							<div class="inputList">
+								<dl>
+									<dt>서명 작성 기한 설정</dt>
+									<dd><input type="text" title="날짜 입력" placeholder="날짜 입력"></dd>
+									<dd><input type="text" title="시간 입력" placeholder="시간 입력"></dd>
+								</dl>
+							</div>
+						</div>
+					</dd>
+				</dl>
+				<!-- btnBottom -->
+				<div class="btnBottom v2">
+					<button class="btn btnWhite">이전</button>
+					<button class="btn btnBlue">발송</button>
+				</div>
+				<!--// btnBottom -->
+			</div>
+			<!--// viewWrap -->
+		</div>
+	</div>
+	<!--// container -->
+</div>
+<!--// wrap -->
+</body>
+</html>

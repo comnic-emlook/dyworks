@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap">
+<style>
+#container > a {margin-top:20px; width:auto}
+</style>
+	<div id="container" style="padding-bottom: 20px;">
+		<a href="javascript:void(0)" onclick="fn_layer('layer1','300')" class="btn btnBlue">접수처리 현황(심사 중) 팝업버튼</a>
+		<a href="javascript:void(0)" onclick="fn_layer('layer2','300')" class="btn btnBlue">접수처리 현황(반려) 팝업버튼</a>
+		<a href="javascript:void(0)" onclick="fn_layer('layer3','300')" class="btn btnBlue">회수하기 알림 팝업버튼</a>
+		<a href="javascript:void(0)" onclick="fn_layer('layer4','300')" class="btn btnBlue">보완 요청하기 팝업버튼</a>
+		<a href="javascript:void(0)" onclick="fn_layer('layer5','300')" class="btn btnBlue">근로계약 사용방법 안내 팝업버튼</a>
+		<a href="javascript:void(0)" onclick="fn_layer('layer6','300')" class="btn btnBlue">계약서가 발송 알림 팝업버튼</a>
+
+		<!-- 접수처리 현황(심사 중) -->
+		<div class="layer layer1">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p>심사 중입니다.</p>
+					<div class="boxWhite">
+						<ul class="dotList">
+							<li>접수일 20/2/13 </li>
+							<li>일 이내 승인예정이며, 승인 시 <span class="cBlue">회원가입 때 설정한 비밀번호 입력 후 접속 가능합니다.</span></li>
+						</ul>
+					</div>
+					<div class="boxBlue02">
+						<ul class="dotList">
+							<li>신청 서비스 : 근로 계약 관리</li>
+							<li>인원 구간 선택 : 01~20명</li>
+							<li>계약 체결 당 : 1,000원</li>
+						</ul>
+					</div>
+					<!-- btnBottom -->
+					<div class="btnBottom">
+						<button class="btn btnBlue">확인</button>
+					</div>
+					<!--// btnBottom -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 접수처리 현황(심사 중) -->
+
+		<!-- 접수처리 현황(반려) -->
+		<div class="layer layer2">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p>반려되었습니다.</p>
+					<div class="boxWhite">
+						<ul class="dotList">
+							<li>생성 후 진입한 회사와 첨부한 사업자등록증이 상이합니다.  생성한 회사의 사업자 등록증을 첨부해주세요. <span class="cBlue">회사명이 변경인 경우 회사 관리에서 변경해주세요.</span></li>
+						</ul>
+					</div>
+					<div class="boxBlue02">
+						<ul class="dotList">
+							<li>신청 서비스 : 근로 계약 관리</li>
+							<li>인원 구간 선택 : 01~20명</li>
+							<li>계약 체결 당 : 1,000원</li>
+						</ul>
+					</div>
+					<!-- btnBottom -->
+					<div class="btnBottom v2">
+						<button class="btn btnWhite">화사정보관리</button>
+						<button class="btn btnBlue">다시 신청하기</button>
+					</div>
+					<!--// btnBottom -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 접수처리 현황(반려) -->
+
+		<!-- 회수하기 알림 -->
+		<div class="layer layer3">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p>발송한 계약서 수정이 불가피한 경우 회수하기를 통해 수정 진행 가능합니다.<br />다시 작성 후 근로자에게 발송 진행하세요</p>
+					<span class="span cBlue">회수 시 근로자 화면에서는 삭제 처리됩니다.</span>
+					
+					<!-- btnBottom -->
+					<div class="btnBottom">
+						<button class="btn btnBlue">회수하기</button>
+					</div>
+					<!--// btnBottom -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 회수하기 알림 -->
+
+		<!-- 보완 요청하기 -->
+		<div class="layer layer4">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont">
+					<textarea title="보완할 사항을 입력해주세요" placeholder="보완할 사항을 입력해주세요"></textarea>
+					<!-- btnBottom -->
+					<div class="btnBottom">
+						<button class="btn btnBlue">보완요청하기</button>
+					</div>
+					<!--// btnBottom -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 보완 요청하기 -->
+
+		<!-- 근로계약 사용방법 안내 -->
+		<div class="layer layer5">
+			<div class="inner">
+				<p class="tit">근로계약 사용방법 안내</p>
+				<!-- popCont --> 
+				<div class="popCont">
+					이미지로 단계별 사용방법 안내 (추후 작업예정 - 디자인 필요)
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 근로계약 사용방법 안내 -->
+
+		<!-- 계약서가 발송 알림 -->
+		<div class="layer layer6">
+			<div class="inner">
+				<p class="tit">알림</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p>계약서가 발송되었습니다.<br /><br />직원 별 계약서 진행을 계속 하시겠습니까?</p>
+					<!-- btnBottom -->
+					<div class="btnBottom v2">
+						<button class="btn btnWhite">계속</button>
+						<button class="btn btnBlue">계약서 보기</button>
+					</div>
+					<!--// btnBottom -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 계약서가 발송 알림 -->
+	</div>
+<!--// wrap -->
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>관리 &lt; 이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/swiper.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap" class="main">
+	<!-- subHeader -->
+	<div id="subHeader">
+		<h2>근무일정</h2>
+		<a href="" class="btnBack">이전 페이지</a>
+		<a href="" class="btnSearch">검색창 열기</a>
+		<a href="" class="btnInfo">정보 안내</a>
+	</div>
+	<!--// subHeader -->
+	<!-- container -->
+	<div id="container">
+		<div class="content">
+			<!-- tabWrap -->
+			<div class="tabWrap">
+				<ul>
+					<li class="curr"><a href="">그룹별 부여</a></li>
+					<li><a href="">직원선택일정부여</a></li>
+				</ul>
+				<div class="tabBoxWrap v2">
+					<!-- 그룹별 부여 -->
+					<div>
+						<strong class="noticeTxt">동일한 근무일정을 지닌 사업장의 경우 적용 그룹을 설정 후 한번에 설정하면 편리합니다.</strong>
+						<div class="btnCenter v2">
+							<button class="btn btnBlue">그룹별 근무 일정 설정</button>
+						</div>
+						<div id="calendar" style="height:365px; background:#e3e8f7"><!-- style 삭제해주세요. -->
+							달력 영역
+						</div>
+					</div>
+					<!--// 그룹별 부여 -->
+					<!-- 직원선택일정부여 -->
+					<div>
+						<strong class="noticeTxt">1:1 선택 근무일정을 세팅 하는 메뉴로 1명의 직원이 다양한 근무일정을 가진 경우 사용하면 편리함.</strong>
+						<div class="btnCenter v2">
+							<button class="btn btnBlue">개인별 근무 일정 설정</button>
+						</div>
+						<div id="calendar" style="height:365px; background:#e3e8f7"><!-- style 삭제해주세요. -->
+							달력 영역
+						</div>
+					</div>
+					<!--// 직원선택일정부여 -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// container -->
+</div>
+<!--// wrap -->
+</body>
+</html>

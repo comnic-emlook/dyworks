@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/swiper.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap">
+<style>
+#container > a {margin-top:20px; width:auto}
+</style>
+	<div id="container">
+		<a href="javascript:void(0)" onclick="fn_layer('layer1','300')" class="btn btnBlue">상세검색 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer2','300')" class="btn btnBlue">상세검색 타입2 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layerSwiper','300')" class="btn btnBlue">상세화면 팝업버튼</a>
+		
+		<!-- 상세검색 -->
+		<div class="layer layer1">
+			<div class="inner">
+				<p class="tit">상세검색</p>
+				<!-- popCont --> 
+				<div class="popCont">
+					<!-- inputList -->
+					<div class="inputList">
+						<dl>
+							<dt>날짜</dt>
+							<dd class="time">
+								<input type="date" title="시작날짜입력">
+								<span>~</span>
+								<input type="date" title="종료날짜입력">
+							</dd>
+						</dl>
+						<div>
+							<dl>
+								<dt>근무타입</dt>
+								<dd>
+									<select class="v2" title="근무타입 선택">
+										<option value="">근무타입 선택</option>
+										<option value="">근무타입 선택선택선택선택</option>
+									</select>
+								</dd>
+							</dl>
+							<dl>
+								<dt>지점</dt>
+								<dd>
+									<select class="v2" title="지점 선택">
+										<option value="">지점 선택</option>
+									</select>
+								</dd>
+							</dl>
+						</div>
+						<div>
+							<dl>
+								<dt>조직</dt>
+								<dd>
+									<select class="v2" title="조직 선택">
+										<option value="">조직 선택</option>
+									</select>
+								</dd>
+							</dl>
+							<dl>
+								<dt>직무</dt>
+								<dd>
+									<select class="v2" title="직무 선택">
+										<option value="">직무 선택</option>
+									</select>
+								</dd>
+							</dl>
+						</div>
+						<dl>
+							<dt>이름 검색</dt>
+							<dd><input type="text" title="이름 입력" placeholder="이름을 입력해 주세요"></dd>
+						</dl>
+					</div>
+					<!--// inputList -->
+					<!-- btnBottom -->
+					<div class="btnBottom">
+						<button class="btn btnBlue">조건 상세 검색</button>
+					</div>
+					<!--// btnBottom -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 상세검색 -->
+
+		<!-- 상세검색 -->
+		<div class="layer layer2">
+			<div class="inner">
+				<p class="tit">상세검색</p>
+				<!-- popCont --> 
+				<div class="popCont">
+					<!-- inputList -->
+					<div class="inputList">
+						<dl>
+							<dt>날짜</dt>
+							<dd class="time">
+								<input type="date" title="시작날짜입력">
+								<span>~</span>
+								<input type="date" title="종료날짜입력">
+							</dd>
+						</dl>
+						<dl>
+							<dt>필터1</dt>
+							<dd>
+								<select class="v2" title="필터1 선택">
+									<option value="">기본 근무</option>
+									<option value="">야간 근무</option>
+									<option value="">연장 근무</option>
+									<option value="">무 일정</option>
+									<option value="">간주 근로제</option>
+									<option value="">확정 근무만</option>
+									<option value="">미확정 근무만</option>
+								</select>
+							</dd>
+						</dl>
+						<dl>
+							<dt>필터2</dt>
+							<dd>
+								<select class="v2" title="필터2 선택">
+									<option value="">근무중</option>
+									<option value="">정상</option>
+									<option value="">지각</option>
+									<option value="">결근</option>
+									<option value="">예정</option>
+								</select>
+							</dd>
+						</dl>
+					</div>
+					<!--// inputList -->
+					<!-- btnBottom -->
+					<div class="btnBottom">
+						<button class="btn btnBlue">조건 상세 검색</button>
+					</div>
+					<!--// btnBottom -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 상세검색 -->
+
+		<!-- 알림 -->
+		<div class="layerSwiper">
+			<div class="inner">
+				<strong class="tit">12/2 월</strong>
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<!-- emplArea -->
+							<div class="emplArea">
+								<strong>홍길동</strong>
+								<p>(미확정)(기본근무)</p>
+								<ul>
+									<li><strong>일정</strong>09:00 ~ 18:00 /휴게 1시간</li>
+									<li class="cBlue"><strong>근태</strong>09:00 ~ 18:00 </li>
+								</ul>
+								<p class="labelArea">
+									<span class="label v2">결근</span>
+									<span class="label v2">지각</span>
+									<span class="label v3">예정</span>
+									<span class="label v7">근무 중</span>
+								</p>
+							</div>
+							<!--// emplArea -->
+							<div class="boxBlue">
+								<ul>
+									<li><strong>소속회사</strong>이엠룩</li>
+									<li><strong>조직</strong>-</li>
+									<li><strong>직위</strong>부장</li>
+									<li><strong>부서</strong>솔루션 사업팀</li>
+									<li><strong>권한</strong>이용자</li>
+								</ul>
+							</div>
+							<!-- btnBottom -->
+							<div class="btnBottom v2">
+								<button class="btn btnWhite">수정</button>
+								<button class="btn btnBlue">근무 확정</button>
+							</div>
+							<!--// btnBottom -->
+						</div>
+						<div class="swiper-slide">
+							<!-- emplArea -->
+							<div class="emplArea">
+								<strong>홍길동</strong>
+								<p>(미확정)(기본근무)</p>
+								<ul>
+									<li><strong>일정</strong>09:00 ~ 18:00 /휴게 1시간</li>
+									<li class="cBlue"><strong>근태</strong>09:00 ~ 18:00 </li>
+								</ul>
+								<p class="labelArea">
+									<span class="label v2">결근</span>
+									<span class="label v2">지각</span>
+									<span class="label v3">예정</span>
+									<span class="label v7">근무 중</span>
+								</p>
+							</div>
+							<!--// emplArea -->
+							<div class="boxBlue">
+								<ul>
+									<li><strong>소속회사</strong>이엠룩</li>
+									<li><strong>조직</strong>-</li>
+									<li><strong>직위</strong>부장</li>
+									<li><strong>부서</strong>솔루션 사업팀</li>
+									<li><strong>권한</strong>이용자</li>
+								</ul>
+							</div>
+							<!-- btnBottom -->
+							<div class="btnBottom v2">
+								<button class="btn btnWhite">수정</button>
+								<button class="btn btnBlue">근무 확정</button>
+							</div>
+							<!--// btnBottom -->
+						</div>
+						<div class="swiper-slide">
+							<!-- emplArea -->
+							<div class="emplArea">
+								<strong>홍길동</strong>
+								<p>(미확정)(기본근무)</p>
+								<ul>
+									<li><strong>일정</strong>09:00 ~ 18:00 /휴게 1시간</li>
+									<li class="cBlue"><strong>근태</strong>09:00 ~ 18:00 </li>
+								</ul>
+								<p class="labelArea">
+									<span class="label v2">결근</span>
+									<span class="label v2">지각</span>
+									<span class="label v3">예정</span>
+									<span class="label v7">근무 중</span>
+								</p>
+							</div>
+							<!--// emplArea -->
+							<div class="boxBlue">
+								<ul>
+									<li><strong>소속회사</strong>이엠룩</li>
+									<li><strong>조직</strong>-</li>
+									<li><strong>직위</strong>부장</li>
+									<li><strong>부서</strong>솔루션 사업팀</li>
+									<li><strong>권한</strong>이용자</li>
+								</ul>
+							</div>
+							<!-- btnBottom -->
+							<div class="btnBottom v2">
+								<button class="btn btnWhite">수정</button>
+								<button class="btn btnBlue">근무 확정</button>
+							</div>
+							<!--// btnBottom -->
+						</div>
+					</div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-pagination"></div>
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 알림 -->
+	</div>
+</div>
+<!--// wrap -->
+</body>
+</html>

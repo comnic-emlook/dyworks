@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>회원가입 &lt; 이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap">
+	<!-- subHeader -->
+	<div id="subHeader">
+		<h2>회원 가입</h2>
+		<a href="" class="btnBack">이전 페이지</a>
+	</div>
+	<!--// subHeader -->
+
+	<!-- container -->
+	<div id="container">
+		<div class="content">
+			<h3>약관 동의</h3>
+			<p class="txt">아래 약관을 읽고 동의 및 회원가입을 진행해주세요.<br />(선택을 제외 필수 모두 동의 후 진행 가능)</p>
+			<!-- agreeBox -->
+			<dl class="agreeBox checkbox">
+				<dt><input type="checkbox" id="chkAll"><label for="chkAll">전체 동의</label></dt>
+				<dd><input type="checkbox" id="chk01"><label for="chk01">(필수) MLOOK 서비스 약관동의</label><a href="">MLOOK 서비스 약관동의 보기</a></dd>
+				<dd><input type="checkbox" id="chk02"><label for="chk02">(필수) 개인 정보 취급 방침</label><a href="">개인 정보 취급 방침 보기</a></dd>
+				<dd><input type="checkbox" id="chk03"><label for="chk03">(필수) 위치 조회 동의</label><a href="">위치 조회 동의 보기</a></dd>
+				<dd><input type="checkbox" id="chk04"><label for="chk04">(선택) MLOOK 마케팅 활용동의</label><a href="">MLOOK 마케팅 활용동의 보기</a></dd>
+			</dl>
+			<!--// agreeBox -->
+			<!-- btnBottom -->
+			<div class="btnBottom">
+				<button class="btn btnBlue">수정하기</button>
+			</div>
+			<!--// btnBottom -->
+		</div>
+	</div>
+	<!--// container -->
+</div>
+<!--// wrap -->
+</body>
+</html>

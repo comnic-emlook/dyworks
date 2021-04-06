@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>요청/접수 관리 &lt; 이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/swiper.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap" class="main">
+	<!-- subHeader -->
+	<div id="subHeader">
+		<h2>요청/접수 관리</h2>
+		<a href="" class="btnLogout">로그아웃</a>
+		<a href="" class="btnMenu">메뉴보기</a>
+		<a href="" class="btnNotice"><span>알림</span><strong>99</strong></a>
+		<div class="utilPop">
+			<ul>
+				<li><a href="">이용안내</a></li>
+				<li><a href="">위치저장</a></li>
+			</ul>
+			<a href="" class="btnClose">닫기</a>
+		</div>
+	</div>
+	<!--// subHeader -->
+	<!-- container -->
+	<div id="container">
+		<div class="content">
+			<!-- tabWrap -->
+			<div class="tabWrap">
+				<ul>
+					<li class="curr"><a href="">요청 대기</a></li>
+					<li><a href="">결과 내역</a></li>
+					<li><a href="">MY</a></li>
+				</ul>
+				<div class="tabBoxWrap v2">
+					<!-- 요청 대기 -->
+					<div>
+						<!-- titCal -->
+						<div class="titCal">
+							<a href="" class="btnPrev">이전달</a>
+							<strong>2020. 01.</strong>
+							<a href="" class="btnNext">다음달</a>
+						</div>
+						<!--// titCal -->
+						<!-- listTop -->
+						<div class="listTop">
+							<p>전체 2건</p>
+							<div class="fr">
+								<select title="필터">
+									<option value="">전체</option>
+									<option value="">전체</option>
+									<option value="">근태(출근)</option>
+									<option value="">근태(퇴근)</option>
+									<option value="">일정/근태</option>
+									<option value="">일정(휴가)</option>
+									<option value="">추가근무승인</option>
+									<option value="">연장근무접수</option>
+								</select>
+							</div>
+						</div>
+						<!--// listTop -->
+						<!-- workList02 -->
+						<div class="workList02 v2">
+							<dl>
+								<dt><strong>12월 1일 (일)</strong><span>대기중</span></dt>
+								<dd>
+									<ul class="emplList">
+										<li>
+											<strong>이효숙</strong>
+											<div>
+												<a href="" class="btnArrow">
+													<span class="label v6">접수건 키워드</span>
+													<p class="line"><strong>일정</strong>09:12 ~ 18:00</p>
+													<p class="cBlue"><strong>변경</strong>09:00 ~ 18:00</p>
+												</a>
+											</div>
+										</li>
+										<li>
+											<strong>이효숙</strong>
+											<div>
+												<a href="" class="btnArrow">
+													<span class="label v6">접수건 키워드</span>
+													<p class="line"><strong>일정</strong>09:12 ~ 18:00</p>
+													<p class="cBlue"><strong>변경</strong>09:00 ~ 18:00</p>
+												</a>
+												<a href="" class="btnArrow">
+													<span class="label v6">접수건 키워드</span>
+													<p class="line"><strong>일정</strong>09:12 ~ 18:00</p>
+													<p class="cBlue"><strong>변경</strong>09:00 ~ 18:00</p>
+												</a>
+											</div>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							<dl>
+								<dt><strong>12월 1일 (일)</strong><span>대기중</span></dt>
+								<dd>
+									<ul class="emplList">
+										<li>
+											<strong>이효숙</strong>
+											<div>
+												<a href="" class="btnArrow">
+													<span class="label v6">접수건 키워드</span>
+													<p class="line"><strong>일정</strong>09:12 ~ 18:00</p>
+													<p class="cBlue"><strong>변경</strong>09:00 ~ 18:00</p>
+												</a>
+											</div>
+										</li>
+										<li>
+											<strong>이효숙</strong>
+											<div>
+												<a href="" class="btnArrow">
+													<span class="label v6">접수건 키워드</span>
+													<p class="line"><strong>일정</strong>09:12 ~ 18:00</p>
+													<p class="cBlue"><strong>변경</strong>09:00 ~ 18:00</p>
+												</a>
+											</div>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+						<!--// workList02 -->
+					</div>
+					<!--// 요청 대기 -->
+					<!-- 결과 내역 -->
+					<div>
+						<!-- titCal -->
+						<div class="titCal">
+							<a href="" class="btnPrev">이전달</a>
+							<strong>2020. 01.</strong>
+							<a href="" class="btnNext">다음달</a>
+						</div>
+						<!--// titCal -->
+						<!-- listTop -->
+						<div class="listTop">
+							<p>전체 2건</p>
+							<div class="fr">
+								<select title="필터">
+									<option value="">전체</option>
+									<option value="">승인</option>
+									<option value="">반려</option>
+								</select>
+							</div>
+						</div>
+						<!--// listTop -->
+						<!-- workList -->
+						<div class="workList">
+							<dl>
+								<dt>12월 1일 (일)<span class="cBlue">승인</span></dt>
+								<dd>
+									<ul class="emplList">
+										<li>
+											<strong>이효숙</strong>
+											<div>
+												<a href="" class="btnArrow">
+													<div>
+														<span class="label v6">접수건 키워드</span>
+														<p class="line"><strong>일정</strong>09:12 ~ 18:00</p>
+														<p class="cBlue"><strong>변경</strong>09:00 ~ 18:00</p>
+													</div>
+												</a>
+											</div>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							<dl>
+								<dt>12월 1일 (일)<span>반려</span></dt>
+								<dd>
+									<ul class="emplList">
+										<li>
+											<strong>이효숙</strong>
+											<div>
+												<a href="" class="btnArrow">
+													<div>
+														<span class="label v6">접수건 키워드</span>
+														<p class="line"><strong>일정</strong>09:12 ~ 18:00</p>
+														<p class="cBlue"><strong>변경</strong>09:00 ~ 18:00</p>
+														<p class="cRed"><strong>사유</strong>1일 전날 신청하세요.</p>
+													</div>
+												</a>
+											</div>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+						<!--// workList -->
+					</div>
+					<!--// 결과 내역 -->
+					<!-- MY -->
+					<div>
+						<!-- titCal -->
+						<div class="titCal">
+							<a href="" class="btnPrev">이전달</a>
+							<strong>2020. 01.</strong>
+							<a href="" class="btnNext">다음달</a>
+						</div>
+						<!--// titCal -->
+						<!-- listTop -->
+						<div class="listTop">
+							<p>전체 2건</p>
+							<div class="fr">
+								<select title="필터">
+									<option value="">전체</option>
+									<option value="">대기</option>
+									<option value="">승인</option>
+									<option value="">반려</option>
+								</select>
+							</div>
+						</div>
+						<!--// listTop -->
+						<!-- workList -->
+						<div class="workList">
+							<dl>
+								<dt>12월 1일 (일)<span>대기중</span></dt>
+								<dd>
+									<a href="">
+										<p><strong>일정</strong>09:00 ~ 18:00 / 휴게 1시간</p>
+										<p><strong>근태</strong>09:12~18:00</p>
+										<p><strong>접수내용</strong>근태 변경</p>
+									</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt>12월 1일 (일)<span>대기중</span></dt>
+								<dd>
+									<a href="">
+										<p><strong>일정</strong>09:00 ~ 18:00 / 휴게 1시간</p>
+										<p><strong>근태</strong>09:12~18:00</p>
+										<p><strong>접수내용</strong>근태 변경</p>
+									</a>
+								</dd>
+							</dl>
+						</div>
+						<!--// workList -->
+					</div>
+					<!--// MY -->
+				</div>
+			</div>
+			<!--// tabWrap -->
+
+			<!-- fixedArea -->
+			<div class="fixedArea">
+				<a href="" class="btnMore">더보기</a>
+				<ul>
+					<li><a href="">근무일정부여</a></li>
+					<li><a href="">근태기록추가</a></li>
+					<li><a href="">직원초대</a></li>
+					<li><a href="">메일 전송</a></li>
+					<li><a href="">pdf 다운</a></li>
+					<li><a href="">엑셀 다운</a></li>
+				</ul>
+			</div>
+			<!--// fixedArea -->
+		</div>
+	</div>
+	<!--// container -->
+	<!-- FixedBtn -->
+	<div id="FixedBtn">
+		<ul>
+			<li><a href="">메인</a></li>
+			<li><a href="">근무/통계</a></li>
+			<li><a href="">계약/급여</a></li>
+			<li class="curr"><a href="">요청/접수</a></li>
+			<li><a href="">관리</a></li>
+		</ul>
+	</div>
+	<!--// FixedBtn -->
+</div>
+<!--// wrap -->
+</body>
+</html>

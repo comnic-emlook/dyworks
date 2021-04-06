@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>근무/근태/통계 &lt; 이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap">
+	<!-- subHeader -->
+	<div id="subHeader">
+		<h2>근무/근태/통계</h2>
+		<a href="" class="btnLogout">로그아웃</a>
+		<a href="" class="btnMenu">메뉴보기</a>
+		<a href="" class="btnNotice"><span>알림</span><strong>99</strong></a>
+		<div class="utilPop">
+			<ul>
+				<li><a href="">이용안내</a></li>
+				<li><a href="">위치저장</a></li>
+			</ul>
+			<a href="" class="btnClose">닫기</a>
+		</div>
+	</div>
+	<!--// subHeader -->
+
+	<!-- container -->
+	<div id="container">
+		<div class="content">
+			<!-- tabWrap -->
+			<div class="tabWrap">
+				<ul>
+					<li class="curr"><a href="">근무 현황</a></li>
+					<li><a href="">출퇴근누락</a></li>
+					<li><a href="">통계보고</a></li>
+				</ul>
+				<div class="tabBoxWrap v2">
+					<!-- 근무 현황 -->
+					<div>
+						<!-- bgGray -->
+						<div class="bgGray">
+							<a href="" class="todayView">
+								<dl>
+									<dt>Today 2019.12.05(목) <span class="label v1">근무중</span></dt>
+									<dd><strong>일정</strong>09:00 ~ 18:00 / 휴게1시간</dd>
+									<dd><strong>근태</strong>09:00 ~ 미 퇴근</dd>
+								</dl>
+							</a>
+						</div>
+						<!--// bgGray -->
+						<!-- titCal -->
+						<div class="titCal">
+							<a href="" class="btnPrev">이전달</a>
+							<strong>2020. 01.</strong>
+							<a href="" class="btnNext">다음달</a>
+						</div>
+						<!--// titCal -->
+						<!-- listTop -->
+						<div class="listTop">
+							<ul>
+								<li>정상 00</li>
+								<li>지각 00</li>
+								<li>결근 00</li>
+								<li>휴가 00</li>
+							</ul>
+							<select title="필터선택">
+								<option value="">전체</option>
+								<option value="">정상</option>
+								<option value="">지각</option>
+								<option value="">결근</option>
+								<option value="">휴가</option>
+								<option value="">연장근무</option>
+							</select>
+						</div>
+						<!--// listTop -->
+						<!-- workList -->
+						<div class="workList">
+							<dl>
+								<dt>12월 1일 (일)</dt>
+								<dd>
+									<a href="">
+										<p><strong>일정</strong>-</p>
+										<p><strong>근태</strong>-</p>
+									</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt>12월 2일 (월)</dt>
+								<dd>
+									<a href="">
+										<span class="label v2">지각</span>
+										<span class="label v3">예정</span>
+										<p><strong>일정</strong>09:00 ~ 18:00 / 휴게 1시간</p>
+										<p><strong>근태</strong>09:12~18:00</p>
+									</a>
+								</dd>
+								<dd>
+									<a href="">
+										<span class="label v4">추가 근무</span>
+										<p><strong>일정</strong>09:00 ~ 18:00 / 휴게 1시간</p>
+										<p><strong>근태</strong>09:12~18:00</p>
+									</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt>12월 3일 (화)</dt>
+								<dd>
+									<a href="">
+										<span class="label v5">휴가</span>
+										<span class="label v6">무일정</span>
+										<p><strong>일정</strong>없음</p>
+										<p><strong>근태</strong>09:12~18:00</p>
+									</a>
+								</dd>
+							</dl>
+						</div>
+						<!--// workList -->
+					</div>
+					<!--// 근무 현황 -->
+					<!-- 출퇴근누락 -->
+					<div>
+						<!-- titCal -->
+						<div class="titCal v2">
+							<a href="" class="btnPrev">이전달</a>
+							<strong>2020. 01.</strong>
+							<a href="" class="btnNext">다음달</a>
+							<p class="txtCal"><strong>기간</strong>2019. 12. 1.  ~  2019. 12. 31.</p>
+						</div>
+						<!--// titCal -->
+						<!-- listTop -->
+						<div class="listTop">
+							<ul>
+								<li>출근누락 01</li>
+								<li>퇴근누락 01</li>
+							</ul>
+							<select title="필터선택">
+								<option value="">전체</option>
+								<option value="">출근누락만</option>
+								<option value="">퇴근누락만</option>
+							</select>
+						</div>
+						<!--// listTop -->
+						<div class="workList">
+							<dl>
+								<dt>12월 2일 (월)</dt>
+								<dd>
+									<a href="">
+										<span class="label v2">결근</span>
+										<span class="label v2">출근 누락</span>
+										<p><strong>일정</strong>09:00 ~ 18:00 / 휴게 1시간</p>
+										<p><strong>근태</strong>출근 미체크 ~</p>
+									</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt>12월 3일 (화)</dt>
+								<dd>
+									<a href="">
+										<span class="label v2">퇴근 누락</span>
+										<p><strong>일정</strong>09:00 ~ 18:00 / 휴게 1시간</p>
+										<p><strong>근태</strong>09:12 ~ 퇴근 미체크</p>
+									</a>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!--// 출퇴근누락 -->
+					<!-- 통계보고 -->
+					<div>
+						<!-- titCal -->
+						<div class="titCal v2">
+							<a href="" class="btnPrev">이전달</a>
+							<strong>2020. 01.</strong>
+							<a href="" class="btnNext">다음달</a>
+							<p class="txtCal"><strong>기간</strong>2019. 12. 1.  ~  2019. 12. 31.</p>
+						</div>
+						<!--// titCal -->
+						<!-- statList -->
+						<div class="statList">
+							<ul>
+								<li>
+									<span>21</span>
+									<strong>근무일수</strong>
+								</li>
+								<li>
+									<span>21</span>
+									<strong>지각</strong>
+								</li>
+								<li>
+									<span>21</span>
+									<strong>휴가</strong>
+								</li>
+								<li>
+									<span>21</span>
+									<strong>결근</strong>
+								</li>
+							</ul>
+						</div>
+						<!--// statList -->
+						<!-- lineList -->
+						<div class="lineList">
+							<ul>
+								<li>
+									<strong>설정 근로일수</strong>
+									<div>
+										<p>21일</p>
+									</div>
+									<a href="" class="btnInfo">정보안내</a>
+								</li>
+								<li>
+									<strong>실제 총 근로일수</strong>
+									<div>
+										<p>20일</p>
+									</div>
+									<a href="" class="btnInfo">정보안내</a>
+								</li>
+								<li>
+									<strong>확정된 근로일수</strong>
+									<div>
+										<p>20일</p>
+									</div>
+									<a href="" class="btnInfo">정보안내</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<strong>소정 근로시간</strong>
+									<div>
+										<p>00시간 00분</p>
+									</div>
+									<a href="" class="btnInfo">정보안내</a>
+								</li>
+								<li>
+									<strong>실제 근로시간</strong>
+									<div>
+										<p>00시간 00분</p>
+									</div>
+									<a href="" class="btnInfo">정보안내</a>
+								</li>
+								<li>
+									<strong>확정 근로시간</strong>
+									<div>
+										<p>00시간 00분</p>
+									</div>
+									<a href="" class="btnInfo">정보안내</a>
+								</li>
+								<li>
+									<strong>일 평균 근로 시간</strong>
+									<div>
+										<p>확정 00시간 00분</p>
+										<p>실제 00시간 00분</p>
+									</div>
+									<a href="" class="btnInfo">정보안내</a>
+								</li>
+								<li>
+									<strong>연장 근로 시간</strong>
+									<div>
+										<p>확정 00시간 00분</p>
+										<p>실제 00시간 00분</p>
+									</div>
+									<a href="" class="btnInfo">정보안내</a>
+								</li>
+								<li>
+									<strong>야간 근로 시간</strong>
+									<div>
+										<p>확정 00시간 00분</p>
+										<p>실제 00시간 00분</p>
+									</div>
+									<a href="" class="btnInfo">정보안내</a>
+								</li>
+								<li>
+									<strong>휴일 근로 시간</strong>
+									<div>
+										<p>확정 00시간 00분</p>
+										<p>실제 00시간 00분</p>
+									</div>
+									<a href="" class="btnInfo">정보안내</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<strong>소정 휴가 일수</strong>
+									<div>
+										<p>15일</p>
+									</div>
+									<a href="" class="btnInfo">정보안내</a>
+								</li>
+								<li>
+									<strong>실제 사용 일수</strong>
+									<div>
+										<p>5일</p>
+									</div>
+									<a href="" class="btnInfo">정보안내</a>
+								</li>
+								<li>
+									<strong>잔여 휴가 일수</strong>
+									<div>
+										<p>10일</p>
+									</div>
+									<a href="" class="btnInfo">정보안내</a>
+								</li>
+							</ul>
+						</div>
+						<!--// lineList -->
+					</div>
+					<!--// 통계보고 -->
+				</div>
+			</div>
+			<!--// tabWrap -->
+		</div>
+	</div>
+	<!--// container -->
+
+	<!-- FixedBtn -->
+	<div id="FixedBtn">
+		<ul>
+			<li><a href="">메인</a></li>
+			<li class="curr"><a href="">근무/통계</a></li>
+			<li><a href="">계약/급여</a></li>
+			<li><a href="">요청/접수</a></li>
+			<li><a href="">관리</a></li>
+		</ul>
+	</div>
+	<!--// FixedBtn -->
+</div>
+<!--// wrap -->
+</body>
+</html>

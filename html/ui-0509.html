@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<div id="wrap">
+	<div id="container">
+		<a href="javascript:void(0)" onclick="fn_layer('layer01')" class="btn btnBlue">계약 상세 팝업버튼</a>
+
+		<!-- 계약 상세 영역 -->
+		<div class="layer fullPop layer01">
+			<div class="inner">
+				<p class="tit">계약 상세</p>
+				<!-- popCont --> 
+				<div class="popCont">
+					<dl class="contractWrap">
+						<dt>
+							최종 미리보기<!-- 2020-02-12 -->
+							<ol class="step">
+								<li>①</li>
+								<li>②</li>
+								<li>③</li>
+								<li class="curr">④</li>
+							</ol>
+						</dt>
+						<dd>
+							<p>최종 확인 후 발송해주세요.</p>
+							<div class="contractBox">
+								근로계약서영역
+							</div>
+							<dl class="boxWhite">
+								<dt><strong>첨부요청</strong>2개</dt>
+								<dd>
+									<div class="fileWrap">
+										<p class="file"><span>통장 사본.jpg</span> <a href="javascript:void(0);" onclick="fn_file_del(this);" class="btnDel">삭제</a></p>
+										<p class="file"><span>주민등록증 사본 사본.jpg</span> <a href="javascript:void(0);" onclick="fn_file_del(this);" class="btnDel">삭제</a></p>
+									</div>
+								</dd>
+							</dl>
+						</dd>
+					</dl>
+					<!-- 2020-02-12 -->
+					<!-- btnBottom -->
+					<div class="btnBottom v2">
+						<button class="btn btnWhite">다시 작성</button>
+						<button class="btn btnBlue">발송하기</button>
+					</div>
+					<!--// btnBottom -->
+					<!--// 2020-02-12 -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 계약 상세 영역 -->
+	</div>
+</div>
+<!--// wrap -->
+</body>
+</html>

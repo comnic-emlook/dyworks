@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>계약/급여 &lt; 이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap">
+<style>
+#container > a {margin-top:20px; width:auto}
+</style>
+	<div id="container" style="padding-bottom: 20px;">
+		<a href="javascript:void(0)" onclick="fn_layer('layer1')" class="btn btnBlue">계약 직원 등록 팝업버튼</a>
+
+		<!--  -->
+		<div class="layer fullPop layer1">
+			<div class="inner">
+				<p class="tit">계약 직원 등록</p>
+				<!-- popCont --> 
+				<div class="popCont v2">
+					<strong class="noticeTxt">계약 진행 할 직원을 선택해주세요.<br />직원이 없는 경우 [관리 > 직원관리]에서 확인 / 등록 후 진행해주세요.</strong>
+					<!-- totalEmpl -->
+					<div class="totalEmpl">
+						<p>정규직으로 등록 된 직원</p>
+						<strong>00명</strong>
+					</div>
+					<!--// totalEmpl -->
+					<!-- filterBox -->
+					<div class="filterBox">
+						<select title="지점 선택" class="v2">
+							<option value="">지점 선택</option>
+						</select>
+						<select title="조직 선택" class="v2">
+							<option value="">조직 선택</option>
+						</select>
+					</div>
+					<!--// filterBox -->
+					<!-- listTop -->
+					<div class="listTop">
+						<div class="fr">
+							<a href="" class="btnAllCheck">전체선택</a>
+						</div>
+					</div>
+					<!--// listTop -->
+					<div class="listTable">
+						<table>
+							<caption>직원 리스트</caption>
+							<colgroup>
+								<col style="width:65px">
+								<col style="width:auto">
+								<col style="width:75px">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">이름</th>
+									<th scope="col">소속</th>
+									<th scope="col"><a href="">전체선택</a></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>홍길동</td>
+									<td class="txtL">이엠룩/솔루션사업팀/직원</td>
+									<td><div class="checkbox only"><input type="checkbox" id="chk01"><label for="chk01"></label></div></td>
+								</tr>
+								<tr>
+									<td>홍길동</td>
+									<td class="txtL">이엠룩/솔루션사업팀/직원</td>
+									<td><div class="checkbox only"><input type="checkbox" id="chk02"><label for="chk02"></label></div></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- btnBottom -->
+					<div class="btnBottom v2">
+						<button class="btn btnWhite">직원 관리</button>
+						<button class="btn btnBlue">직원 선택</button>
+					</div>
+					<!--// btnBottom -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--//  -->
+	</div>
+<!--// wrap -->
+</body>
+</body>
+</html>

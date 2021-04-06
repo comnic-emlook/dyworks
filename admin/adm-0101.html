@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>근무/근태/통계 &lt; 이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/swiper.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap" class="main">
+	<!-- subHeader -->
+	<div id="subHeader">
+		<h2>근무/근태/통계</h2>
+		<a href="" class="btnLogout">로그아웃</a>
+		<a href="" class="btnMenu">메뉴보기</a>
+		<a href="" class="btnNotice"><span>알림</span><strong>99</strong></a>
+		<div class="utilPop">
+			<ul>
+				<li><a href="">이용안내</a></li>
+				<li><a href="">위치저장</a></li>
+			</ul>
+			<a href="" class="btnClose">닫기</a>
+		</div>
+	</div>
+	<!--// subHeader -->
+	<!-- container -->
+	<div id="container">
+		<div class="content">
+			<!-- tabWrap -->
+			<div class="tabWrap">
+				<ul>
+					<li class="curr"><a href="">근무 현황</a></li>
+					<li><a href="">전체근무</a></li>
+					<li><a href="">출퇴근 기록</a></li>
+					<li><a href="">통계</a></li>
+				</ul>
+				<div class="tabBoxWrap v2">
+					<!-- 근무 현황 -->
+					<div>
+						<!-- chartWrap -->
+						<div class="chartWrap">
+							<div class="inBox">
+								<div class="tit">
+									<strong>Today 2019. 12. 02</strong>
+									<p>전체 직원  00명</p>
+								</div>
+								<!-- chartArea -->
+								<div class="chartArea" style="height:220px; background:#ccc">
+									차트영역 - 스타일은 나중에 지워주세요
+								</div>
+								<!--// chartArea -->
+							</div>
+						</div>
+						<!--// chartWrap -->
+						<!-- listTop -->
+						<div class="listTop">
+							<p>[근무 중] 직원 리스트</p>
+							<div class="fr">
+								<a href="">전체보기</a>
+							</div>
+						</div>
+						<!--// listTop -->
+						<!-- emplList -->
+						<ul class="emplList">
+							<li>
+								<strong>이효숙</strong>
+								<div>
+									<a href="" class="btnArrow">
+										<span class="label v7">근무 중</span>
+										<p><strong>일정</strong>09:00 ~ 18:00 / 휴게 1시간</p>
+										<p><strong>근태</strong>09:00 ~ 근무 중</p>
+									</a>
+									<a href="" class="btnIco01">위치저장리스트 팝업</a>
+									<a href="" class="btnIco02">기타 지역 팝업</a>
+								</div>
+							</li>
+							<li>
+								<strong>이효숙</strong>
+								<div>
+									<a href="" class="btnArrow">
+										<span class="label v7">근무 중</span>
+										<p><strong>일정</strong>09:00 ~ 18:00 / 휴게 1시간</p>
+										<p><strong>근태</strong>09:00 ~ 근무 중</p>
+									</a>
+								</div>
+							</li>
+						</ul>
+						<!--// emplList -->
+					</div>
+					<!--// 근무 현황 -->
+					<!-- 전체근무 -->
+					<div>
+						<!-- titCal -->
+						<div class="titCal v2">
+							<a href="" class="btnPrev">이전달</a>
+							<strong>2020. 01.</strong>
+							<a href="" class="btnNext">다음달</a>
+							<p class="txtCal"><strong>기간</strong>2019. 12. 1.  ~  2019. 12. 31.</p>
+						</div>
+						<!--// titCal -->
+						<!-- listTop -->
+						<div class="listTop">
+							<ul>
+								<li><a href="">전체보기</a></li>
+								<li><a href="" class="cBlue">내 근무</a></li>
+							</ul>
+							<div class="fr">
+								<a href="">필터</a>
+							</div>
+						</div>
+						<!--// listTop -->
+						<!-- filterWrap -->
+						<div class="filterWrap">
+							<div class="searchFilter">
+								<p>근무타입 : 전체 <a href="" class="btnDel">삭제</a></p>
+								<p>지점 : 이엠룩 <a href="" class="btnDel">삭제</a></p>
+								<p>조직 : 솔루션사업팀 <a href="" class="btnDel">삭제</a></p>
+							</div>
+							<div class="listTop">
+								<p>검색 결과 : 4명</p>
+								<div class="fr">
+									<a href="">검색 초기화</a>
+								</div>
+							</div>
+						</div>
+						<!--// filterWrap -->
+						<!-- listTable -->
+						<div class="listTable">
+							<table>
+								<caption>검색 리스트</caption>
+								<colgroup>
+									<col style="width:22.5%">
+									<col span="4" style="width:auto">
+									<col style="width:14.8%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">이름</th>
+										<th scope="col">총 근무</th>
+										<th scope="col">야간</th>
+										<th scope="col">연장</th>
+										<th scope="col">무일정</th>
+										<th scope="col">&nbsp;</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">홍길동</th>
+										<td>21</td>
+										<td>03</td>
+										<td>00</td>
+										<td>02</td>
+										<td><a href="" class="btnArrow">더보기</a></td>
+									</tr>
+									<tr>
+										<th scope="row">홍길동</th>
+										<td>21</td>
+										<td>03</td>
+										<td>00</td>
+										<td>02</td>
+										<td><a href="" class="btnArrow">더보기</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!--// listTable -->
+					</div>
+					<!--// 전체근무 -->
+					<!-- 출퇴근 기록 -->
+					<div>
+						<div class="subTabWrap">
+							<ul>
+								<li class="curr"><a href="">출/퇴근 기록 보기</a></li>
+								<li><a href="">출/퇴 누락</a></li>
+							</ul>
+							<div class="subTabBox">
+								<!-- 출/퇴근 기록 보기 -->
+								<div>
+									<!-- titCal -->
+									<div class="titCal v2">
+										<a href="" class="btnPrev">이전달</a>
+										<strong>2020. 01.</strong>
+										<a href="" class="btnNext">다음달</a>
+										<p class="txtCal"><strong>기간</strong>2019. 12. 1.  ~  2019. 12. 31.</p>
+									</div>
+									<!--// titCal -->
+									<!-- listTop -->
+									<div class="listTop">
+										<ul>
+											<li><a href="">전체보기</a></li>
+											<li><a href="" class="cBlue">내 근무</a></li>
+										</ul>
+										<div class="fr">
+											<a href="">필터</a>
+										</div>
+									</div>
+									<!--// listTop -->
+									<!-- 2020-03-11 -->
+									<div class="listTable fixed">
+										<table>
+											<colgroup>
+												<col style="width:100%">
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col"><p>이름</p></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="btn-team-toggle-team">
+                            <span>홍길동</span>
+                            <div class="team-view">[이엠룩] 솔루션사업부</div>
+                          </td>
+												</tr>
+												<tr>
+													<td class="btn-team-toggle-team">
+                            <span>홍길동</span>
+                            <div class="team-view">[이엠룩] 솔루션사업부</div>
+                          </td>
+												</tr>
+											</tbody>
+										</table>
+										<div>
+											<table>
+												<colgroup>
+													<col style="width:72px">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col"><p>1(일)</p></th>
+														<th scope="col"><p>2(월)</p></th>
+														<th scope="col"><p>3(화)</p></th>
+														<th scope="col"><p>4(수)</p></th>
+														<th scope="col"><p>5(목)</p></th>
+														<th scope="col"><p>6(금)</p></th>
+														<th scope="col"><p>7(토)</p></th>
+														<th scope="col"><p>8(일)</p></th>
+														<th scope="col"><p>9(월)</p></th>
+														<th scope="col"><p>10(화)</p></th>
+														<th scope="col"><p>11(수)</p></th>
+														<th scope="col"><p>12(목)</p></th>
+														<th scope="col"><p>13(금)</p></th>
+														<th scope="col"><p>14(토)</p></th>
+														<th scope="col"><p>15(일)</p></th>
+														<th scope="col"><p>16(월)</p></th>
+														<th scope="col"><p>17(화)</p></th>
+														<th scope="col"><p>18(수)</p></th>
+														<th scope="col"><p>19(목)</p></th>
+														<th scope="col"><p>20(금)</p></th>
+														<th scope="col"><p>21(토)</p></th>
+														<th scope="col"><p>22(일)</p></th>
+														<th scope="col"><p>23(월)</p></th>
+														<th scope="col"><p>24(화)</p></th>
+														<th scope="col"><p>25(수)</p></th>
+														<th scope="col"><p>26(목)</p></th>
+														<th scope="col"><p>27(금)</p></th>
+														<th scope="col"><p>28(토)</p></th>
+														<th scope="col"><p>29(일)</p></th>
+														<th scope="col"><p>30(월)</p></th>
+														<th scope="col"><p>31(화)</p></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><p class="cBlue">09 : 00 <br /> 18 : 00<p></td>
+														<td><p class="cRed">09 : 00 <br /> 18 : 00<p></td>
+														<td><p class="cGray">휴가</p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+													</tr>
+													<tr>
+														<td><p class="cBlue">09 : 00 <br /> 18 : 00<p></td>
+														<td><p class="cRed">09 : 00 <br /> 18 : 00<p></td>
+														<td><p class="cGray">휴가</p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+														<td><p>09 : 00 <br /> 18 : 00<p></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<!--// 2020-03-11 -->
+								</div>
+								<!--// 출/퇴근 기록 보기 -->
+								<!-- 출/퇴 누락 -->
+								<div>
+									<!-- titCal -->
+									<div class="titCal v2">
+										<a href="" class="btnPrev">이전달</a>
+										<strong>2020. 01.</strong>
+										<a href="" class="btnNext">다음달</a>
+										<p class="txtCal"><strong>기간</strong>2019. 12. 1.  ~  2019. 12. 31.</p>
+									</div>
+									<!--// titCal -->
+									<!-- listTop -->
+									<div class="listTop">
+										<ul>
+											<li><a href="" class="cBlue">전체보기</a></li>
+											<li><a href="">MY</a></li>
+										</ul>
+										<div class="fr">
+											<a href="">필터</a>
+										</div>
+									</div>
+									<!--// listTop -->
+									<!-- listTable -->
+									<div class="listTable v2">
+										<table>
+											<caption>검색 리스트</caption>
+											<colgroup>
+												<col style="width:22.5%">
+												<col span="2" style="width:auto">
+												<col style="width:14.8%">
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">이름</th>
+													<th scope="col">출근 누락</th>
+													<th scope="col">퇴근 누락</th>
+													<th scope="col">&nbsp;</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th scope="row">홍길동</th>
+													<td>21</td>
+													<td>03</td>
+													<td><a href="" class="btnArrow">더보기</a></td>
+												</tr>
+												<tr>
+													<th scope="row">홍길동</th>
+													<td>21</td>
+													<td>03</td>
+													<td><a href="" class="btnArrow">더보기</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!--// listTable -->
+								</div>
+								<!--// 출/퇴 누락 -->
+							</div>
+						</div>
+					</div>
+					<!--// 출퇴근 기록 -->
+					<!-- 통계 -->
+					<div>
+						<!-- titCal -->
+						<div class="titCal v2">
+							<a href="" class="btnPrev">이전달</a>
+							<strong>2020. 01.</strong>
+							<a href="" class="btnNext">다음달</a>
+							<p class="txtCal"><strong>기간</strong>2019. 12. 1.  ~  2019. 12. 31.</p>
+						</div>
+						<!--// titCal -->
+						<!-- listTop -->
+						<div class="listTop">
+							<div class="fr">
+								<a href="">필터</a>
+							</div>
+						</div>
+						<!--// listTop -->
+						<!-- filterBox -->
+						<div class="filterBox v1">
+							<select title="필터" class="v2">
+								<option value="">전체</option>
+								<option value="">지각/결근/휴가</option>
+								<option value="">근로일수 (설정/실제/확정)</option>
+								<option value="">근로시간 (소정/실제/확정)</option>
+								<option value="">일 평균 근로 시간(확정/실제)</option>
+								<option value="">연장근로시간(확정/실제)</option>
+								<option value="">야간근로시간(확정/실제)</option>
+								<option value="">휴일근로시간(확정/실제)</option>
+								<option value="">휴가일수(소정/실제/잔여)</option>
+							</select>
+						</div>
+						<!--// filterBox -->
+						<!-- listTable -->
+						<div class="listTable v2">
+							<table>
+								<caption>검색 리스트</caption>
+								<colgroup>
+									<col style="width:22.5%">
+									<col span="2" style="width:auto">
+									<col style="width:14.8%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">이름</th>
+										<th scope="col">지각</th>
+										<th scope="col">결근</th>
+										<th scope="col">휴가</th>
+										<th scope="col">&nbsp;</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">홍길동</th>
+										<td>01</td>
+										<td>00</td>
+										<td>00</td>
+										<td><a href="" class="btnArrow">더보기</a></td>
+									</tr>
+									<tr>
+										<th scope="row">홍길동</th>
+										<td>01</td>
+										<td>00</td>
+										<td>00</td>
+										<td><a href="" class="btnArrow">더보기</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!--// listTable -->
+					</div>
+					<!--// 통계 -->
+				</div>
+			</div>
+			<!--// tabWrap -->
+
+			<!-- fixedArea -->
+			<div class="fixedArea">
+				<a href="" class="btnMore">더보기</a>
+				<ul>
+					<li><a href="">근무일정부여</a></li>
+					<li><a href="">근태기록추가</a></li>
+					<li><a href="">직원초대</a></li>
+					<li><a href="">메일 전송</a></li>
+					<li><a href="">pdf 다운</a></li>
+					<li><a href="">엑셀 다운</a></li>
+				</ul>
+			</div>
+			<!--// fixedArea -->
+		</div>
+	</div>
+	<!--// container -->
+	<!-- FixedBtn -->
+	<div id="FixedBtn">
+		<ul>
+			<li><a href="">메인</a></li>
+			<li class="curr"><a href="">근무/통계</a></li>
+			<li><a href="">계약/급여</a></li>
+			<li><a href="">요청/접수</a></li>
+			<li><a href="">관리</a></li>
+		</ul>
+	</div>
+	<!--// FixedBtn -->
+</div>
+<!--// wrap -->
+<script>
+$(".btn-team-toggle-team").click(function(){
+  $(this).children(".team-view").toggleClass("on");
+})
+</script>
+</body>
+</html>

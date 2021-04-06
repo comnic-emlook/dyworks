@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<div id="wrap">
+	<div id="container">
+		<a href="javascript:void(0)" onclick="fn_layer('layer01')" class="btn btnBlue">직원 초대 팝업버튼</a>
+
+		<!-- 직원 초대 -->
+		<div class="layer fullPop layer01">
+			<div class="inner">
+				<p class="tit">직원 초대</p>
+				<!-- popCont --> 
+				<div class="popCont v2">
+					<!-- txtBox -->
+					<div class="txtBox">
+						<strong>해당 직원을 다시 초대하시겠습니까?</strong>
+						<p>초대한 회원에게 인증코드가 발송되며<br/>발송 인증코드를 입력 후 합류가 가능합니다</p>
+					</div>
+					<div class="checkboxWrap">
+						<span class="checkbox"><input type="radio" id="chk0101" name="chk01" checked><label for="chk0101">SNS 초대</label></span>
+						<span class="checkbox"><input type="radio" id="chk0102" name="chk01"><label for="chk0102">이메일 초대</label></span>
+					</div>
+					<!--// txtBox -->
+					<div class="bgGray">
+						<div class="boxWhite">
+							<ul class="list02">
+								<li><strong>이름</strong>문제성</li>
+								<li><strong>전화번호</strong>01012345678</li>
+								<li><strong>합류코드</strong>WQEJ23ED</li>
+							</ul>
+						</div>
+					</div>
+					<!-- btnBottom -->
+					<div class="btnBottom">
+						<button class="btn btnBlue">초대하기</button>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 직원 초대 -->
+	</div>
+</div>
+<!--// wrap -->
+</body>
+</html>

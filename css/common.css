@@ -1,0 +1,81 @@
+﻿@charset "utf-8"; 
+@font-face {
+	font-family: 'Noto Sans KR'; 
+	font-style: normal; 
+	font-weight: 300; 
+	src: url(../fonts/NotoSansKR-Light.woff2) format('woff2'),
+		url(../fonts/NotoSansKR-Light.woff) format('woff'),
+		url(../fonts/NotoSansKR-Light.otf) format('opentype'); 
+}
+@font-face {
+	font-family: 'Noto Sans KR'; 
+	font-style: normal; 
+	font-weight: 400; 
+	src: url(../fonts/NotoSansKR-Regular.woff2) format('woff2'),
+		url(../fonts/NotoSansKR-Regular.woff) format('woff'),
+		url(../fonts/NotoSansKR-Regular.otf) format('opentype'); 
+}
+@font-face {
+	font-family: 'Noto Sans KR'; 
+	font-style: normal; 
+	font-weight: 500; 
+	src: url(../fonts/NotoSansKR-Medium.woff2) format('woff2'),
+		url(../fonts/NotoSansKR-Medium.woff) format('woff'),
+		url(../fonts/NotoSansKR-Medium.otf) format('opentype'); 
+}
+@font-face {
+	font-family: 'Noto Sans KR'; 
+	font-style: normal; 
+	font-weight: 700; 
+	src: url(../fonts/NotoSansKR-Bold.woff2) format('woff2'),
+		url(../fonts/NotoSansKR-Bold.woff) format('woff'),
+		url(../fonts/NotoSansKR-Bold.otf) format('opentype'); 
+}
+/* Reset */
+* {margin:0; padding:0; letter-spacing:-0.025em}
+* {-webkit-text-size-adjust:none; outline:none}
+body {margin:0; padding:0; height:100%; font-size:12px; line-height:1.0; color:#000; font-family:"Noto Sans KR", Dotum, Arial, sans-serif}
+div,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,p,form,fieldset,input,table,tr,th,td,button,textarea,select {margin:0; padding:0; -webkit-appearance:none; border-radius:0}
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary {display:block}
+h1,h2,h3,h4,h5,h6 {font-weight:normal; font-size:100%}
+ul,ol,dl,dt,dd,li {list-style:none}
+fieldset {border:none}
+img {border:0; vertical-align:middle}
+strong {font-weight:normal}
+address,em {font-style:normal}
+hr {display:none}
+table {border-collapse:collapse; width:100%}
+table, td, th {border:none}
+th {font-weight:normal}
+a {text-decoration:none; cursor:pointer; color:#000}
+a:hover,a:focus {text-decoration:none}
+caption {visibility:hidden; width:0; height:0; font-size:0; line-height:0}
+button {cursor:pointer; border:0; background-color:transparent; padding:0; margin:0; font-family:"Noto Sans KR", Dotum, Arial, sans-serif}
+button > span,button > em {position:relative; top:0; left:0}
+label {line-height:13px}
+textarea {padding:6px 10px; resize:none; border:none; border:1px solid #b5b8c7; width:100%; height:114px; font-size:14px; line-height:20px; font-family:"Noto Sans KR", Dotum, Arial, sans-serif}
+select {padding:0; border:none; border-bottom:1px solid #b5b8c7; width:100%; height:45px; font-size:14px; background:url("../images/bl-arrow.png") no-repeat right 10px center; background-size:14px auto}
+select.v2 {padding-right:15px; text-align:center; background:url("../images/bl-arrow02.png") no-repeat right center; background-size:8px auto}
+input[type=text], input[type=password], input[type=time], input[type=date], input[type=email], input[type=number], input[type=tel] {padding:0; border:none; border-bottom:1px solid #b5b8c7; width:100%; height:45px; vertical-align:middle; line-height:20px; font-size:14px; background:none; -webkit-appearance:none; -webkit-border-radius:0}
+input[type=date] {text-align:center}
+*,*:before,*:after {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box}
+
+.error {border-bottom-color:#ff3333 !important; color:#ff3333 !important}
+
+input::-webkit-input-placeholder {color:#b5b8c7}
+input:-ms-input-placeholder {color:#b5b8c7}
+textarea::-webkit-input-placeholder {color:#b5b8c7}
+textarea:-ms-input-placeholder {color:#b5b8c7}
+
+input:-moz-read-only {color:#b5b8c7}
+input:read-only {color:#b5b8c7}
+
+.time {overflow:hidden; border-bottom:1px solid #b5b8c7}
+.time > * {float:left; width:22px; text-align:center; line-height:45px; font-size:14px}
+.time input {border-bottom:none; width:calc(50% - 11px)}
+.inputList dl dd.time > input {text-align:center !important}
+
+input.error::-webkit-input-placeholder {color:#ff3333}
+input.error:-ms-input-placeholder {color:#ff3333}
+textarea.error::-webkit-input-placeholder {color:#ff3333}
+textarea.error:-ms-input-placeholder {color:#ff3333}

@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta http-equi-v="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equi-v="Content-Script-Type" content="text/javascript" />
+  <meta http-equi-v="Content-Style-Type" content="text/css" />
+  <meta http-equi-v="X-UA-Compatible" content="IE=Edge" />
+  <title>대영그룹 관리자 IA</title>
+  <link rel="stylesheet" href="css/common.css" />
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <style type="text/css">
+  body{display:block !important;overflow:auto;min-width:1600px;box-sizing:border-box}
+  *{box-sizing:border-box}
+  caption{display:none}
+  #wrap{overflow:hidden;width:100%;min-width:1024px;margin-bottom:50px}
+  #header{overflow:hidden;padding:50px;width:100%}
+  #header .tit_area{position:relative;overflow:hidden}
+  #header .tit_area h1{overflow:hidden;line-height:50px;font-size:40px}
+  #header .tit_area strong{display:block;overflow:hidden;width:169px;line-height:23px;text-align:center;font-size:15px;color:#fff;text-align:center;background:#000}
+  #header .tit_area strong:before{display:block;overflow:hidden;position:absolute;bottom:23px;left:0;content:"";width:100%;border-top:2px solid #000}
+  #header .tit_area strong span{overflow:hidden}
+  #header .intro{position:absolute;top:60px;right:50px;overflow:hidden}
+  #header .intro p{overflow:hidden;font-size:10px;line-height:15px;text-align:right}
+  #contents{position:relative;overflow:hidden;padding:0 430px 0 50px}
+  #contents iframe{position:fixed;right:50px;overflow-y:auto;border:1px solid #ccc;width:360px;height:640px;background:#fff}
+  #contents .table_style01{width:100%;max-width:100%;border-top:3px solid #f00;border-bottom:1px solid #000}
+  #contents .table_style01 table{min-width:100%;width:auto;table-layout:fixed}
+  #contents .table_style01 table thead{border-left:1px solid #444}
+  #contents .table_style01 table tr th{padding:10px;border-right:1px solid #444;font-size:13px;text-align:left;color:#fff;background:#000}
+  #contents .table_style01 table tr td{padding:10px;border-top:1px solid #eaeaea;border-right:1px solid #eaeaea;font-size:13px;text-align:left;color:#000}
+  #contents .table_style01 table tr td:first-child{border-left:1px solid #eaeaea}
+  #contents .table_style01 table tr td a{text-decoration:underline;color:#fa9999}
+  #contents .table_style01 table tr td a:visited{color:#00f}
+  #contents .table_style01 table tr.today td{border-color:#fccfcf;background:#fcf2f2}
+  #contents .table_style01 table tr.today td+td+td+td+td+td+td{color:#ff0000}
+  #contents .table_style01 table tr.depth td{border-top:1px solid #f00}
+  /* 메뉴 구분 */
+  #contents .table_style01 table tr.point td{border:1px solid #f8b9b9;background:#ffe7e7}
+  /* 중요 내용 */
+  .noneSb td{background:#f8fbc4}
+  .modi td{background:#ffd8d8}
+  .bgGray td{color:#ddd !important;background:#fafafa}
+  .bgGray td a{color:#ddd !important}
+  </style>
+  <script>
+    $(function () {
+      $(".btnIframe").click(function (e) {
+        e.preventDefault();
+        var i = $(this).attr("href");
+        $("iframe").attr("src", i);
+      });
+    })
+  </script>
+</head>
+
+<body>
+  <!-- wrap -->
+  <div id="wrap">
+    <!-- header -->
+    <header id="header">
+      <div class="tit_area">
+        <h1>대영그룹 관리자 IA :) </h1>
+        <strong>국문 <span>(Mobile)</span></strong>
+      </div>
+      <div class="intro">
+        <p>HTML5 / utf-8</p>
+        <p>Browser - Crome, Safari</p>
+      </div>
+    </header>
+    <!--// header -->
+
+    <!-- section -->
+    <section id="contents">
+      <iframe src="" frameborder="0"></iframe>
+      <!-- 메뉴 구조도 -->
+      <div class="table_style01">
+        <table summary="1depth, 2depth, 3depth, 4depth, URL, 완료날짜, 수정날짜, 진행상태, 기타사항 항목으로 구성된 IA 표입니다.">
+          <caption>대영그룹 관리자 IA</caption>
+          <colgroup>
+            <col style="width:8%" />
+            <col style="width:8%" />
+            <col style="width:8%" />
+            <col style="width:8%" />
+            <col style="width:10%" />
+            <col style="width:8%" />
+            <col style="width:8%" />
+            <col style="width:8%" />
+            <col style="width:10%" />
+            <col style="width:auto" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col">1depth</th>
+              <th scope="col">2depth</th>
+              <th scope="col">3depth</th>
+              <th scope="col">4depth</th>
+              <th scope="col">URL</th>
+              <th scope="col">미리보기</th>
+              <th scope="col">완료날짜</th>
+              <th scope="col">수정날짜</th>
+              <th scope="col">진행상태</th>
+              <th scope="col">기타사항</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>UI KIT</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><a href="html/ui-kit.html" target="_blank" title="새창으로 열기">ui-kit.html</a></td>
+              <td><a href="html/ui-kit.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>메인</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/index.html" target="_blank" title="새창으로 열기">index.html</a></td>
+              <td><a href="admin/index.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>팝업</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-pop.html" target="_blank" title="새창으로 열기">adm-pop.html</a></td>
+              <td><a href="admin/adm-pop.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="depth today">
+              <td>근무/근태/통계</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0101.html" target="_blank" title="새창으로 열기">adm-0101.html</a></td>
+              <td><a href="admin/adm-0101.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>전체근무</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0102.html" target="_blank" title="새창으로 열기">adm-0102.html</a></td>
+              <td><a href="admin/adm-0102.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>출퇴근 누락</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0109.html" target="_blank" title="새창으로 열기">adm-0109.html</a></td>
+              <td><a href="admin/adm-0109.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>퇴직 직원</td>
+              <td></td>
+              <td><a href="admin/adm-0108.html" target="_blank" title="새창으로 열기">adm-0108.html</a></td>
+              <td><a href="admin/adm-0108.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>수정하기</td>
+              <td>과거/현재</td>
+              <td><a href="admin/adm-0105.html" target="_blank" title="새창으로 열기">adm-0105.html</a></td>
+              <td><a href="admin/adm-0105.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>예정</td>
+              <td><a href="admin/adm-0106.html" target="_blank" title="새창으로 열기">adm-0106.html</a></td>
+              <td><a href="admin/adm-0106.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>근태기록추가</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0103.html" target="_blank" title="새창으로 열기">adm-0103.html</a></td>
+              <td><a href="admin/adm-0103.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>직원 전체 리스트</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0104.html" target="_blank" title="새창으로 열기">adm-0104.html</a></td>
+              <td><a href="admin/adm-0104.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>통계보고</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0107.html" target="_blank" title="새창으로 열기">adm-0107.html</a></td>
+              <td><a href="admin/adm-0107.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>팝업</td>
+              <td>검색&상세</td>
+              <td></td>
+              <td><a href="admin/adm-0101-pop.html" target="_blank" title="새창으로 열기">adm-0101-pop.html</a></td>
+              <td><a href="admin/adm-0101-pop.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>알림</td>
+              <td></td>
+              <td><a href="admin/adm-0102-pop.html" target="_blank" title="새창으로 열기">adm-0102-pop.html</a></td>
+              <td><a href="admin/adm-0102-pop.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>정보</td>
+              <td></td>
+              <td><a href="admin/adm-0103-pop.html" target="_blank" title="새창으로 열기">adm-0103-pop.html</a></td>
+              <td><a href="admin/adm-0103-pop.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="depth">
+              <td>요청/접수 관리</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0201.html" target="_blank" title="새창으로 열기">adm-0201.html</a></td>
+              <td><a href="admin/adm-0201.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>접수 상세</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0202.html" target="_blank" title="새창으로 열기">adm-0202.html</a></td>
+              <td><a href="admin/adm-0202.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>결과 내역 상세</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0203.html" target="_blank" title="새창으로 열기">adm-0203.html</a></td>
+              <td><a href="admin/adm-0203.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>반려</td>
+              <td></td>
+              <td><a href="admin/adm-0204.html" target="_blank" title="새창으로 열기">adm-0204.html</a></td>
+              <td><a href="admin/adm-0204.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="depth">
+              <td>계약/급여</td>
+              <td>유료 신청이 아닌 경우</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0301.html" target="_blank" title="새창으로 열기">adm-0301.html</a></td>
+              <td><a href="admin/adm-0301.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>권한 비 허용자 접근 시</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0302.html" target="_blank" title="새창으로 열기">adm-0302.html</a></td>
+              <td><a href="admin/adm-0302.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>미납사인경우</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0303.html" target="_blank" title="새창으로 열기">adm-0303.html</a></td>
+              <td><a href="admin/adm-0303.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>재 신청 시</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0304.html" target="_blank" title="새창으로 열기">adm-0304.html</a></td>
+              <td><a href="admin/adm-0304.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>유료메뉴</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0311.html" target="_blank" title="새창으로 열기">adm-0311.html</a></td>
+              <td><a href="admin/adm-0311.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>결제 내역</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0306.html" target="_blank" title="새창으로 열기">adm-0306.html</a></td>
+              <td><a href="admin/adm-0306.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>완료계약서</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0307.html" target="_blank" title="새창으로 열기">adm-0307.html</a></td>
+              <td><a href="admin/adm-0307.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>계약 상세</td>
+              <td></td>
+              <td><a href="admin/adm-0308.html" target="_blank" title="새창으로 열기">adm-0308.html</a></td>
+              <td><a href="admin/adm-0308.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>근로 계약 관리</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0312.html" target="_blank" title="새창으로 열기">adm-0312.html</a></td>
+              <td><a href="admin/adm-0312.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>취소 후 재 신청 시 </td>
+              <td></td>
+              <td><a href="admin/adm-0305.html" target="_blank" title="새창으로 열기">adm-0305.html</a></td>
+              <td><a href="admin/adm-0305.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>서비스 안내</td>
+              <td></td>
+              <td><a href="admin/adm-0309.html" target="_blank" title="새창으로 열기">adm-0309.html</a></td>
+              <td><a href="admin/adm-0309.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>접수완료</td>
+              <td></td>
+              <td><a href="admin/adm-0310.html" target="_blank" title="새창으로 열기">adm-0310.html</a></td>
+              <td><a href="admin/adm-0310.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>계약 상세</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0313.html" target="_blank" title="새창으로 열기">adm-0313.html</a></td>
+              <td><a href="admin/adm-0313.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>계약서 확인</td>
+              <td></td>
+              <td><a href="admin/adm-0314.html" target="_blank" title="새창으로 열기">adm-0314.html</a></td>
+              <td><a href="admin/adm-0314.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>타입별 버튼 주석처리되어 있음</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>근로계약작성</td>
+              <td>계약 종류 선택</td>
+              <td></td>
+              <td><a href="admin/adm-0315.html" target="_blank" title="새창으로 열기">adm-0315.html</a></td>
+              <td><a href="admin/adm-0315.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>계약서 확인</td>
+              <td></td>
+              <td><a href="admin/adm-0316.html" target="_blank" title="새창으로 열기">adm-0316.html</a></td>
+              <td><a href="admin/adm-0316.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>계약 직원 설정</td>
+              <td></td>
+              <td><a href="admin/adm-0317.html" target="_blank" title="새창으로 열기">adm-0317.html</a></td>
+              <td><a href="admin/adm-0317.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>계약 직원 등록</td>
+              <td><a href="admin/adm-0318.html" target="_blank" title="새창으로 열기">adm-0318.html</a></td>
+              <td><a href="admin/adm-0318.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>작성 계약 등록 목록</td>
+              <td><a href="admin/adm-0319.html" target="_blank" title="새창으로 열기">adm-0319.html</a></td>
+              <td><a href="admin/adm-0319.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>계약서 내용 편집</td>
+              <td></td>
+              <td><a href="admin/adm-0320.html" target="_blank" title="새창으로 열기">adm-0320.html</a></td>
+              <td><a href="admin/adm-0320.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>계약 직원 설정</td>
+              <td></td>
+              <td><a href="admin/adm-0321.html" target="_blank" title="새창으로 열기">adm-0321.html</a></td>
+              <td><a href="admin/adm-0321.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>최종 미리보기</td>
+              <td><a href="admin/adm-0322.html" target="_blank" title="새창으로 열기">adm-0322.html</a></td>
+              <td><a href="admin/adm-0322.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>팝업</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0301-pop.html" target="_blank" title="새창으로 열기">adm-0301-pop.html</a></td>
+              <td><a href="admin/adm-0301-pop.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="depth">
+              <td>관리</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0401.html" target="_blank" title="새창으로 열기">adm-0401.html</a></td>
+              <td><a href="admin/adm-0401.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>회사 선택</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0402.html" target="_blank" title="새창으로 열기">adm-0402.html</a></td>
+              <td><a href="admin/adm-0402.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>가입정보 관리</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0403.html" target="_blank" title="새창으로 열기">adm-0403.html</a></td>
+              <td><a href="admin/adm-0403.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>회사 생성</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0404.html" target="_blank" title="새창으로 열기">adm-0404.html</a></td>
+              <td><a href="admin/adm-0404.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>팝업</td>
+              <td><a href="admin/adm-0401-pop.html" target="_blank" title="새창으로 열기">adm-0401-pop.html</a></td>
+              <td><a href="admin/adm-0401-pop.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>지점/조직/직무 정보</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0405.html" target="_blank" title="새창으로 열기">adm-0405.html</a></td>
+              <td><a href="admin/adm-0405.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>상세 정보</td>
+              <td>지점 택</td>
+              <td><a href="admin/adm-0406.html" target="_blank" title="새창으로 열기">adm-0406.html</a></td>
+              <td><a href="admin/adm-0406.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>조직 택</td>
+              <td><a href="admin/adm-0407.html" target="_blank" title="새창으로 열기">adm-0407.html</a></td>
+              <td><a href="admin/adm-0407.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>직무 택</td>
+              <td><a href="admin/adm-0408.html" target="_blank" title="새창으로 열기">adm-0408.html</a></td>
+              <td><a href="admin/adm-0408.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>등록하기</td>
+              <td>지점 택</td>
+              <td><a href="admin/adm-0409.html" target="_blank" title="새창으로 열기">adm-0409.html</a></td>
+              <td><a href="admin/adm-0409.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>조직 택</td>
+              <td><a href="admin/adm-0410.html" target="_blank" title="새창으로 열기">adm-0410.html</a></td>
+              <td><a href="admin/adm-0410.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>직무 택</td>
+              <td><a href="admin/adm-0411.html" target="_blank" title="새창으로 열기">adm-0411.html</a></td>
+              <td><a href="admin/adm-0411.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>권역정보 설정</td>
+              <td></td>
+              <td><a href="admin/adm-0412.html" target="_blank" title="새창으로 열기">adm-0412.html</a></td>
+              <td><a href="admin/adm-0412.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>직원 관리</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0413.html" target="_blank" title="새창으로 열기">adm-0413.html</a></td>
+              <td><a href="admin/adm-0413.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>팝업</td>
+              <td><a href="admin/adm-0402-pop.html" target="_blank" title="새창으로 열기">adm-0402-pop.html</a></td>
+              <td><a href="admin/adm-0402-pop.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>상세 정보</td>
+              <td></td>
+              <td><a href="admin/adm-0414.html" target="_blank" title="새창으로 열기">adm-0414.html</a></td>
+              <td><a href="admin/adm-0414.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>비활성 직원 (퇴사자)</td>
+              <td><a href="admin/adm-0415.html" target="_blank" title="새창으로 열기">adm-0415.html</a></td>
+              <td><a href="admin/adm-0415.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>비활성 직원 (차단 직원)</td>
+              <td><a href="admin/adm-0416.html" target="_blank" title="새창으로 열기">adm-0416.html</a></td>
+              <td><a href="admin/adm-0416.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="today">
+              <td></td>
+              <td></td>
+              <td>직원 초대</td>
+              <td></td>
+              <td><a href="admin/adm-0417.html" target="_blank" title="새창으로 열기">adm-0417.html</a></td>
+              <td><a href="admin/adm-0417.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>수정날짜 주석</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1:1 초대</td>
+              <td><a href="admin/adm-0418.html" target="_blank" title="새창으로 열기">adm-0418.html</a></td>
+              <td><a href="admin/adm-0418.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>미 합류 직원</td>
+              <td><a href="admin/adm-0419.html" target="_blank" title="새창으로 열기">adm-0419.html</a></td>
+              <td><a href="admin/adm-0419.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>근무일정 생성/관리</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0420.html" target="_blank" title="새창으로 열기">adm-0420.html</a></td>
+              <td><a href="admin/adm-0420.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>근무일정 추가 생성</td>
+              <td></td>
+              <td><a href="admin/adm-0421.html" target="_blank" title="새창으로 열기">adm-0421.html</a></td>
+              <td><a href="admin/adm-0421.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>상세 정보</td>
+              <td></td>
+              <td><a href="admin/adm-0422.html" target="_blank" title="새창으로 열기">adm-0422.html</a></td>
+              <td><a href="admin/adm-0422.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>팝업</td>
+              <td><a href="admin/adm-0403-pop.html" target="_blank" title="새창으로 열기">adm-0403-pop.html</a></td>
+              <td><a href="admin/adm-0403-pop.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>직원 근무일정 부여/관리</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0423.html" target="_blank" title="새창으로 열기">adm-0423.html</a></td>
+              <td><a href="admin/adm-0423.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>상세</td>
+              <td></td>
+              <td><a href="admin/adm-0424.html" target="_blank" title="새창으로 열기">adm-0424.html</a></td>
+              <td><a href="admin/adm-0424.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>근무일정</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0425.html" target="_blank" title="새창으로 열기">adm-0425.html</a></td>
+              <td><a href="admin/adm-0425.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>선택 팝업</td>
+              <td></td>
+              <td><a href="admin/adm-0426.html" target="_blank" title="새창으로 열기">adm-0426.html</a></td>
+              <td><a href="admin/adm-0426.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>설정 그룹 완료 후</td>
+              <td></td>
+              <td><a href="admin/adm-0427.html" target="_blank" title="새창으로 열기">adm-0427.html</a></td>
+              <td><a href="admin/adm-0427.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>팝업</td>
+              <td><a href="admin/adm-0404-pop.html" target="_blank" title="새창으로 열기">adm-0404-pop.html</a></td>
+              <td><a href="admin/adm-0404-pop.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>근로 계약 관리</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0430.html" target="_blank" title="새창으로 열기">adm-0430.html</a></td>
+              <td><a href="admin/adm-0430.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>비 신청인</td>
+              <td></td>
+              <td><a href="admin/adm-0428.html" target="_blank" title="새창으로 열기">adm-0428.html</a></td>
+              <td><a href="admin/adm-0428.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>신청 회원</td>
+              <td></td>
+              <td><a href="admin/adm-0429.html" target="_blank" title="새창으로 열기">adm-0429.html</a></td>
+              <td><a href="admin/adm-0429.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>휴가 유형 생성 관리</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0431.html" target="_blank" title="새창으로 열기">adm-0431.html</a></td>
+              <td><a href="admin/adm-0431.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>등록</td>
+              <td></td>
+              <td><a href="admin/adm-0432.html" target="_blank" title="새창으로 열기">adm-0432.html</a></td>
+              <td><a href="admin/adm-0432.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>근태체크방식 관리</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0433.html" target="_blank" title="새창으로 열기">adm-0433.html</a></td>
+              <td><a href="admin/adm-0433.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>추가 등록</td>
+              <td></td>
+              <td><a href="admin/adm-0434.html" target="_blank" title="새창으로 열기">adm-0434.html</a></td>
+              <td><a href="admin/adm-0434.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>근태알림수신관리</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0435.html" target="_blank" title="새창으로 열기">adm-0435.html</a></td>
+              <td><a href="admin/adm-0435.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>앱관리</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0436.html" target="_blank" title="새창으로 열기">adm-0436.html</a></td>
+              <td><a href="admin/adm-0436.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>권한 이임하기</td>
+              <td></td>
+              <td></td>
+              <td><a href="admin/adm-0437.html" target="_blank" title="새창으로 열기">adm-0437.html</a></td>
+              <td><a href="admin/adm-0437.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>팝업</td>
+              <td></td>
+              <td><a href="admin/adm-0405-pop.html" target="_blank" title="새창으로 열기">adm-0405-pop.html</a></td>
+              <td><a href="admin/adm-0405-pop.html" class="btnIframe">미리보기</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--// 메뉴 구조도 -->
+    </section>
+    <!--// section -->
+
+  </div>
+  <!--// wrap -->
+
+</body>
+
+</html>

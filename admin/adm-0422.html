@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<div id="wrap">
+	<div id="container">
+		<a href="javascript:void(0)" onclick="fn_layer('layer01')" class="btn btnBlue">상세 정보 팝업버튼</a>
+
+		<!-- 상세 정보 -->
+		<div class="layer fullPop layer01">
+			<div class="inner">
+				<p class="tit">상세 정보</p>
+				<!-- popCont --> 
+				<div class="popCont v2">
+					<div class="bgGray">
+						<dl class="workInfo v3">
+							<dt>기본 근무</dt>
+							<dd>
+								<ul class="list02">
+									<li><strong>근무 시간</strong>09:00~18:00</li>
+									<li><strong>휴게 시간</strong>휴게시간  1시간</li>
+									<li><strong>생성일</strong>2019. 11. 11.</li>
+								</ul>
+								<p class="botInput">
+									<textarea title="수정 텍스트 입력">재택으로 설정된 경우 기본 근무제 9시간으로 인정하는 간주근무탬플릿.</textarea>
+								</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="workList02 v2">
+						<dl>
+							<dt><strong>속한 직원 정보</strong></dt>
+							<dd>
+								<ul class="emplList">
+									<li>
+										<strong>이효숙</strong>
+										<div>
+											<a href="" class="btnArrow">
+												<p>이엠룩/솔루션사업팀/직원</p>
+											</a>
+										</div>
+									</li>
+									<li>
+										<strong>이효숙</strong>
+										<div>
+											<a href="" class="btnArrow">
+												<p>이엠룩/솔루션사업팀/직원</p>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+					<!-- btnBottom -->
+					<div class="btnBottom v2">
+						<button class="btn btnWhite">삭제</button>
+						<button class="btn btnBlue">수정</button>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 상세 정보-->
+	</div>
+</div>
+<!--// wrap -->
+</body>
+</html>

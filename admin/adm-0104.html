@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>[근무 중] 직원 전체 리스트 &lt; 근무/근태/통계 &lt; 이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/swiper.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<div id="wrap">
+	<div id="container" style="padding-bottom: 20px;">
+		<a href="javascript:void(0)" onclick="fn_layer('layer01')" class="btn btnBlue">[근무 중] 직원 전체 리스트 팝업버튼</a>
+
+		<!-- [근무 중] 직원 전체 리스트 -->
+		<div class="layer fullPop layer01">
+			<div class="inner">
+				<p class="tit">[근무 중] 직원 전체 리스트</p>
+				<!-- popCont --> 
+				<div class="popCont v2">
+					<!-- listTop -->
+					<div class="listTop">
+						<p>2019.12.02.  근무 중 : 00명</p>
+						<div class="fr">
+							<ul>
+								<li><a href="">전체보기</a></li>
+								<li><a href="" class="cBlue">내 근무</a></li>
+							</ul>
+						</div>
+					</div>
+					<!--// listTop -->
+					<!-- filterBox -->
+					<div class="filterBox">
+						<select title="필터" class="v2">
+							<option value="">전체</option>
+							<option value="">지점만</option>
+							<option value="">조직만</option>
+						</select>
+						<select title="필터" class="v2">
+							<option value="">전체</option>
+							<option value="">서초지점</option>
+							<option value="">(지점명) 조직명</option>
+						</select>
+					</div>
+					<!--// filterBox -->
+					<!-- emplList -->
+					<ul class="emplList">
+						<li>
+							<strong>이효숙</strong>
+							<div>
+								<a href="" class="btnArrow">
+									<span class="label v7">근무 중</span>
+									<p><strong>일정</strong>09:00 ~ 18:00 / 휴게 1시간</p>
+									<p><strong>근태</strong>09:00 ~ 근무 중</p>
+								</a>
+								<a href="" class="btnIco01">위치저장리스트 팝업</a>
+								<a href="" class="btnIco02">기타 지역 팝업</a>
+							</div>
+						</li>
+						<li>
+							<strong>이효숙</strong>
+							<div>
+								<a href="" class="btnArrow">
+									<span class="label v7">근무 중</span>
+									<p><strong>일정</strong>09:00 ~ 18:00 / 휴게 1시간</p>
+									<p><strong>근태</strong>09:00 ~ 근무 중</p>
+								</a>
+							</div>
+						</li>
+					</ul>
+					<!--// emplList -->
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// [근무 중] 직원 전체 리스트 -->
+	</div>
+<p class="dim"></p></div>
+</body>
+</html>

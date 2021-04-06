@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>UI KIT</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+  <style>
+  .guide-wrap{margin-bottom: 30px;}
+  .guide-wrap.button button{margin-bottom: 10px;}
+  .guide-ex{color:#777;background-color:#f0f0f0;padding:10px;margin-bottom:20px;border-radius:3px;}
+  .guide-ex span{color: #5f0080;}
+  </style>
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+  <!-- wrap -->
+  <div id="wrap">
+    <!-- subHeader -->
+	<div id="subHeader">
+		<h2>제목</h2>
+		<a href="" class="btnLogout">로그아웃</a>
+		<a href="" class="btnMenu">메뉴보기</a>
+		<a href="" class="btnNotice"><span>알림</span><strong>99</strong></a>
+		<div class="utilPop">
+			<ul>
+				<li><a href="">이용안내</a></li>
+				<li><a href="">위치저장</a></li>
+			</ul>
+			<a href="" class="btnClose">닫기</a>
+		</div>
+	</div>
+	<!--// subHeader -->
+  </div>
+  <!-- wrap -->
+
+
+  <!-- container -->
+  <div id="container">
+
+    <h3>기본 버튼</h3>
+    <div class="guide-wrap button">
+      <p class="guide-ex">버튼 기본 스타일 사용 시 <span>class="btn"</span> 삽입 (너비 110px) / 버튼 너비 100% 사용 시 <span>class="wFull"</span> 추가 삽입</p>
+      <!-- 사용 -->
+      <button class="btn">기본 버튼</button>
+      <button class="btn wFull btnWhite">버튼 너비 100%</button>
+      <button class="btn wFull">버튼 너비 100%</button>
+      <!-- 사용 -->
+    </div>
+
+    <h3>상태 버튼</h3>
+    <div class="guide-wrap button">
+      <p class="guide-ex">버튼 색상 적용 시 <span>class="btn"</span>과 버튼 상태에 따라 <span>"btnPurple, btnGray, btnWhite"</span> 중 추가 삽입 / 비활성화 상태 시 <span>disabled</span> 삽입</p>
+      <!-- 사용 -->
+      <button class="btn btnPurple">저장/등록</button>
+      <button class="btn btnGray">취소/닫기</button>
+      <button class="btn btnWhite">수정/선택</button>
+      <button class="btn btnWhite" disabled>비활성화</button>
+      <!-- 사용 -->
+    </div>
+
+    <!-- 사용 -->
+    <div class="btnFixed">
+      <!-- 하단 고정 버튼 -->
+      <button class="btn btnGray">Cancle</button>
+      <button class="btn">Button</button>
+    </div>
+    <!-- 사용 -->
+
+    <h3>체크박스</h3>
+    <div class="guide-wrap">
+      <!-- 사용 -->
+      <div class="checkbox">
+        <input type="checkbox" id="chk01">
+        <label for="chk01">기본 상태</label>
+      </div>
+
+      <div class="checkbox">
+        <input type="checkbox" id="chk02" checked>
+        <label for="chk02">활성화 상태</label>
+      </div>
+      <!-- 사용 -->
+    </div>
+
+    <h3>라디오버튼</h3>
+    <div class="guide-wrap">
+      <!-- 사용 -->
+      <dd class="checkList">
+        <span>
+          <input type="radio" name="chk01" id="chk0101">
+          <label for="chk0101">예</label>
+        </span>
+        <span>
+          <input type="radio" name="chk01" id="chk0102">
+          <label for="chk0102">아니오</label>
+        </span>
+      </dd>
+      <!-- 사용 -->
+    </div>
+
+    <h3>인풋</h3>
+    <div class="guide-wrap">
+      <p class="guide-ex">기본 인풋 사용 시</p>
+      <!-- 사용 -->
+      <div class="inputBox">
+        <input type="text" title="">
+        <a href="#" class="btnTxtDel">입력 삭제</a>
+      </div>
+      <!-- 사용 -->
+
+      <br>
+
+      <p class="guide-ex">기본 인풋 placeholder 사용 / 에러 메세지 활성화 시 <span>class="is-error"</span> 삽입</p>
+      <!-- 사용 -->
+      <div class="inputBox">
+        <input type="text" title="" placeholder="내용을 입력하세요.">
+        <!-- 에러메세지 출력 -->
+        <p class="errorMessage">에러 메세지 출력</p>
+        <a href="#" class="btnTxtDel">입력 삭제</a>
+      </div>
+
+      <br>
+
+      <div class="inputBox">
+        <input type="text" class="is-error" title="" placeholder="내용을 입력하세요.">
+        <!-- 에러메세지 출력 -->
+        <p class="errorMessage">에러 메세지 출력</p>
+        <a href="#" class="btnTxtDel">입력 삭제</a>
+      </div>
+      <!-- 사용 -->
+
+      <br>
+
+      <p class="guide-ex">인풋과 버튼 사용 시</p>
+      <!-- 사용 -->
+      <div class="inputBtn">
+        <input type="text" title="" placeholder="내용을 입력하세요.">
+        <a href="#" class="btnTxtDel">입력 삭제</a>
+        <button class="btn btnPurple">기본 버튼</button>
+      </div>
+      <div class="inputBtn search">
+        <input type="text" title="" placeholder="제목을 검색하세요.">
+        <a href="#" class="btnTxtDel">입력 삭제</a>
+        <button class="btn btnPurple"></button>
+      </div>
+      <!-- 사용 -->
+
+      <br>
+
+      <p class="guide-ex">날자 인풋 사용 시</p>
+      <div class="dateWrap">
+        <input type="date" title="시작일">
+        <span>~</span>
+        <input type="date" title="종료일">
+      </div>
+      <!-- 사용 -->
+    </div>
+
+    <h3>페이징</h3>
+    <div class="guide-wrap">
+      <!-- 사용 -->
+      <div class="paging">
+        <div class="inBox">
+          <a href="">이전 페이지</a>
+          <div class="page">
+            <a href="">1</a>
+            <strong>2</strong>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+          </div>
+          <a href="">다음 페이지</a>
+        </div>
+      </div>
+      <!-- 사용 -->
+    </div>
+  </div>
+  <!-- container -->
+</body>
+
+</html>

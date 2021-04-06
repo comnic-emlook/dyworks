@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>이엠룩</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap">
+<style>
+#container > a {margin-top:20px; width:auto}
+</style>
+	<div id="container">
+		<a href="javascript:void(0)" onclick="fn_layer('layer1','300')" class="btn btnBlue">설정근로일수 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer2','300')" class="btn btnBlue">실제 총 근로일수 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer3','300')" class="btn btnBlue">확정 된 근로일수 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer4','300')" class="btn btnBlue">소정 근로시간 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer5','300')" class="btn btnBlue">실제 근로시간 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer6','300')" class="btn btnBlue">확정 근로시간 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer7','300')" class="btn btnBlue">일 평균 근로시간 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer8','300')" class="btn btnBlue">연장 근로 시간 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer9','300')" class="btn btnBlue">야간 근로 시간 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer10','300')" class="btn btnBlue">연장 근로 시간(유효한 데이터가 없음) 팝업버튼</a><br />
+		<a href="javascript:void(0)" onclick="fn_layer('layer11','300')" class="btn btnBlue">야간 근로 시간(유효한 데이터가 없음) 팝업버튼</a><br />
+
+		<!-- 설정근로일수 -->
+		<div class="layer layer1">
+			<div class="inner">
+				<p class="tit">설정근로일수</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p class="txtL">조회기간 내 근로정보에 설정 된 근로 요일 기반 사업장에서 설정한 근로일수</p>
+					<div class="boxBlue">
+						<p class="dotTxt">21일</p>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 설정근로일수 -->
+
+		<!-- 실제 총 근로일수 -->
+		<div class="layer layer2">
+			<div class="inner">
+				<p class="tit">실제 총 근로일수</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p class="txtL">조회기간 내 나의출퇴근기록일수+간주근로일수 (무일정,결근 배제)</p>
+					<div class="boxBlue">
+						<p class="dotTxt">12/2(월) 00시간00분</p>
+						<p class="dotTxt">월/일(요일) 출퇴근기록합산</p>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 실제 총 근로일수 -->
+
+		<!-- 확정 된 근로일수 -->
+		<div class="layer layer3">
+			<div class="inner">
+				<p class="tit">확정 된 근로일수</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p class="txtL">조회 기간 내 확정 지어진 근무기록 즉 출퇴근기록의 합산</p>
+					<div class="boxBlue">
+						<p class="dotTxt">12/2(월) 00시간00분</p>
+						<p class="dotTxt">월/일(요일) 출퇴근기록합산</p>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 확정 된 근로일수 -->
+
+		<!-- 소정 근로시간 -->
+		<div class="layer layer4">
+			<div class="inner">
+				<p class="tit">소정 근로시간</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p class="txtL">조회기간 내 근로 정보에 설정 된 근로일수 X 일별근로시간 (휴게시간 배제)</p>
+					<div class="boxBlue">
+						<p class="dotTxt">12/2(월) 8시간–30분=7시간</p>
+						<p class="dotTxt">12/3(화) 9시간-1시간=8시간</p>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 소정 근로시간 -->
+
+		<!-- 실제 근로시간 -->
+		<div class="layer layer5">
+			<div class="inner">
+				<p class="tit">실제 근로시간</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p class="txtL">조회기간 내 일별 출퇴근 기록 합산 + 간주 근로 시간 (휴게시간 배제)</p>
+					<div class="boxBlue">
+						<p class="dotTxt">12/2(월) 8시간–30분=7시간</p>
+						<p class="dotTxt">12/3(화) 9시간-1시간=8시간</p>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 실제 근로시간 -->
+
+		<!-- 확정 근로시간 -->
+		<div class="layer layer6">
+			<div class="inner">
+				<p class="tit">확정 근로시간</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p class="txtL">조회기간 내 확정 지어진 일별 출퇴근 기록 합산 + 간주 근로 시간 (휴게시간 배제)</p>
+					<div class="boxBlue">
+						<p class="dotTxt">12/2(월) 8시간–30분=7시간</p>
+						<p class="dotTxt">12/3(화) 9시간-1시간=8시간</p>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 확정 근로시간 -->
+
+		<!-- 일 평균 근로시간 -->
+		<div class="layer layer7">
+			<div class="inner">
+				<p class="tit">확정 근로시간</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p class="txtL">조회기간 내 설정 된 근로시간/근로일수, 실제 근로시간/실제근로일수와 확정 지어진 근로시간/근로일수</p>
+					<div class="boxBlue">
+						<strong class="v2">[설정 일 평균 근로시간]</strong>
+						<p class="dotTxt">설정근로시간/설정근로일수)</p>
+						<p>00시00분</p>
+
+						<strong class="v2">[실제 일 평균 근로시간]</strong>
+						<p class="dotTxt">실제근로시간/실제근로일수)</p>
+						<p>00시00분</p>
+
+						<strong class="v2">[확정 평균 근로시간]</strong>
+						<p class="dotTxt">확정근로시간/확정근로일수) </p>
+						<p>00시00분</p>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 일 평균 근로시간 -->
+
+		<!-- 연장 근로 시간 -->
+		<div class="layer layer8">
+			<div class="inner">
+				<p class="tit">연장 근로 시간</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p class="txtL">조회기간 내 실제 근로시간 합-소정의 근로시간 합과 확정 지어진 근로시간 합–소정의 근로 시간 합</p>
+					<div class="boxBlue">
+						<strong class="v2">[실제 연장 근로시간]</strong>
+						<p class="dotTxt">12/2(월) 8시간–30분=7시간</p>
+						<p class="dotTxt">월/일(요일) 00시간-휴게시간=0시간</p>
+
+						<strong class="v2">[확정 평균 근로시간]</strong>
+						<p class="dotTxt">12/2(월) 8시간–30분=7시간</p>
+						<p class="dotTxt">월/일(요일) 00시간-휴게시간=0시간</p>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 연장 근로 시간 -->
+
+		<!-- 야간 근로 시간 -->
+		<div class="layer layer9">
+			<div class="inner">
+				<p class="tit">야간 근로 시간</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p class="txtL">조회 기간 내 오후 10시~새벽 3시까지 근무한 근로 시간 기반 출퇴근기록 합산</p>
+					<div class="boxBlue">
+						<strong class="v2">[실제 야간 근로시간]</strong>
+						<p class="dotTxt">12/2(월) 7시간</p>
+						<p class="dotTxt">월/일(요일) 00시간</p>
+
+						<strong class="v2">[확정 야간 근로시간]</strong>
+						<p class="dotTxt">12/2(월) 7시간</p>
+						<p class="dotTxt">월/일(요일) 00시간</p>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 야간 근로 시간 -->
+
+		<!-- 연장 근로 시간(유효한 데이터가 없음) -->
+		<div class="layer layer10">
+			<div class="inner">
+				<p class="tit">연장 근로 시간</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p class="txtL">조회기간 내 실제 근로시간 합-소정의 근로시간 합과 확정 지어진 근로시간 합–소정의 근로 시간 합</p>
+					<div class="boxBlue">
+						<strong class="v2">[실제 연장 근로시간]</strong>
+						<p class="dotTxt">유효한 데이터가 없습니다.</p>
+
+						<strong class="v2">[확정 평균 근로시간]</strong>
+						<p class="dotTxt">유효한 데이터가 없습니다.</p>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 연장 근로 시간(유효한 데이터가 없음) -->
+
+		<!-- 야간 근로 시간(유효한 데이터가 없음) -->
+		<div class="layer layer11">
+			<div class="inner">
+				<p class="tit">야간 근로 시간</p>
+				<!-- popCont --> 
+				<div class="popCont notice">
+					<p class="txtL">조회기간 내 실제 근로시간 합-소정의 근로시간 합과 확정 지어진 근로시간 합–소정의 근로 시간 합</p>
+					<div class="boxBlue">
+						<strong class="v2">[실제 야간 근로시간]</strong>
+						<p class="dotTxt">유효한 데이터가 없습니다.</p>
+
+						<strong class="v2">[확정 야간 근로시간]</strong>
+						<p class="dotTxt">유효한 데이터가 없습니다.</p>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 연장 근로 시간(유효한 데이터가 없음) -->
+	</div>
+</div>
+<!--// wrap -->
+</body>
+</html>
