@@ -6,17 +6,17 @@
 .mainTop .top ul li:before {display:block; content:""; position:absolute; top:9px; left:0; width:1px; height:9px; background:#fff; opacity:0.2}
 .mainTop .top ul li a {display:block; line-height:26px; font-size:12px; font-weight:500; color:#fff; letter-spacing:-0.025em; opacity:0.2}
 .mainTop .top ul li.curr a {font-weight:400; opacity:1}
-.mainTop .top .icoGps {float:right; padding-left:19px; line-height:26px; font-size:12px; color:#fff; letter-spacing:-0.025em; background:url("../images/common/ico-gps.png") no-repeat left center; background-size:14px}
+.mainTop .top .icoGps {float:right; padding-left:19px; line-height:26px; font-size:12px; color:#fff; letter-spacing:-0.025em; background:url("/images/common/ico-gps.png") no-repeat left center; background-size:14px}
 .mainTop .todayStatus {display:inline-block; margin-bottom:15px; border-radius:50%; width:105px; line-height:105px; font-size:40px; font-weight:700; color:#000; background:#fff}
-.mainTop .btnMap {display:inline-block; padding-left:27px; line-height:18px; font-size:14px; color:#fff; background:url("../images/common/ico-map.png") no-repeat 0 center; background-size:auto 18px}
+.mainTop .btnMap {display:inline-block; padding-left:27px; line-height:18px; font-size:14px; color:#fff; background:url("/images/common/ico-map.png") no-repeat 0 center; background-size:auto 18px}
 .mainCont .cont {padding:26px 20px 30px}
 .mainCont .cont h2 {padding:0 10px; margin-bottom:6px; line-height:25px; font-size:18px; font-weight:700}
 .mainCont .cont.v1 {background:#e3e8f7}
 .mainCont .cont.v1 > p {padding:0 10px}
-.mainCont .cont.v1 > p a {display:inline-block; padding-right:16px; line-height:22px; font-size:14px; background:url("../images/common/bl-arrow.png") no-repeat right center; background-size:auto 12px}
+.mainCont .cont.v1 > p a {display:inline-block; padding-right:16px; line-height:22px; font-size:14px; background:url("/images/common/bl-arrow.png") no-repeat right center; background-size:auto 12px}
 .mainCont .cont.v1 dl {margin-top:20px; padding:14px 10px; border-radius:9px; background:#fff}
 .mainCont .cont.v1 dl dt {margin-bottom:13px; line-height:20px; font-size:14px; font-weight:700}
-.mainCont .cont.v1 dl dt .btnReset {display:block; float:right; width:15px; height:20px; text-indent:-9999px; background:url("../images/common/btn-reload.png") no-repeat center; background-size:auto 15px}
+.mainCont .cont.v1 dl dt .btnReset {display:block; float:right; width:15px; height:20px; text-indent:-9999px; background:url("/images/common/btn-reload.png") no-repeat center; background-size:auto 15px}
 .mainCont .cont.v1 dl dd {overflow:hidden; padding:0 2px; margin:-5px}
 .mainCont .cont.v1 dl dd > div {float:left; padding:5px; width:33.33333%}
 .mainCont .cont.v1 dl dd > div > * {padding:5px 7px; border:1px solid #b7bac8; border-radius:4px}
@@ -57,4 +57,4 @@
 .mainCont .cont.v2 .weekList ul li.today + li + li + li + li + li + li strong {color:#b5b8c7}
 .mainCont .cont.v2 .quickBtn {overflow:hidden; margin:25px -5px -5px}
 .mainCont .cont.v2 .quickBtn li {float:left; padding:5px; width:50%}
-.mainCont .cont.v2 .quickBtn li a {display:block; padding:0 25px 0 10px; border:1px solid #b5b8c7; border-radius:4px; line-height:39px; font-size:13px; color:#000; background:url("../images/common/bl-arrow-b.png") no-repeat right 11px center; background-size:8px auto}
+.mainCont .cont.v2 .quickBtn li a {display:block; padding:0 25px 0 10px; border:1px solid #b5b8c7; border-radius:4px; line-height:39px; font-size:13px; color:#000; background:url("/images/common/bl-arrow-b.png") no-repeat right 11px center; background-size:8px auto}
