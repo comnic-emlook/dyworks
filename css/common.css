@@ -80,3 +80,37 @@ input.error::-webkit-input-placeholder {color:#ff3333}
 input.error:-ms-input-placeholder {color:#ff3333}
 textarea.error::-webkit-input-placeholder {color:#ff3333}
 textarea.error:-ms-input-placeholder {color:#ff3333}
+
+.rounded-box { padding: 5px 7px;border: 1px solid #b7bac8;border-radius: 4px;}
+
+.border-box dl{padding:0 10px;border:1px solid #b5b8c7}
+.border-box dl + dl{margin-top:15px}
+.border-box dl dt{overflow:hidden;border-bottom:1px solid #b5b8c7;line-height:29px;font-size:12px;font-weight:700}
+.border-box dl dt span{float:right;font-weight:400}
+.border-box dl dd + dd > *{border-top:1px solid #b5b8c7}
+.border-box dl dd:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.border-box dl dd .label2{float: left;}
+.border-box dl dd .value{float: right;}
+.border-box dl dd > a{background:url("/images/bl-arrow.png") no-repeat right center;background-size:auto 16px}
+.border-box dl dd > *{display:block;position:relative;padding:10px 0}
+.border-box dl dd > * p{line-height:23px;font-size:14px}
+.border-box dl dd > * p strong{display:inline-block;margin-right:15px}
+.border-box dl dd > * p span{text-decoration:line-through}
+.border-box dl dd > * .label{margin:5px 0 3px}
+.border-box dl dd > * > strong{position:absolute;top:10px;right:10px;line-height:23px;font-size:12px;font-weight:700}
+
+.box-info {padding: 15px 0px;font-size: 15px;}
+
+.lavel-value-wrap .value{
+  float: right;
+}
+
+.txt-1{font-size: 2rem;}
+.txt-2{font-size: 1.5rem;}
+.txt-3{font-size: 1rem;}
+.txt-4{font-size: 0.8rem;}
+.txt-5{font-size: 0.5rem;}
