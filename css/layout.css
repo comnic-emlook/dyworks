@@ -42,7 +42,8 @@ a.btnMenu {right:0; width:43px; background:url("/images/common/btn-menu.png") no
 /* 하단 퀵버튼 */
 #FixedBtn {position:fixed; bottom:0; left:0; z-index:100; border-top:2px solid #0f4a8c; width:100%; background:#fff}
 #FixedBtn ul {overflow:hidden; text-align:center}
-#FixedBtn ul li {float:left; width:20%}
+#FixedBtn ul li {float:left; width:25%}
+#FixedBtn ul.admin li {float:left; width:20%}
 #FixedBtn ul li a {display:block; padding-top:41px; height:68px; line-height:15px; font-size:12px; font-weight:500; color:#666; background-size:22px !important}
 #FixedBtn ul li:nth-child(1) a {background:url("/images/common/ico01.png") no-repeat center 15px}
 #FixedBtn ul li:nth-child(2) a {background:url("/images/common/ico02.png") no-repeat center 15px}
