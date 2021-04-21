@@ -103,7 +103,7 @@ textarea.error:-ms-input-placeholder {color:#ff3333}
 .border-box dl dd > * .label{margin:5px 0 3px}
 .border-box dl dd > * > strong{position:absolute;top:10px;right:10px;line-height:23px;font-size:12px;font-weight:700}
 
-.box-info {padding: 15px 0px;font-size: 15px;}
+.box-info {padding: 10px 0px;font-size: 1rem;}
 
 .lavel-value-wrap .value{
   float: right;

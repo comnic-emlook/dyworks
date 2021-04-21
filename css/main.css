@@ -13,10 +13,10 @@
 .mainCont .cont .main-content-top{padding: 20px;}
 .mainCont .cont .main-content-top .txt-msg-1{font-size: 12px;color: #777;}
 .mainCont .cont .main-content-top .main-top-name-wrapper{
-  font-size: 23px;
+  font-size: 2rem;
   color: #000; 
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 3px;
   /* border-bottom:1px solid #aaa; */
 }
 .mainCont .cont .main-content-top .main-top-name-wrapper .main-top-name{font-weight: 800;}
