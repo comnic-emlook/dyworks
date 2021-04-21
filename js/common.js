@@ -73,14 +73,16 @@ function fn_add_list(obj){
 	$(".addList").append('<li><input type="text" title="요청할 자료 명 입력" placeholder="요청한 자료 명 입력1(예:통장사본)"><a href="javascript:void(0)" class="btnDel" onclick="fn_list_del(this)">삭제</a></li>');
 }
 
-/*
+
 // 그래프
 function graph(){
-	var graph = $(".graph"),
-		text = graph.find("em").text(), // 근무시간 값
-		value = text*1.923076923076923; // 근무시간 값을 100%로 환산
+	var graph = $(".graph");
+	var weekHour = graph.find("strong").text().replace(/[^0-9]/g, ''); // 주당 근로시간 값
+	var text = graph.find("em").text().replace(/[^0-9]/g, ''); // 근무시간 값
+	var value = text*(100/weekHour);//1.923076923076923; // 근무시간 값을 100%로 환산
 	graph.find("em").css({left:value+"%"}); // 근무시간 위치 이동
 	graph.find("p").css({width:value+"%"}); // 그래프 width % 체크
+	graph.find("p").text(Math.round(value) + '%');
 }
 
 $(window).load(function(){
@@ -89,9 +91,9 @@ $(window).load(function(){
 
 	setInterval(function(){
 		graph();
-	},1000); // 1초마다 시간 체크
+	}, 3000); // 1초마다 시간 체크
 })
-*/
+
 $(function(){
 	/* >>>>>>>>>> 공통 <<<<<<<<<<  */
 
