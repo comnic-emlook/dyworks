@@ -80,7 +80,14 @@
 .mainCont .cont.v2 .quickBtn li a {display:block; padding:0 25px 0 10px; border:1px solid #b5b8c7; border-radius:4px; line-height:39px; font-size:13px; color:#000; background:url("/images/common/bl-arrow-b.png") no-repeat right 11px center; background-size:8px auto}
 
 .layer.main-map .popCont .map{
-  height: 300px;
+  height: 200px;
   background-color: #0f4a8c;
   margin-top: 10px;
+}
+
+.layer.main-map .popCont .share-memo {
+  margin-top: 10px;
+}
+.layer.main-map .popCont .share-memo textarea {
+  height: 80px;
 }
