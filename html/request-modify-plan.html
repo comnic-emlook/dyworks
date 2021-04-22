@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>대양그룹</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="/css/style.css" />
+	<script src="/js/jquery-1.10.2.min.js"></script>
+	<script src="/js/swiper.js"></script>
+	<script src="/js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap" class="main">
+	<!-- subHeader -->
+	<div id="subHeader">
+		<h2>일정 수정 요청</h2>
+		<a href="" class="btnBack">이전 페이지</a>
+	</div>
+	<!--// subHeader -->
+
+	<!-- container -->
+	<div id="container">
+		<!-- mainCont -->
+		<div class="mainCont request-modify-plan">
+			<div class="cont v2">
+				<div class="plan-info">
+					<ul class="box-list">
+						<li class="border-box">
+							<dl class="">
+								<dt class="text-center">
+									2021-04-01(월)
+								</dt>
+								<dd>
+									<div class="label-value-wrap">
+										일정 타입
+										<span class="value">간주(재택근무)</span>
+									</div>
+									<div class="label-value-wrap">
+										근무 시간
+										<span class="value">09:00 ~ 18:00 휴게 60분</span>
+									</div>
+									<div class="label-value-wrap">
+										춘근 시간
+										<span class="value">09:00</span>
+									</div>
+									<div class="label-value-wrap">
+										퇴근 시간
+										<span class="value">18:00</span>
+									</div>
+								</dd>
+								<dd>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+
+				<div class="request-info">
+					<ul class="box-list">
+						<li class="border-box">
+							<dl class="">
+								<dt>
+									요청 내용
+								</dt>
+								<dd>
+									<div class="form-wrap">
+										요청 일정 타입
+										<div>
+											<select class="v2" title="선택">
+												 <option value="">선택하세요.</option>
+												 <option value="">선택하세요.</option>
+											 </select>
+										 </div>			
+									</div>
+									<div class="form-wrap">
+										요청 출근 시간
+										<div class="select-2-container">
+											<select class="v2" name="hour" title="선택">
+												 <option value="">시간을 선택하세요.</option>
+												 <option value="0">0시</option>
+												 <option value="1">1시</option>
+												 <option value="2">2시</option>
+												 <option value="3">3시</option>
+												 <option value="4">4시</option>
+												 <option value="5">5시</option>
+												 <option value="6">6시</option>
+												 <option value="7">7시</option>
+												 <option value="8">8시</option>
+												 <option value="9">9시</option>
+												 <option value="10">10시</option>
+												 <option value="11">11시</option>
+												 <option value="12">12시</option>
+												 <option value="13">13시</option>
+												 <option value="14">14시</option>
+												 <option value="15">15시</option>
+												 <option value="16">16시</option>
+												 <option value="17">17시</option>
+												 <option value="18">18시</option>
+												 <option value="19">19시</option>
+												 <option value="20">20시</option>
+												 <option value="21">21시</option>
+												 <option value="22">22시</option>
+												 <option value="23">23시</option>
+											</select>
+											<select class="v2" name="minute" title="선택">
+												<option value="">분을 선택하세요.</option>
+												<option value="0">00분</option>
+												<option value="1">01분</option>
+												<option value="2">02분</option>
+												<option value="3">03분</option>
+											</select>
+										 </div>			
+
+									</div>
+									<div class="form-wrap">
+										요청 퇴근 시간
+										<div class="select-2-container">
+											<select class="v2" name="hour" title="선택">
+												 <option value="">시간을 선택하세요.</option>
+												 <option value="0">0시</option>
+												 <option value="1">1시</option>
+												 <option value="2">2시</option>
+												 <option value="3">3시</option>
+												 <option value="4">4시</option>
+												 <option value="5">5시</option>
+												 <option value="6">6시</option>
+												 <option value="7">7시</option>
+												 <option value="8">8시</option>
+												 <option value="9">9시</option>
+												 <option value="10">10시</option>
+												 <option value="11">11시</option>
+												 <option value="12">12시</option>
+												 <option value="13">13시</option>
+												 <option value="14">14시</option>
+												 <option value="15">15시</option>
+												 <option value="16">16시</option>
+												 <option value="17">17시</option>
+												 <option value="18">18시</option>
+												 <option value="19">19시</option>
+												 <option value="20">20시</option>
+												 <option value="21">21시</option>
+												 <option value="22">22시</option>
+												 <option value="23">23시</option>
+											</select>
+											<select class="v2" name="minute" title="선택">
+												<option value="">분을 선택하세요.</option>
+												<option value="0">00분</option>
+												<option value="1">01분</option>
+												<option value="2">02분</option>
+												<option value="3">03분</option>
+											</select>
+										 </div>			
+
+									</div>
+									<div class="form-wrap">
+										무급휴게 시간(분)
+										<div>
+											<select class="v2" title="선택">
+												<option value="">분을 선택하세요.</option>
+												<option value="10">10분</option>
+												<option value="20">20분</option>
+												<option value="30">30분</option>
+												<option value="40">40분</option>
+												<option value="50">50분</option>
+												<option value="60">60분</option>
+											 </select>
+										 </div>			
+									</div>
+									<div class="form-wrap">
+										요청 사유
+										<div class="mt-10">
+											<textarea name="" placeholder="요청 사유를 입력해 주세요!"></textarea>
+										</div>			
+									</div>
+									<div class="notice">
+										<p class="tit">안내</p>
+										<p>1. Lorem ipsum dolor sit amet</p>
+										<p>2. Consectetur adipiscing elit</p>
+										<p>3. Lorem ipsum dolor sit amet</p>
+										<p>4. Lorem ipsum dolor sit amet</p>
+										<p>5. Lorem ipsum dolor sit amet</p>
+									</div>
+		
+								</dd>
+								<dd>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+		<!--// mainCont -->
+	</div>
+	<!--// container -->
+</div>
+<!--// wrap -->
+</body>
+</html>

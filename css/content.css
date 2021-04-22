@@ -328,11 +328,23 @@
 .termsArea > dl > dd table td{font-size:12px}
 
 /* 일정/근태 */
-.mainCont.plan-month{}
 .mainCont.plan-month .search-result{ margin-top: 30px;}
 .mainCont.plan-month .search-result p.tit{ font-weight: 400; font-size: 1.1rem; }
 .mainCont.plan-month .search-result ul.box-list li + li{margin-top: 15px;}
 
+/* 일정 수정 요청 */
+.mainCont.request-modify-plan .request-info{margin-top: 20px;}
+.mainCont.request-modify-plan .request-info .select-2-container:after{content: "";display: block;clear: both;}
+.mainCont.request-modify-plan .request-info .select-2-container select{
+  width: 45%;
+}
+.mainCont.request-modify-plan .request-info .select-2-container select:first-child{
+  float: left;
+}
+.mainCont.request-modify-plan .request-info .select-2-container select:last-child{
+  float: right;
+}
+.mainCont.request-modify-plan .request-info .notice .tit{border-bottom: 1px solid #b5b8c7;}
 
 .todayView{padding:15px 10px 10px;box-shadow:0 3px 3px rgba(0,0,0,0.16);background:#fff}
 .todayView dl dt{margin-bottom:10px;line-height:20px;font-size:16px;color:#0f4a8c}
