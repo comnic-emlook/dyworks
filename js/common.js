@@ -118,6 +118,33 @@ $(function(){
 		});
 	});
 
+	// 탑 메뉴 열기
+
+	//컨텍스트 메뉴
+	$(".btn-context-menu").click(function(e){
+		e.preventDefault();
+
+		$('.context-menu').fadeOut(200);	//다른 창을 먼저 닫는다.
+
+		var contextMenu = $('.context-menu', $(e.target).parent());
+		contextMenu.fadeIn(200);
+		contextMenu.find(".btnClose").click(function(e){
+			e.preventDefault();
+			$(e.target).parent().fadeOut(200);
+		});
+	});
+
+	$('#floatMenu').click(function(e){
+		var isShow = $('#floatMenu .float-menu').hasClass('show');
+		if(isShow){
+			$('#floatMenu .float-menu').removeClass('show');
+			$('#floatMenu .float-menu').addClass('hide');
+		}else{
+			$('#floatMenu .float-menu').removeClass('hide');
+			$('#floatMenu .float-menu').addClass('show');
+		}
+	});
+
 	// 탭
 	var tabWrap = $(".tabWrap");
 	tabWrap.each(function(){

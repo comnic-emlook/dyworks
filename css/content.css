@@ -326,7 +326,14 @@
 .termsArea > dl > dd table th:first-child,.termsArea > dl > dd table td:first-child{border-left:none}
 .termsArea > dl > dd table th{text-align:center;font-size:13px;color:#000;background:#f0f8ff}
 .termsArea > dl > dd table td{font-size:12px}
-/* 근무/근태/통계 */
+
+/* 일정/근태 */
+.mainCont.plan-month{}
+.mainCont.plan-month .search-result{ margin-top: 30px;}
+.mainCont.plan-month .search-result p.tit{ font-weight: 400; font-size: 1.1rem; }
+.mainCont.plan-month .search-result ul.box-list li + li{margin-top: 15px;}
+
+
 .todayView{padding:15px 10px 10px;box-shadow:0 3px 3px rgba(0,0,0,0.16);background:#fff}
 .todayView dl dt{margin-bottom:10px;line-height:20px;font-size:16px;color:#0f4a8c}
 .todayView dl dt span{margin-left:6px;vertical-align:top}
@@ -335,6 +342,8 @@
 a.todayView{background:#fff url("/images/bl-arrow.png") no-repeat right 10px center;background-size:auto 16px}
 .titCal{position:relative;z-index:1;text-align:center}
 .titCal *{vertical-align:top}
+.titCal.middle *{vertical-align:middle}
+.titCal input[type=month]{border: none; font-size: 18px; color: #0f4a8c;}
 .titCal a{display:inline-block;overflow:hidden;width:50px;height:50px;text-indent:-9999px;background-size:8px auto !important}
 .titCal a.btnPrev{background:url("/images/btn-prev.png") no-repeat center}
 .titCal a.btnNext{background:url("/images/btn-next.png") no-repeat center}

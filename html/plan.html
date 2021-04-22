@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>대양그룹</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="/css/style.css" />
+	<script src="/js/jquery-1.10.2.min.js"></script>
+	<script src="/js/swiper.js"></script>
+	<script src="/js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap" class="main">
+	<!-- subHeader -->
+	<div id="subHeader">
+		<h2>일정/근태</h2>
+		<a href="" class="btnBack">이전 페이지</a>
+	</div>
+	<!--// subHeader -->
+
+	<!-- container -->
+	<div id="container">
+		<!-- mainCont -->
+		<div class="mainCont plan-month">
+			<div class="cont v2">
+				<!-- 상단 필터링(년월, 종류) -->
+				<div class="border-box">
+							<!-- titCal -->
+							<div class="titCal">
+								<a href="#" class="btnPrev">이전달</a>
+								<strong>2021. 04.</strong>
+								<a href="#" class="btnNext">다음달</a>
+							</div>
+							<div class="titCal middle">
+								<a href="#" class="btnPrev">이전달</a>
+								<input type="month" value="2021-04">
+								<a href="#" class="btnNext">다음달</a>
+							</div>
+							<div class="text-center">
+								<select class="v3" title="선택">
+									 <option value="">전체</option>
+									 <option value="">누락</option>
+									 <option value="">정상</option>
+									 <option value="">근무중</option>
+									 <option value="">무일정</option>
+									 <option value="">지각</option>
+									 <option value="">조퇴</option>
+									 <option value="">결근</option>
+									 <option value="">휴가</option>
+								 </select>
+							 </div>
+				 
+							<!--// titCal -->
+				</div>
+				<!--// 상단 필터링(년월, 종류) -->
+
+				<!-- 검색 결과 -->
+				<div class="search-result">
+					<p class="tit">조회 결과 13건</p>
+					<ul class="box-list">
+						<li class="border-box">
+							<dl class="">
+								<dt>
+									04.01(월)
+									<span class="align-right">
+										<a href="#" class="btn-context-menu">메뉴보기</a>
+										<div class="context-menu">
+											<ul>
+												<li><a href="">일정 수정 요청</a></li>
+												<li><a href="">근태기록 수정 요청</a></li>
+											</ul>
+											<a href="" class="btnClose">닫기</a>
+										</div>								
+									</span>
+								</dt>
+								<dd>
+									<div class="label-value-wrap">
+										일정 타입
+										<span class="value">일반</span>
+									</div>
+									<div class="label-value-wrap">
+										근무 시간
+										<span class="value">09:00 ~ 18:00 휴게 60분</span>
+									</div>
+									<div class="label-value-wrap">
+										춘근 시간
+										<span class="value">09:00</span>
+									</div>
+									<div class="label-value-wrap">
+										퇴근 시간
+										<span class="value text-red">누락</span>
+									</div>
+								</dd>
+								<dd>
+								</dd>
+							</dl>
+						</li>
+
+						<li class="border-box">
+							<dl class="">
+								<dt>
+									04.01(월)
+									<span class="align-right">
+										<a href="#" class="btn-context-menu">메뉴보기</a>
+										<div class="context-menu">
+											<ul>
+												<li><a href="">일정 수정 요청</a></li>
+												<li><a href="">근태기록 수정 요청</a></li>
+											</ul>
+											<a href="" class="btnClose">닫기</a>
+										</div>								
+									</span>
+								</dt>
+								<dd>
+									<div class="label-value-wrap">
+										일정 타입
+										<span class="value">일반</span>
+									</div>
+									<div class="label-value-wrap">
+										근무 시간
+										<span class="value">09:00 ~ 18:00 휴게 60분</span>
+									</div>
+									<div class="label-value-wrap">
+										춘근 시간
+										<span class="value">09:00</span>
+									</div>
+									<div class="label-value-wrap">
+										퇴근 시간
+										<span class="value text-red">누락</span>
+									</div>
+								</dd>
+								<dd>
+								</dd>
+							</dl>
+						</li>
+
+						<li class="border-box">
+							<dl class="">
+								<dt>
+									04.01(월)
+									<span class="align-right">
+										<a href="#" class="btn-context-menu">메뉴보기</a>
+										<div class="context-menu">
+											<ul>
+												<li><a href="">일정 수정 요청</a></li>
+												<li><a href="">근태기록 수정 요청</a></li>
+											</ul>
+											<a href="" class="btnClose">닫기</a>
+										</div>								
+									</span>
+								</dt>
+								<dd>
+									<div class="label-value-wrap">
+										일정 타입
+										<span class="value">반차</span>
+									</div>
+								</dd>
+								<dd>
+								</dd>
+							</dl>
+						</li>
+
+						<li class="border-box">
+							<dl class="">
+								<dt>
+									04.01(월)
+									<span class="align-right">
+										<a href="#" class="btn-context-menu">메뉴보기</a>
+										<div class="context-menu">
+											<ul>
+												<li><a href="">일정 수정 요청</a></li>
+												<li><a href="">근태기록 수정 요청</a></li>
+											</ul>
+											<a href="" class="btnClose">닫기</a>
+										</div>								
+									</span>
+								</dt>
+								<dd>
+									<div class="label-value-wrap">
+										일정 타입
+										<span class="value">일반</span>
+									</div>
+									<div class="label-value-wrap">
+										근무 시간
+										<span class="value">09:00 ~ 18:00 휴게 60분</span>
+									</div>
+									<div class="label-value-wrap">
+										춘근 시간
+										<span class="value">09:00</span>
+									</div>
+									<div class="label-value-wrap">
+										퇴근 시간
+										<span class="value">18:00</span>
+									</div>
+								</dd>
+								<dd>
+								</dd>
+							</dl>
+						</li>
+
+					</ul>
+				</div>
+				<!-- 검색 결과 -->
+
+			</div>
+		</div>
+		<!--// mainCont -->
+	</div>
+	<!--// container -->
+
+	<!-- FixedBtn -->
+	<div id="FixedBtn">
+		<ul class="admin"><!-- 관리자의 경우 class="admin" 추가, 사용사는 class를 지운다. -->
+			<li class="curr"><a href="">홈</a></li>
+			<li><a href="">일정/근태</a></li>
+			<li><a href="">요청현황</a></li>
+			<li><a href="">요청/접수</a></li>
+			<li><a href="">관리</a></li><!-- 관리자 -->
+		</ul>
+	</div>
+	<!--// FixedBtn -->
+
+<!-- floating menu --> 
+<div id="floatMenu"> 
+	<a href="javascript:void(0)" onclick=""><img src="/images/ico-plus.png" width="70"></a>
+	<ul class="float-menu hide"> 
+		<li><a href="#">일정 추가 요청</a></li> 
+		<li><a href="#">휴가 신청</a></li>
+	</ul> 
+</div> <!-- //floatMenu -->
+	
+</div>
+<!--// wrap -->
+</body>
+</html>
