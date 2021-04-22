@@ -56,6 +56,7 @@ label {line-height:13px}
 textarea {padding:6px 10px; resize:none; border:none; border:1px solid #b5b8c7; width:100%; height:114px; font-size:14px; line-height:20px; font-family:"Noto Sans KR", Dotum, Arial, sans-serif}
 select {padding:0; border:none; border-bottom:1px solid #b5b8c7; width:100%; height:45px; font-size:14px; background:url("/images/bl-arrow.png") no-repeat right 10px center; background-size:14px auto}
 select.v2 {padding-right:15px; text-align:center; background:url("/images/bl-arrow02.png") no-repeat right center; background-size:8px auto}
+select.v3 {padding:0 10px; text-align:center; background:url("/images/bl-arrow02.png") no-repeat; background-position: right 10px center; background-size:8px auto; width: 70%; border: 1px solid #b5b8c7;}
 input[type=text], input[type=password], input[type=time], input[type=date], input[type=email], input[type=number], input[type=tel] {padding:0; border:none; border-bottom:1px solid #b5b8c7; width:100%; height:45px; vertical-align:middle; line-height:20px; font-size:14px; background:none; -webkit-appearance:none; -webkit-border-radius:0}
 input[type=date] {text-align:center}
 *,*:before,*:after {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box}
@@ -81,18 +82,17 @@ input.error:-ms-input-placeholder {color:#ff3333}
 textarea.error::-webkit-input-placeholder {color:#ff3333}
 textarea.error:-ms-input-placeholder {color:#ff3333}
 
+.text-center{text-align:center;}
+
 .rounded-box { padding: 5px 7px;border: 1px solid #b7bac8;border-radius: 4px;}
 
-.border-box dl{padding:0 10px;border:1px solid #b5b8c7}
+.border-box {border:1px solid #b5b8c7; padding: 10px}
+.border-box dl{padding:0 10px;}
 .border-box dl + dl{margin-top:15px}
 .border-box dl dt{overflow:hidden;border-bottom:1px solid #b5b8c7;line-height:29px;font-size:12px;font-weight:700}
 .border-box dl dt span{float:right;font-weight:400}
 .border-box dl dd + dd > *{border-top:1px solid #b5b8c7}
-.border-box dl dd:after{
-	content: "";
-	display: block;
-	clear: both;
-}
+.border-box dl dd:after{content: "";display: block;clear: both;}
 .border-box dl dd .label2{float: left;}
 .border-box dl dd .value{float: right;}
 .border-box dl dd > a{background:url("/images/bl-arrow.png") no-repeat right center;background-size:auto 16px}
@@ -109,8 +109,31 @@ textarea.error:-ms-input-placeholder {color:#ff3333}
   float: right;
 }
 
-.txt-1{font-size: 2rem;}
-.txt-2{font-size: 1.5rem;}
-.txt-3{font-size: 1rem;}
-.txt-4{font-size: 0.8rem;}
-.txt-5{font-size: 0.5rem;}
+.text-1{font-size: 2rem;}
+.text-2{font-size: 1.5rem;}
+.text-3{font-size: 1rem;}
+.text-4{font-size: 0.8rem;}
+.text-5{font-size: 0.5rem;}
+
+.text-red{color:#ff3333}
+
+a.btn-context-menu {display: block;width:43px;position:relative;top:-3px;right:-15px;text-indent: -9999px; background:url("/images/common/btn-menu-b.png") no-repeat center;background-size:15px auto !important}
+.context-menu {display:none; position:absolute; right:50px; z-index:100; padding: 10px 22px 10px 11px; border:1px solid #0f4a8c; width:130px; text-align:left; background:#fff}
+.context-menu:before {display:block; content:""; position:absolute; top:-9px; right:-1px; width:8px; height:9px; background:url("/images/bg-arrow.png") no-repeat center; background-size:100%}
+.context-menu ul li a {display:block; line-height:25px; font-size:12px}
+/* .context-menu ul li + li {border-top:1px solid #b5b8c7} */
+.context-menu .btnClose {display:block; position:absolute; top:3px; right:0; width:23px; height:23px; text-indent:-9999px; background:url("/images/btn-del02.png") no-repeat center; background-size:11px}
+
+#floatMenu{
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+}
+#floatMenu .float-menu{
+	position: fixed;
+  bottom: 150px;
+  right: 30px;
+	z-index:100; padding: 10px 22px 10px 11px; border:1px solid #ccc; width:130px; text-align:left; background:#fff;
+}
+#floatMenu ul.float-menu li a{line-height:25px; font-size:12px}
+.hide{display:none;}
