@@ -109,7 +109,8 @@ textarea.error:-ms-input-placeholder {color:#ff3333}
   float: right;
 }
 
-.mt-10{margin-top: 10px;}
+.mt-0{margin-top: 0px !important;}
+.mt-10{margin-top: 10px !important;}
 
 .text-1{font-size: 2rem;}
 .text-2{font-size: 1.5rem;}
