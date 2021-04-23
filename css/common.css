@@ -140,3 +140,7 @@ a.btn-context-menu {display: block;width:43px;position:relative;top:-3px;right:-
 }
 #floatMenu ul.float-menu li a{line-height:25px; font-size:12px}
 .hide{display:none;}
+
+input.error{
+	border-bottom: 1px solid #f00 impo !important;
+}
