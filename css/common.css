@@ -86,7 +86,7 @@ textarea.error:-ms-input-placeholder {color:#ff3333}
 
 .rounded-box { padding: 5px 7px;border: 1px solid #b7bac8;border-radius: 4px;}
 
-.border-box {border:1px solid #b5b8c7; padding: 10px}
+.border-box {border:1px solid #b5b8c7; padding: 10px;border-radius: 5px;}
 .border-box dl{padding:0 10px;}
 .border-box dl + dl{margin-top:15px}
 .border-box dl dt{overflow:hidden;border-bottom:1px solid #b5b8c7;line-height:29px;font-size:12px;font-weight:700}
