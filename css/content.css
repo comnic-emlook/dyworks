@@ -271,13 +271,14 @@
 .loginTit{padding:20px 0 40px;text-align:center}
 .loginTit .logo{display:inline-block;width:78px}
 .loginTit .logo img{width:100%}
-.loginTit strong{display:block;margin-top:12px;line-height:20px;font-size:15px}
-.logBtnArea{margin-top:26px;text-align:center}
-.logBtnArea p + p{margin-top:10px}
-.logBtnArea p a{display:inline-block;line-height:20px;font-size:14px;letter-spacing:-0.025em}
-.logUtil{padding-bottom:5px;width:100%;text-align:center;background:#fff}
-.logUtil a{display:inline-block;margin:0 6px;line-height:20px;font-size:12px;color:#7f828a;letter-spacing:-0.025em}
-.logUtil{position:fixed;bottom:20px;left:0;width:100%}
+.loginTit strong{display:block;margin-top:12px;line-height:20px;font-size:25px;font-weight: 700;color: #073d76;}
+.copyright{
+  position: fixed;
+  bottom: 30px;
+  width: 100%;
+  font-size: 13px;
+  color: #999;
+}
 @media screen and (max-width:350px){.loginTit{padding-bottom:20px}
 .logBtnArea{margin-top:15px}
 }
