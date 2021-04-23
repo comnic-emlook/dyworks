@@ -345,6 +345,8 @@
   float: right;
 }
 .mainCont.request-modify-plan .request-info .notice .tit{border-bottom: 1px solid #b5b8c7;}
+.mainCont.request-modify-plan .request-info .notice ol{padding-top: 10px; padding-left: 15px;}
+.mainCont.request-modify-plan .request-info .notice ol li{list-style: decimal;line-height: 15px;}
 
 .todayView{padding:15px 10px 10px;box-shadow:0 3px 3px rgba(0,0,0,0.16);background:#fff}
 .todayView dl dt{margin-bottom:10px;line-height:20px;font-size:16px;color:#0f4a8c}
