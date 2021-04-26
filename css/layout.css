@@ -48,8 +48,7 @@ a.btnMenu {right:0; width:43px; background:url("/images/common/btn-menu.png") no
 #FixedBtn ul li:nth-child(1) a {background:url("/images/common/ico01.png") no-repeat center 15px}
 #FixedBtn ul li:nth-child(2) a {background:url("/images/common/ico02.png") no-repeat center 15px}
 #FixedBtn ul li:nth-child(3) a {background:url("/images/common/ico03.png") no-repeat center 15px}
-#FixedBtn ul li:nth-child(4) a {background:url("/images/common/ico04.png") no-repeat center 15px}
-#FixedBtn ul li:nth-child(5) a {background:url("/images/common/ico05.png") no-repeat center 15px}
+#FixedBtn ul li:nth-child(4) a {background:url("/images/common/ico05.png") no-repeat center 15px}
 #FixedBtn ul li:active a,
 #FixedBtn ul li.curr a {color:#0f4a8c}
 #FixedBtn ul li:nth-child(1):active a,
@@ -59,6 +58,4 @@ a.btnMenu {right:0; width:43px; background:url("/images/common/btn-menu.png") no
 #FixedBtn ul li:nth-child(3):active a,
 #FixedBtn ul li:nth-child(3).curr a {background:url("/images/common/ico03-on.png") no-repeat center 15px}
 #FixedBtn ul li:nth-child(4):active a,
-#FixedBtn ul li:nth-child(4).curr a {background:url("/images/common/ico04-on.png") no-repeat center 15px}
-#FixedBtn ul li:nth-child(5):active a,
-#FixedBtn ul li:nth-child(5).curr a {background:url("/images/common/ico05-on.png") no-repeat center 15px}
+#FixedBtn ul li:nth-child(4).curr a {background:url("/images/common/ico05-on.png") no-repeat center 15px}
