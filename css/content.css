@@ -330,26 +330,6 @@
 .termsArea > dl > dd table th{text-align:center;font-size:13px;color:#000;background:#f0f8ff}
 .termsArea > dl > dd table td{font-size:12px}
 
-/* 일정/근태 */
-.mainCont.plan-month .search-result{ margin-top: 30px;}
-.mainCont.plan-month .search-result p.tit{ font-weight: 400; font-size: 1.1rem; }
-.mainCont.plan-month .search-result ul.box-list li + li{margin-top: 15px;}
-
-/* 일정 수정 요청 */
-.mainCont.request-modify-plan .request-info{margin-top: 20px;}
-.mainCont.request-modify-plan .request-info .select-2-container:after{content: "";display: block;clear: both;}
-.mainCont.request-modify-plan .request-info .select-2-container select{
-  width: 45%;
-}
-.mainCont.request-modify-plan .request-info .select-2-container select:first-child{
-  float: left;
-}
-.mainCont.request-modify-plan .request-info .select-2-container select:last-child{
-  float: right;
-}
-.mainCont.request-modify-plan .request-info .notice .tit{border-bottom: 1px solid #b5b8c7;}
-.mainCont.request-modify-plan .request-info .notice ol{padding-top: 10px; padding-left: 15px;}
-.mainCont.request-modify-plan .request-info .notice ol li{list-style: decimal;line-height: 15px;}
 
 .todayView{padding:15px 10px 10px;box-shadow:0 3px 3px rgba(0,0,0,0.16);background:#fff}
 .todayView dl dt{margin-bottom:10px;line-height:20px;font-size:16px;color:#0f4a8c}
@@ -357,19 +337,6 @@
 .todayView dl dd{line-height:23px;font-size:14px}
 .todayView dl dd strong{display:inline-block;margin-right:15px}
 a.todayView{background:#fff url("/images/bl-arrow.png") no-repeat right 10px center;background-size:auto 16px}
-.titCal{position:relative;z-index:1;text-align:center}
-.titCal *{vertical-align:top}
-.titCal.middle *{vertical-align:middle}
-.titCal input[type=month]{border: none; font-size: 18px; color: #0f4a8c;}
-.titCal a{display:inline-block;overflow:hidden;width:50px;height:50px;text-indent:-9999px;background-size:8px auto !important}
-.titCal a.btnPrev{background:url("/images/btn-prev.png") no-repeat center}
-.titCal a.btnNext{background:url("/images/btn-next.png") no-repeat center}
-.titCal a.btnNext + .txtCal{display:block;text-align:center}
-.titCal > strong{display:inline-block;padding:0 4px;line-height:50px;font-size:18px;color:#0f4a8c}
-.titCal > strong:first-child{display:block}
-.titCal .txtCal{display:inline-block;text-align:left;line-height:23px;font-size:14px}
-.titCal .txtCal strong{display:inline-block;margin-right:15px}
-.titCal .label{margin:-6px 3px 10px}
 .listTop{overflow:hidden;padding:0 20px;background:#e6e8f1;box-shadow:inset 0 2px 3px rgba(0,0,0,0.22)}
 .listTop ul{float:left;overflow:hidden;margin:0 -7px}
 .listTop ul li{position:relative;float:left;padding:0 7px;line-height:30px;font-size:14px}
@@ -891,3 +858,52 @@ strong.noticeTxt + .fullWidth .titCal:first-child{margin-top:15px}
 .taPolicy > dl > dd:first-child{padding-top:10px}
 .taPolicy > dl > dd.inputList{margin-top:0}
 /* 권한 이임하기 */
+
+
+
+/* ===== 이민호 작업 ===== */
+
+/* 일정/근테 */
+.mainCont.plan-month .search-result{ margin-top: 30px;}
+.mainCont.plan-month .search-result p.tit{ font-weight: 400; font-size: 1.1rem; }
+.mainCont.plan-month .search-result ul.box-list li + li{margin-top: 15px;}
+.mainCont.plan-month .titCal{position:relative;z-index:1;}
+.mainCont.plan-month .titCal *{vertical-align:top}
+.mainCont.plan-month .titCal.middle *{vertical-align:middle}
+.mainCont.plan-month .titCal input[type=month]{border: none; font-size: 18px; color: #0f4a8c;}
+.mainCont.plan-month .titCal a.btn-img{display:inline-block;overflow:hidden;width:50px;height:50px;text-indent:-9999px;background-size:8px auto !important}
+.mainCont.plan-month .titCal a.btnPrev{background:url("/images/btn-prev.png") no-repeat center}
+.mainCont.plan-month .titCal a.btnNext{background:url("/images/btn-next.png") no-repeat center}
+.mainCont.plan-month .titCal a.btnNext + .txtCal{display:block;text-align:center}
+.mainCont.plan-month .titCal a.btn-today{float: right; width: 50px; text-align:center;line-height: 20px; border: 1px solid #eee; border-radius: 7px;}
+.mainCont.plan-month .titCal > strong{display:inline-block;padding:0 4px;line-height:50px;font-size:18px;color:#0f4a8c}
+.mainCont.plan-month .titCal > strong:first-child{display:block}
+.mainCont.plan-month .titCal .txtCal{display:inline-block;text-align:left;line-height:23px;font-size:14px}
+.mainCont.plan-month .titCal .txtCal strong{display:inline-block;margin-right:15px}
+.mainCont.plan-month .titCal .label{margin:-6px 3px 10px}
+
+.mainCont.plan-month .week-table tr th{text-align:center;height: 20px;}
+.mainCont.plan-month .week-table tr th:nth-child(6),
+.mainCont.plan-month .week-table tr td:nth-child(6){color: blue;}
+.mainCont.plan-month .week-table tr th:nth-child(7),
+.mainCont.plan-month .week-table tr td:nth-child(7){color: red;}
+.mainCont.plan-month .week-table tr td{text-align:center;height: 45px;}
+.mainCont.plan-month .week-table tr td.today{background-color: #dce6f2;}
+
+/* 일정 수정 요청 */
+.mainCont.request-modify-plan .request-info{margin-top: 20px;}
+.mainCont.request-modify-plan .request-info .select-2-container:after{content: "";display: block;clear: both;}
+.mainCont.request-modify-plan .request-info .select-2-container select{width: 45%;}
+.mainCont.request-modify-plan .request-info .select-2-container select:first-child{float: left;}
+.mainCont.request-modify-plan .request-info .select-2-container select:last-child{float: right;}
+.mainCont.request-modify-plan .request-info .notice .tit{border-bottom: 1px solid #b5b8c7;}
+.mainCont.request-modify-plan .request-info .notice ol{padding-top: 10px; padding-left: 15px;}
+.mainCont.request-modify-plan .request-info .notice ol li{list-style: decimal;line-height: 15px;}
+.mainCont.request-modify-plan .request-info .chk-tommorow{float: right;}
+
+/* 출퇴근 수정 요청 */
+.mainCont.request-modify-plan.cmmt{;}
+
+/* 일정 추가 요청 */
+.mainCont.request-modify-plan.add{;}
+
