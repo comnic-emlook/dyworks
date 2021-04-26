@@ -23,23 +23,24 @@
 }
 .mainCont .work-plan-wrap .btn-group .btn-wrap.disabled{background: #bed9d5;}
 
-.mainCont .work-plan-wrap .btn-group .btn-big{margin: 20px 20px 0px 20px; padding: 20px 10px 20px;background: #009688;color: #fff;cursor: pointer;text-align: center;margin-top: 20px;border-top-left-radius: 5px;border-top-right-radius: 5px;}
+.mainCont .work-plan-wrap .btn-group .btn-big{margin: 20px 10px 0px 10px; padding: 20px 10px 20px;background: #009688;color: #fff;cursor: pointer;text-align: center;margin-top: 20px;border-top-left-radius: 5px;border-top-right-radius: 5px;}
 .mainCont .work-plan-wrap .btn-group .btn-big p.btn-tit{font-size: 2rem;}
 .mainCont .work-plan-wrap .btn-group .btn-big .time-info{font-size: 0.9rem;text-align: center;margin-top: 5px;}
 
 .mainCont .work-plan-wrap .btn-group.btn-group-row{
-  margin: 1px 20px;
+  margin: 0px 10px;
 }
 .mainCont .work-plan-wrap .btn-group .btn-sm{
-  padding: 20px 0px;
-  height: 60px;
+  border-top: 2px solid #fff;
+  padding: 13px 0px;
+  height: 45px;
   width: 50%;
   font-size: 1rem;
-
 }
 .mainCont .work-plan-wrap .btn-group .btn-sm:first-child{
   float: left;
   border-bottom-left-radius: 5px;
+  border-right: 2px solid #fff;
 }
 .mainCont .work-plan-wrap .btn-group .btn-sm:last-child{
   float: right;
