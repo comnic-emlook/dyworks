@@ -70,16 +70,14 @@
 							<span class="value">18:00</span>
 						</div>
 
-						<div class="btn-group">
-							<div class="btn-wrap btn-big disabled" onclick="handler_click()">
-								<p class="btn-tit text-center ">출근하기</p>
-								<p class="btn-sub time-info text-center">14:58</p>
+						<section class="">
+							<p class="btn-big text-center ">출근하기</p>
+							<p class="time-info text-center">14:58</p>
+							<div class="btn-group">
+								<a class="btn-no-border" href="">근무 일정 수정</a>
+								<a class="btn-no-border left-border" href="javascript:void(0)" onclick="fn_layer('main-map','300')" >내 위치 공유</a>
 							</div>
-							<div class="btn-group btn-group-row">
-								<div class="btn-wrap btn-sm disabled">근무일정 수정</div>
-								<div class="btn-wrap btn-sm">내 위치 공유</div>
-							</div>
-						</div>
+						</section>
 					</div>
 
 					<div class="work-plan-wrap">
@@ -88,7 +86,7 @@
 							<span class="value">09:00 ~ 18:00</span>
 						</div>
 
-						<section class="btn-wrap">
+						<section class="">
 							<p class="btn-big text-center ">퇴근하기</p>
 							<p class="time-info text-center">14:58</p>
 							<div class="btn-group">
@@ -193,16 +191,30 @@
 		</div>
 		<!--// 내 위치 공유 팝업 -->
 
+		<!-- 비밀번호 변경 안내 팝업 -->
+		<div class="layer change-password-pop">
+			<div class="inner">
+				<p class="tit">비밀번호 변경 안내</p>
+				<!-- popCont -->
+				<div class="popCont notice">
+					<p>처음 접속하셨나요?</p>
+					<p>비민번호를 변경해 주세요.</p>
+					<div class="btnBottom v2">
+						<button class="btn btnWhite">취소</button>
+						<button class="btn btnBlue">확인</button>
+					</div>
+				</div>
+				<!--// popCont -->
+				<a href="#" class="closeLayer">close</a>
+			</div>
+		</div>
+		<!--// 비밀번호 변경 안내 팝업 -->
 
 		<script language="JavaScript">
-			function handler_click(){
-				if($(event.target).hasClass('disabled') || $(event.target).parent().hasClass('disabled')) return;
-				console.log("Click!!");
-			}
-
 			$(document).ready(function(){
-
+				fn_layer('change-password-pop','300')
 			})
 		</script>
+
 </body>
 </html>
