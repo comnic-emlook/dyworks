@@ -14,6 +14,9 @@
 .btnMore{display:block;margin:0 auto;border-radius:13px;width:100px;height:25px;text-align:center;line-height:25px;font-size:14px;font-weight:500;color:#fff;background:#b5b8c7}
 .btnLink{color:#f25f5f;text-decoration:underline}
 .btnLine{display:inline-block;border-bottom:1px solid #000;line-height:28px;font-size:14px;color:#000}
+.btnGreen{border-color:#0ea88e;color:#fff;background:#0ea88e}
+.btnGreen:disabled{border-color:#b5b8c7;color:#fff;background:#b5b8c7}
+
 /* 버튼 영역 */
 .btnBottom{position:fixed;bottom:0;left:0;z-index:50;padding:0 30px 30px;width:100%;background:#fff}
 .btnBottom:before{display:block;content:"";position:absolute;top:-20px;left:0;width:100%;height:20px;background:url("/images/dim.png") repeat-x 0 0;background-size:auto 100%}
@@ -862,11 +865,11 @@ strong.noticeTxt + .fullWidth .titCal:first-child{margin-top:15px}
 
 
 /* ===== 이민호 작업 ===== */
+ul.box-list li + li{margin-top: 15px;}
 
 /* 일정/근테 */
 .mainCont.plan-month .search-result{ margin-top: 30px;}
 .mainCont.plan-month .search-result p.tit{ font-weight: 400; font-size: 1.1rem; }
-.mainCont.plan-month .search-result ul.box-list li + li{margin-top: 15px;}
 .mainCont.plan-month .titCal{position:relative;z-index:1;}
 .mainCont.plan-month .titCal *{vertical-align:top}
 .mainCont.plan-month .titCal.middle *{vertical-align:middle}
@@ -907,3 +910,7 @@ strong.noticeTxt + .fullWidth .titCal:first-child{margin-top:15px}
 /* 일정 추가 요청 */
 .mainCont.request-modify-plan.add{;}
 
+/* 관리 - 알림 및 시간 */
+.mainCont.alert-and-time {
+  ;
+}
