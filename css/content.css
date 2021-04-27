@@ -926,5 +926,5 @@ ul.box-list li + li{margin-top: 15px;}
 }
 .mainCont.cmmt-location-add .checkbox label{display: inline-block}
 .mainCont.cmmt-location-add .checkbox label:first{float: left;}
-.mainCont.cmmt-location-add .checkbox label:last-child{float: right;}
+.mainCont.cmmt-location-add .checkbox label:last-child{float: right;padding-right: 100px;}
 .mainCont.cmmt-location-add .map{margin-top: 10px;height: 200px; background-color: #0ea88e;}
