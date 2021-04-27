@@ -878,7 +878,7 @@ ul.box-list li + li{margin-top: 15px;}
 .mainCont.plan-month .titCal a.btnPrev{background:url("/images/btn-prev.png") no-repeat center}
 .mainCont.plan-month .titCal a.btnNext{background:url("/images/btn-next.png") no-repeat center}
 .mainCont.plan-month .titCal a.btnNext + .txtCal{display:block;text-align:center}
-.mainCont.plan-month .titCal a.btn-today{float: right; width: 50px; text-align:center;line-height: 20px; border: 1px solid #eee; border-radius: 7px;}
+.mainCont.plan-month .titCal a.btn-today{float: right; width: 50px; text-align:center;line-height: 20px; border: 1px solid #eee; border-radius: 7px;margin-top:15px;}
 .mainCont.plan-month .titCal > strong{display:inline-block;padding:0 4px;line-height:50px;font-size:18px;color:#0f4a8c}
 .mainCont.plan-month .titCal > strong:first-child{display:block}
 .mainCont.plan-month .titCal .txtCal{display:inline-block;text-align:left;line-height:23px;font-size:14px}
