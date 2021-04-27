@@ -500,7 +500,7 @@ strong.noticeTxt em{display:block;font-weight:700}
 .noticeArea ul li > span{display:inline-block;margin-bottom:3px;font-size:12px;color:#484a53}
 .noticeArea ul li > a{display:block;position:absolute;top:50%;right:20px;margin-top:-5px;width:10px;height:10px;text-indent:-9999px;background:url("/images/btn-del02.png") no-repeat center;background-size:100%}
 /* 관리 */
-.lineList.v2{margin:0 -20px;padding:20px 20px 0}
+.lineList.v2{margin:0 -20px;padding:20px}
 .lineList.v2 ul{border:none}
 .lineList.v2 ul + ul{margin-top:20px}
 .lineList.v2 ul li{border-radius:10px;border:none;background:url("/images/bl-arrow.png") no-repeat right 20px center;background-color:#fff;background-size:auto 16px}
@@ -914,3 +914,17 @@ ul.box-list li + li{margin-top: 15px;}
 .mainCont.alert-and-time {
   ;
 }
+
+/* 관리 - 출퇴근 위치 */
+.mainCont.cmmt-location .menu-list-wrap .submenu{padding: 10px 0px;;border-bottom: 1px solid #ccc;}
+.mainCont.cmmt-location .menu-list-wrap .submenu .submenu-link{float: right;}
+.mainCont.cmmt-location .menu-list-wrap .submenu .submenu-link a{padding: 10px 0px 10px 10px;}
+.mainCont.cmmt-location .menu-list-wrap .submenu:last-child{border-bottom: none;}
+
+.mainCont.cmmt-location-add .checkbox {
+  margin-top: 10px; 
+}
+.mainCont.cmmt-location-add .checkbox label{display: inline-block}
+.mainCont.cmmt-location-add .checkbox label:first{float: left;}
+.mainCont.cmmt-location-add .checkbox label:last-child{float: right;}
+.mainCont.cmmt-location-add .map{margin-top: 10px;height: 200px; background-color: #0ea88e;}
