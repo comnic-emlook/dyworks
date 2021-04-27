@@ -920,11 +920,13 @@ ul.box-list li + li{margin-top: 15px;}
 .mainCont.cmmt-location .menu-list-wrap .submenu .submenu-link{float: right;}
 .mainCont.cmmt-location .menu-list-wrap .submenu .submenu-link a{padding: 10px 0px 10px 10px;}
 .mainCont.cmmt-location .menu-list-wrap .submenu:last-child{border-bottom: none;}
-
-.mainCont.cmmt-location-add .checkbox {
-  margin-top: 10px; 
-}
+.mainCont.cmmt-location-add .checkbox {margin-top: 10px; }
 .mainCont.cmmt-location-add .checkbox label{display: inline-block}
 .mainCont.cmmt-location-add .checkbox label:first{float: left;}
 .mainCont.cmmt-location-add .checkbox label:last-child{float: right;padding-right: 100px;}
 .mainCont.cmmt-location-add .map{margin-top: 10px;height: 200px; background-color: #0ea88e;}
+
+/* 관리 - 내정보 */
+.mainCont.my-info .lavel-value-wrap a{
+  display: block;
+}

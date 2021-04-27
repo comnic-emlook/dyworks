@@ -97,7 +97,7 @@ textarea.error:-ms-input-placeholder {color:#ff3333}
 .border-box dl dd + dd > *{border-top:1px solid #b5b8c7}
 .border-box dl dd:after{content: "";display: block;clear: both;}
 .border-box dl dd .label2{float: left;}
-.border-box dl dd .value{float: right;}
+.border-box dl dd .value{float: right;max-width: 60%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
 .border-box dl dd > a{background:url("/images/bl-arrow.png") no-repeat right center;background-size:auto 16px}
 .border-box dl dd > *{display:block;position:relative;padding:10px 0}
 .border-box dl dd > * p{line-height:23px;font-size:14px}
@@ -108,9 +108,7 @@ textarea.error:-ms-input-placeholder {color:#ff3333}
 .border-box .no-border{border: none;}
 .box-info {padding: 10px 0px;font-size: 1rem;}
 
-.lavel-value-wrap .value{
-  float: right;
-}
+.lavel-value-wrap .value{float: right;}
 
 .mt-0{margin-top: 0px !important;}
 .mt-10{margin-top: 10px !important;}
@@ -141,3 +139,6 @@ input.error{
 }
 
 .btn-text{font-size: 0.8rem; color: #009688;}
+
+.singleline-ellipsis {white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.multiline-ellipsis {height: 28px;overflow: hidden;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical; }
