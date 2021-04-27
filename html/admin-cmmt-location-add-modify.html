@@ -1,0 +1,138 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>대양그룹</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="/css/style.css" />
+	<script src="/js/jquery-1.10.2.min.js"></script>
+	<script src="/js/swiper.js"></script>
+	<script src="/js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap" class="main">
+	<!-- subHeader -->
+	<div id="subHeader">
+		<h2>출퇴근 위치 추가/수정</h2>
+		<a href="" class="btnBack">이전 페이지</a>
+	</div>
+	<!--// subHeader -->
+
+	<!-- container -->
+	<div id="container">
+		<!-- mainCont -->
+		<div class="mainCont cmmt-location-add">
+			<div class="cont v2">
+
+				<div class="request-info mt-0">
+					<ul class="box-list">
+						<li class="border-box">
+							<dl class="">
+								<dd>
+									<div class="form-wrap">
+										이름
+										<div>
+											<input type="text" title="" placeholder="내용을 입력하세요.">
+										</div>
+									</div>
+								</dd>
+								<dd>
+									<div class="form-wrap no-border">
+										방식							
+										<div class="checkbox">
+											<input type="radio" name="kind" id="kind1" ><label for="kind1">비콘</label>
+											<input type="radio" name="kind" id="kind2" ><label for="kind2">GPS</label>
+										</div>
+									</div>
+								</dd>
+								<dd>
+									<div class="form-wrap no-border">
+										UUID
+										<div>
+											<input type="text" title="" placeholder="내용을 입력하세요.">
+										</div>
+									</div>
+								</dd>
+								<dd>
+									<div class="form-wrap no-border">
+										MINOR
+										<div>
+											<input type="text" title="" placeholder="내용을 입력하세요.">
+										</div>
+									</div>
+								</dd>
+								<dd>
+									<div class="form-wrap no-border">
+										위치
+										<div class="map">
+											
+										</div>
+									</div>
+								</dd>
+								<dd>
+									<div class="form-wrap no-border">
+										주소
+										<div>
+											<input type="text" title="" placeholder="내용을 입력하세요.">
+										</div>
+									</div>
+								</dd>
+								<dd>
+									<div class="form-wrap no-border">
+										반경
+										<div>
+											<select class="v2" title="선택">
+												<option value="">선택하세요.</option>
+												<option value="">30m</option>
+												<option value="">50m</option>
+												<option value="">100m</option>
+												<option value="">500m</option>
+											</select>
+											 
+										</div>
+									</div>
+								</dd>
+								<dd>
+									<div class="form-wrap no-border">
+										메모
+										<div class="mt-10">
+											<textarea class="v2"></textarea>
+										</div>
+									</div>
+								</dd>
+
+							</dl>
+						</li>
+					</ul>
+				</div>
+				<!--// 기준일 -->
+
+			</div>
+		</div>
+		<!--// mainCont -->
+
+		<!-- 하단 버튼 -->
+		<div class="btnBottom v2">
+			<button class="btn btnWhite">취소</button>
+			<button class="btn btnGreen">저장</button>
+		</div>
+		<!--// 하단 버튼 -->
+
+	</div>
+	<!--// container -->
+
+</div>
+<!--// wrap -->
+</body>
+</html>
