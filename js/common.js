@@ -335,7 +335,7 @@ $(function(){
 
 
 	if($('#TopSubBtnGroup')){
-		$('#TopSubBtnGroup ul li').width('150');
+		$('#TopSubBtnGroup ul li').width('100');
 		$('#TopSubBtnGroup ul').width($('#TopSubBtnGroup ul li').length * 150);
 	}
 
