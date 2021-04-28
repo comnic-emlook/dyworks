@@ -15,7 +15,7 @@
 .btnLink{color:#f25f5f;text-decoration:underline}
 .btnLine{display:inline-block;border-bottom:1px solid #000;line-height:28px;font-size:14px;color:#000}
 .btnGreen{border-color:#0ea88e;color:#fff;background:#0ea88e}
-.btnGreen:disabled{border-color:#b5b8c7;color:#fff;background:#b5b8c7}
+.btnGreen:disabled{border-color:#c3e5dd;color:#fff;background:#c3e5dd}
 
 /* 버튼 영역 */
 .btnBottom{position:fixed;bottom:0;left:0;z-index:50;padding:0 30px 30px;width:100%;background:#fff}
@@ -929,4 +929,11 @@ ul.box-list li + li{margin-top: 15px;}
 /* 관리 - 내정보 */
 .mainCont.my-info .lavel-value-wrap a{
   display: block;
+}
+
+/* 요청상황 */
+.mainCont.request-state .cmmt-detail p.reason{
+  margin-top: 10px;
+  border-top: 1px solid #b5b8c7;
+  font-size: 0.8rem;
 }
