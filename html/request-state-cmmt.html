@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>대양그룹</title>
+	<!-- //<![CDATA[ -->
+	<link rel="stylesheet" href="/css/style.css" />
+	<script src="/js/jquery-1.10.2.min.js"></script>
+	<script src="/js/swiper.js"></script>
+	<script src="/js/common.js"></script>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap" class="main">
+	<!-- subHeader -->
+	<div id="subHeader">
+		<h2>요청현황</h2>
+		<a href="" class="btnBack">이전 페이지</a>
+	</div>
+	<!--// subHeader -->
+
+	<!-- TopSubBtnGroup -->
+	<div id="TopSubBtnGroup" class="request-top-button-group">
+		<ul>
+			<li class="curr"><a href="">출퇴근 변경</a></li>
+			<li><a href="">일정 추가</a></li>
+			<li><a href="">일정 변경</a></li>
+			<li><a href="">휴가 신청</a></li>
+			<li><a href="">추가 메뉴</a></li>
+			<li><a href="">추가 메뉴</a></li>
+			<li><a href="">추가 메뉴</a></li>
+			<li><a href="">추가 메뉴</a></li>
+			<li><a href="">추가 메뉴</a></li>
+			<li><a href="">추가 메뉴</a></li>
+		</ul>
+	</div>
+	<!--// TopSubBtnGroup -->
+
+	<!-- container -->
+	<div id="container">
+		<!-- mainCont -->
+		<div class="mainCont plan-month">
+			<div class="cont v2">
+				<!-- 상단 필터링(년월, 종류) -->
+				<div class="border-box">
+							<!-- titCal -->
+							<div class="titCal text-center">
+								<a href="#" class="btnPrev btn-img">이전달</a>
+								<strong>2021. 04.</strong>
+								<a href="#" class="btnNext btn-img">다음달</a>
+							</div>
+							<!-- <div class="titCal middle">
+								<a href="#" class="btnPrev">이전달</a>
+								<input type="month" value="2021-04">
+								<a href="#" class="btnNext">다음달</a>
+							</div> -->
+							<div class="text-center">
+								<select class="v3" title="선택">
+									 <option value="">전체</option>
+									 <option value="">누락</option>
+									 <option value="">정상</option>
+									 <option value="">근무중</option>
+									 <option value="">무일정</option>
+									 <option value="">지각</option>
+									 <option value="">조퇴</option>
+									 <option value="">결근</option>
+									 <option value="">휴가</option>
+								 </select>
+							 </div>
+				 
+							<!--// titCal -->
+				</div>
+				<!--// 상단 필터링(년월, 종류) -->
+
+				<!-- 검색 결과 -->
+				<div class="search-result">
+					<p class="tit">조회 결과 2건</p>
+					<ul class="box-list">
+						<li class="border-box">
+							<dl class="">
+								<dt>
+									04.01(월)
+									<span class="align-right state-box">
+										대기
+									</span>
+								</dt>
+								<dd>
+									<div class="label-value-wrap">
+										일정 타입
+										<span class="value">간주(재택근무)</span>
+									</div>
+									<div class="label-value-wrap">
+										근무 시간
+										<span class="value">09:00 ~ 18:00 휴게 60분</span>
+									</div>
+									<div class="label-value-wrap">
+										기존
+										<span class="value">09:00 ~ <span class="text-red">누락</span></span>
+									</div>
+									<div class="label-value-wrap">
+										변경
+										<span class="value">09:00 ~ 18:00(익일)</span>
+									</div>
+									<div>
+										<button class="btn btnWrite">자세히보기 ></button>
+									</div>
+								</dd>
+								<dd>
+								</dd>
+							</dl>
+						</li>
+
+						<li class="border-box">
+							<dl class="">
+								<dt>
+									04.02(화)
+									<span class="align-right state-box">
+										승인
+									</span>
+								</dt>
+								<dd>
+									<div class="label-value-wrap">
+										일정 타입
+										<span class="value">일반</span>
+									</div>
+									<div class="label-value-wrap">
+										근무 시간
+										<span class="value">09:00 ~ 18:00 휴게 60분</span>
+									</div>
+									<div class="label-value-wrap">
+										기존
+										<span class="value"><span class="text-red">누락</span> ~ <span class="text-red">누락</span></span>
+									</div>
+									<div class="label-value-wrap">
+										변경
+										<span class="value">09:00 ~ 18:00</span>
+									</div>
+									<div>
+										<button class="btn btnWrite">자세히보기 ></button>
+									</div>
+								</dd>
+								<dd>
+								</dd>
+							</dl>
+						</li>
+
+					</ul>
+				</div>
+				<!-- 검색 결과 -->
+
+			</div>
+		</div>
+		<!--// mainCont -->
+	</div>
+	<!--// container -->
+
+	<!-- FixedBtn -->
+	<div id="FixedBtn">
+		<ul class=""><!-- 관리자의 경우 class="admin" 추가, 사용사는 class를 지운다. -->
+			<li class="curr"><a href="">홈</a></li>
+			<li><a href="">근태</a></li>
+			<li><a href="">요청</a></li>
+			<li><a href="">관리</a></li><!-- 관리자 -->
+		</ul>
+	</div>
+	<!--// FixedBtn -->
+
+
+</div>
+<!--// wrap -->
+</body>
+</html>

@@ -86,12 +86,14 @@ function graph(){
 }
 
 $(window).load(function(){
+	/*
 	// 메인
 	graph(); // 첫 로딩시
 
 	setInterval(function(){
 		graph();
 	}, 3000); // 1초마다 시간 체크
+	*/
 })
 
 $(function(){
@@ -330,4 +332,11 @@ $(function(){
 			$(this).addClass("off");
 		}
 	})
+
+
+	if($('#TopSubBtnGroup')){
+		$('#TopSubBtnGroup ul li').width('150');
+		$('#TopSubBtnGroup ul').width($('#TopSubBtnGroup ul li').length * 150);
+	}
+
 })
