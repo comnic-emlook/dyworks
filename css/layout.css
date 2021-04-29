@@ -1,7 +1,7 @@
 ﻿@charset "utf-8";
 /* 해더 */
-#header {position:relative; padding:0 20px; height:50px; text-align:center; background:#0f4a8c}
-#header h1 a {display:block; line-height:50px; font-size:18px; font-weight:700; color:#fff}
+#header {position:relative; height:50px; text-align:center;margin: 0 0 22px;padding: 12px 0px;box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.03);background-color: #ffffff;}
+#header h1 a {display:block; line-height:25px; font-size:18px; font-weight:700; color:#002c61}
 #header > a {display:block; position:absolute; top:0; height:50px; text-indent:-9999px}
 a.btnLogout {left:0; width:54px; background:url("/images/common/btn-logout.png") no-repeat center; background-size:15px auto !important}
 a.btnNotice {right:43px; width:25px; text-indent:0px !important; background:url("/images/common/btn-notice.png") no-repeat center; background-size:15px auto !important}
@@ -25,7 +25,7 @@ a.btnMenu {right:0; width:43px; background:url("/images/common/btn-menu.png") no
 #subHeader a.btnMenu {background:url("/images/common/btn-menu-b.png") no-repeat center}
 #subHeader a.btnInfo {right:10px; margin:0; width:40px; background:url("/images/common/btn-info.png") no-repeat center; background-size:19px}
 #subHeader a.btnSearch {right:40px; width:40px; background:url("/images/common/btn-search.png") no-repeat center; background-size:19px auto}
-#wrap.v2 {background:#e3e8f7}
+#wrap.v2 {background:#f9f9f9}
 #wrap.v2 #subHeader {background:#0f4a8c}
 #wrap.v2 #subHeader h2 {color:#fff}
 #wrap.v2 #subHeader a.btnLogout {background:url("/images/common/btn-logout.png") no-repeat center}
