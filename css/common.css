@@ -77,10 +77,10 @@ input:read-only {color:#b5b8c7}
 .time span {margin-left: 0 !important;}
 .inputList dl dd.time > input {text-align:center !important}
 
-input.error::-webkit-input-placeholder {color:#ff3333}
-input.error:-ms-input-placeholder {color:#ff3333}
-textarea.error::-webkit-input-placeholder {color:#ff3333}
-textarea.error:-ms-input-placeholder {color:#ff3333}
+input.error::-webkit-input-placeholder {color:#ce0000}
+input.error:-ms-input-placeholder {color:#ce0000}
+textarea.error::-webkit-input-placeholder {color:#ce0000}
+textarea.error:-ms-input-placeholder {color:#ce0000}
 
 .text-center{text-align:center;}
 .text-right{text-align:right;}
@@ -117,6 +117,7 @@ textarea.error:-ms-input-placeholder {color:#ff3333}
 
 .mt-0{margin-top: 0px !important;}
 .mt-10{margin-top: 10px !important;}
+.mt-20{margin-top: 20px !important;}
 
 .text-1{font-size: 2rem;}
 .text-2{font-size: 1.5rem;}
@@ -124,7 +125,8 @@ textarea.error:-ms-input-placeholder {color:#ff3333}
 .text-4{font-size: 0.8rem;}
 .text-5{font-size: 0.5rem;}
 
-.text-red{color:#ff3333}
+.text-red{color:#ce0000}
+.error-msg{margin-top: 10px; color: #ce0000;font-size: 14px;}
 
 a.btn-context-menu {display: block;width:43px;position:relative;top:-3px;right:-15px;text-indent: -9999px; background:url("/images/common/btn-menu-b.png") no-repeat center;background-size:15px auto !important}
 .context-menu {display:none; position:absolute; right:50px; z-index:100; padding: 10px 22px 10px 11px; border:1px solid #0f4a8c; width:130px; text-align:left; background:#fff}
@@ -140,7 +142,7 @@ a.btn-context-menu {display: block;width:43px;position:relative;top:-3px;right:-
 .hide{display:none;}
 
 input.error{
-	border-bottom: 1px solid #f00 impo !important;
+	border-bottom: 1px solid #ce0000 !important;
 }
 
 .btn-text{font-size: 0.8rem; color: #009688;}

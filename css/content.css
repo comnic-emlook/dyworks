@@ -1,12 +1,12 @@
 ﻿@charset "utf-8";/* >>>>>>>>>> 공통 <<<<<<<<<< */
 /* 버튼 */
 .btn{display:inline-block;padding:0 10px;border:1px solid #b5b8c7;border-radius:4px;width:100%;text-align:center;height:45px;line-height:43px;font-weight:500;font-size:15px;color:#0f4a8c;letter-spacing:0.016em}
-.btn.wFull{width:100%;}
+.btn.wFull{width:100%;border-radius: 10px;}
 .btn:disabled{border-color:#b5b8c7;color:#b5b8c7;background:#fff}
 .btn.ss{padding:0 12px;border-radius:3px;width:auto;height:24px;line-height:22px;font-size:12px}
 .btn.v2{line-height:24px !important;font-size:18px}
 .btn.v2 span{display:block;line-height:24px;font-size:12px}
-.btnBlue{border-color:#0f4a8c;color:#fff;background:#0f4a8c}
+.btnBlue{border-color:#0354a8;color:#fff;background:#0354a8}
 .btnBlue:disabled{border-color:#b5b8c7;color:#fff;background:#b5b8c7}
 .btnYellow{border-color:#e9bd2b;color:#fff;background:#e9bd2b}
 .btnWhite{border-color:#b5b8c7;color:#000;background:#fff}
@@ -136,9 +136,9 @@
 .inputList div{overflow:hidden}
 .inputList div dl{float:left;width:calc(50% - 10px)}
 .inputList div dl + dl{margin:0 0 0 10px}
-.inputList dl dt{margin-bottom:-4px;line-height:21px;font-size:12px;font-weight:700}
+.inputList dl dt{margin-bottom:10px;line-height:21px;font-size:12px;font-weight:700}
 .inputList dl dt span{font-weight:400}
-.inputList .checkbox{margin-top:15px;overflow:hidden;margin-left:-23px}
+.inputList .checkbox{margin-top:24px;overflow:hidden;margin-left:-23px}
 .inputList .checkbox span{float:left;margin-left:23px}
 .inputList .checkbox span label{padding-left:27px;line-height:23px;font-size:12px;}
 .inputList p.checkbox span label{color:#b5b8c7}
@@ -273,17 +273,12 @@
 .agreeBox dd label + a{display:block;overflow:hidden;position:absolute;top:0;right:0;width:24px;height:24px;text-indent:-9999px;background:url("/images/bl-arrow.png") no-repeat right center;background-size:auto 16px}
 .agreeBox dd + dd{margin-top:16px}
 /* 로그인 */
+.content.login .inputList dt{font-size: 14px;}
 .loginTit{padding:20px 0 40px;text-align:center}
-.loginTit .logo{display:inline-block;width:78px}
+.loginTit .logo{display:inline-block;width:200px}
 .loginTit .logo img{width:100%}
 .loginTit strong{display:block;margin-top:12px;line-height:20px;font-size:25px;font-weight: 700;color: #073d76;}
-.copyright{
-  position: fixed;
-  bottom: 30px;
-  width: 100%;
-  font-size: 13px;
-  color: #999;
-}
+.copyright{ position: fixed;bottom: 20px;width: 100%;font-size: 13px;color: #b2b3b9;}
 @media screen and (max-width:350px){.loginTit{padding-bottom:20px}
 .logBtnArea{margin-top:15px}
 }
